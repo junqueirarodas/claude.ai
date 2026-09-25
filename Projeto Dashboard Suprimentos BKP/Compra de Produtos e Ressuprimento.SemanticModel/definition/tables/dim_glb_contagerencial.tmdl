@@ -1,0 +1,68 @@
+table dim_glb_contagerencial
+	lineageTag: d56714fd-0589-42b2-98af-80cc36dbb643
+
+	column sk_glb_contagerencial
+		dataType: int64
+		formatString: 0
+		lineageTag: 75abf0da-d744-45a0-b734-c18e1cfc74ec
+		summarizeBy: none
+		sourceColumn: sk_glb_contagerencial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 609e089e-821c-4a98-8f9d-4a0bcf0df00e
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcontagerencial
+		dataType: string
+		lineageTag: e01cbdac-abfa-4f7a-bd0c-a751bbb06479
+		summarizeBy: none
+		sourceColumn: nk_codcontagerencial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nomecontagerencial
+		dataType: string
+		lineageTag: 9da4e99a-e26c-4609-bb23-081433a80946
+		summarizeBy: none
+		sourceColumn: ds_nomecontagerencial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcolcontagerencial
+		dataType: int64
+		formatString: 0
+		lineageTag: fab36750-f0ef-4e36-87d8-466df799fde9
+		summarizeBy: none
+		sourceColumn: nk_codcolcontagerencial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_glb_contagerencial = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_glb_contagerencial1 = public{[Name="dim_glb_contagerencial"]}[Data]
+				in
+				    dim_glb_contagerencial1
+
+	annotation PBI_ResultType = Table
+

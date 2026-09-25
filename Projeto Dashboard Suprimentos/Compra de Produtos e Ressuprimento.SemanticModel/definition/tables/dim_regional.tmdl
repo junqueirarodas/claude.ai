@@ -1,0 +1,88 @@
+table dim_regional
+	lineageTag: 05f8aa12-65eb-4c5c-89bb-af8211a39181
+
+	column sk_regional
+		dataType: int64
+		formatString: 0
+		lineageTag: 68d540da-2334-4650-adf9-b4ced41d8641
+		summarizeBy: none
+		sourceColumn: sk_regional
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 16144dfb-d78b-4bf1-a929-17e1dfca4e5e
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codfilial
+		dataType: int64
+		formatString: 0
+		lineageTag: 668ac412-2e0d-45a9-9cc2-e9b809f2859f
+		summarizeBy: none
+		sourceColumn: nk_codfilial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_atividadecultura
+		dataType: string
+		lineageTag: 929f5be8-f182-4bbd-8ca1-46e1e90bdaad
+		summarizeBy: none
+		sourceColumn: nk_atividadecultura
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_regional
+		dataType: string
+		lineageTag: db3e167b-2b5e-4b04-b92c-330cd93638a2
+		summarizeBy: none
+		sourceColumn: nk_regional
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_regional
+		dataType: string
+		lineageTag: 47cf56ae-7fd7-4007-bade-fe059c15e101
+		summarizeBy: none
+		sourceColumn: ds_regional
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_cultura
+		dataType: string
+		lineageTag: 93e649cf-53c4-4123-a03b-d04ac08b67bd
+		summarizeBy: none
+		sourceColumn: ds_cultura
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_regional = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_regional1 = public{[Name="dim_regional"]}[Data]
+				in
+				    dim_regional1
+
+	annotation PBI_ResultType = Table
+

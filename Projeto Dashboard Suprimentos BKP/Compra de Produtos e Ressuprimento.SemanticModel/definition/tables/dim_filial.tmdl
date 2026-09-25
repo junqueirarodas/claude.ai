@@ -1,0 +1,101 @@
+table dim_filial
+	lineageTag: edd0ad14-5cb2-46e4-b7be-1a59f6e68a88
+
+	column sk_filial
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e46df14-dc85-4436-ba36-16d6333987a7
+		summarizeBy: none
+		sourceColumn: sk_filial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codfilial
+		dataType: int64
+		formatString: 0
+		lineageTag: bc63f434-c9d5-44b7-8fde-1863382ad64b
+		summarizeBy: none
+		sourceColumn: nk_codfilial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 54909abc-a947-4cf7-9b59-74d379406e2d
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_nomefantasia
+		dataType: string
+		lineageTag: dbb8f200-aaeb-4927-80e6-279b7d8bebf7
+		summarizeBy: none
+		sourceColumn: nm_nomefantasia
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_nomeabreviado
+		dataType: string
+		lineageTag: f81a9f57-a076-46fc-b9b8-049727b0e821
+		summarizeBy: none
+		sourceColumn: nm_nomeabreviado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_codfilialagrupamento
+		dataType: int64
+		formatString: 0
+		lineageTag: 34a1b222-daec-4cb4-ab72-32f0f36cbe0b
+		summarizeBy: none
+		sourceColumn: nr_codfilialagrupamento
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_estado
+		dataType: string
+		lineageTag: cd5cac9b-cce8-4b9d-95f7-05d436e386c0
+		summarizeBy: none
+		sourceColumn: ds_estado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_pais
+		dataType: string
+		lineageTag: 66b555f1-ded0-4efa-952b-fe062dc8ef97
+		summarizeBy: none
+		sourceColumn: ds_pais
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_filial = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_filial1 = public{[Name="dim_filial"]}[Data]
+				in
+				    dim_filial1
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

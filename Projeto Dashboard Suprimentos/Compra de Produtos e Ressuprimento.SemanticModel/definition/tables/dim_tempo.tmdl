@@ -1,0 +1,315 @@
+table dim_tempo
+	lineageTag: bb1bd5f3-2332-41af-a277-ebd69f344342
+
+	column sk_data
+		dataType: int64
+		formatString: 0
+		lineageTag: d264ab3d-e896-46ae-8d8b-e7d0c880f687
+		summarizeBy: none
+		sourceColumn: sk_data
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 26928943-26a5-4ee7-ba34-f41a66033889
+		summarizeBy: none
+		sourceColumn: dt_data
+
+		variation Variation
+			isDefault
+			relationship: 553f3fd8-b171-40c2-abee-355b6ad703b7
+			defaultHierarchy: LocalDateTable_68433cd7-004f-4f85-b029-cf62ba44ded6.'Hierarquia de datas'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ds_ano
+		dataType: int64
+		formatString: 0
+		lineageTag: e5a7e4a6-7a23-4c70-92c9-4e02f892ee7f
+		summarizeBy: sum
+		sourceColumn: ds_ano
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_mes
+		dataType: int64
+		formatString: 0
+		lineageTag: b1e91f7b-8a12-4e8f-821a-2616a88de9bc
+		summarizeBy: sum
+		sourceColumn: ds_mes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_dia
+		dataType: int64
+		formatString: 0
+		lineageTag: 08b679b6-4c81-4af0-b33a-fa6601e80031
+		summarizeBy: sum
+		sourceColumn: ds_dia
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_dia_semana
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e37502b-3048-4897-9f1a-4c0e084a5581
+		summarizeBy: sum
+		sourceColumn: ds_dia_semana
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_dia_ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 37b41a42-9831-4e91-a9d4-d3966e77556b
+		summarizeBy: sum
+		sourceColumn: ds_dia_ano
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_ano_bissexto
+		dataType: string
+		lineageTag: 1b1b8659-305a-4733-bad7-06a9dc117892
+		summarizeBy: none
+		sourceColumn: ds_ano_bissexto
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_dia_util
+		dataType: string
+		lineageTag: 59761dd3-dfee-4e30-a2c1-d95d5cf487e2
+		summarizeBy: none
+		sourceColumn: ds_dia_util
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_fim_semana
+		dataType: string
+		lineageTag: 84321b0f-c821-4452-ba57-80c755f037e5
+		summarizeBy: none
+		sourceColumn: ds_fim_semana
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_feriado
+		dataType: string
+		lineageTag: a5082bcb-3738-46f2-aa51-8bb8f2305aa2
+		summarizeBy: none
+		sourceColumn: ds_feriado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_pre_feriado
+		dataType: string
+		lineageTag: c5a70c02-3f8e-4b01-955c-8a43e0f912ec
+		summarizeBy: none
+		sourceColumn: ds_pre_feriado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_pos_feriado
+		dataType: string
+		lineageTag: f27dcf3e-c7f9-4e42-80f3-e91e5a0b6425
+		summarizeBy: none
+		sourceColumn: ds_pos_feriado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_feriado
+		dataType: string
+		lineageTag: df517139-3ab1-4870-9c45-6ddda31768d0
+		summarizeBy: none
+		sourceColumn: ds_nome_feriado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_dia_semana
+		dataType: string
+		lineageTag: 9e1b28fc-8b8f-4c75-b02b-b2f7a1279bf8
+		summarizeBy: none
+		sourceColumn: ds_nome_dia_semana
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_dia_semana_abrev
+		dataType: string
+		lineageTag: 956ad694-828c-4ad1-b7e7-d75f36332258
+		summarizeBy: none
+		sourceColumn: ds_nome_dia_semana_abrev
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_mes
+		dataType: string
+		lineageTag: 7c5515e3-bc23-4b77-8395-c54bbca13bdb
+		summarizeBy: none
+		sourceColumn: ds_nome_mes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_mes_abrev
+		dataType: string
+		lineageTag: 2c9f1470-ddc1-4258-ae99-f8de0d043566
+		summarizeBy: none
+		sourceColumn: ds_nome_mes_abrev
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_quinzena
+		dataType: int64
+		formatString: 0
+		lineageTag: 60786c53-c481-4f74-8506-62354d9f0796
+		summarizeBy: sum
+		sourceColumn: ds_quinzena
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_bimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: fb7d6326-3b76-4351-bd0d-ea31c447059f
+		summarizeBy: sum
+		sourceColumn: ds_bimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_trimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: f82537ca-3515-4c5b-b145-e2b5f19dd855
+		summarizeBy: sum
+		sourceColumn: ds_trimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_semestre
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d1cb0fb-cccc-451e-adb4-a5469d129549
+		summarizeBy: sum
+		sourceColumn: ds_semestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nr_semana_mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 468f8d0f-2536-45e3-bd0e-3428ecd54839
+		summarizeBy: sum
+		sourceColumn: ds_nr_semana_mes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nr_semana_ano
+		dataType: int64
+		formatString: 0
+		lineageTag: ea7387d9-8d93-4790-a9a2-6a91c8756709
+		summarizeBy: sum
+		sourceColumn: ds_nr_semana_ano
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_estacao_ano
+		dataType: string
+		lineageTag: 8335f66e-3b58-49c8-b8b0-b17fe58632fe
+		summarizeBy: none
+		sourceColumn: ds_estacao_ano
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_data_por_extenso
+		dataType: string
+		lineageTag: 6b3f49d5-74e5-4765-9d33-801c3719dbc6
+		summarizeBy: none
+		sourceColumn: ds_data_por_extenso
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_evento
+		dataType: string
+		lineageTag: 24c36109-afcf-4ee1-878b-597eecae3887
+		summarizeBy: none
+		sourceColumn: ds_evento
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_semana
+		dataType: string
+		lineageTag: a9bf040a-9b6e-4a7c-be84-d2c543ae563e
+		summarizeBy: none
+		sourceColumn: ds_semana
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_tempo = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_tempo1 = public{[Name="dim_tempo"]}[Data]
+				in
+				    dim_tempo1
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,88 @@
+table dim_localestoque
+	lineageTag: c66b1059-3099-4269-988f-c8b30c2f36df
+
+	column sk_localestoque
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b2e86df-8e25-4bd8-b8e6-3881b899715f
+		summarizeBy: none
+		sourceColumn: sk_localestoque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 0c394ad2-8e3d-49da-86a3-8a5b284bbee1
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codfilial
+		dataType: int64
+		formatString: 0
+		lineageTag: 2be8aa24-2441-4104-8d73-85e23efb6bcc
+		summarizeBy: none
+		sourceColumn: nk_codfilial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_localestoque
+		dataType: string
+		lineageTag: f59a7760-0f04-4e4b-9a39-982fa4f4aaf2
+		summarizeBy: none
+		sourceColumn: nk_localestoque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_localestoque
+		dataType: string
+		lineageTag: fdc8e0d0-b42d-4fba-bf5a-386a6dd4cc86
+		summarizeBy: none
+		sourceColumn: ds_localestoque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_agrupadorlocalestoque
+		dataType: string
+		lineageTag: cf47ecdf-55ed-4214-a2e0-a18fc8f60a0a
+		summarizeBy: none
+		sourceColumn: ds_agrupadorlocalestoque
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_ativo
+		dataType: string
+		lineageTag: e754cb33-da5f-429f-a1ae-154f9c03bfac
+		summarizeBy: none
+		sourceColumn: ds_ativo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_localestoque = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    suprimentos = Fonte{[Schema="suprimentos"]}[Data],
+				    dim_localestoque1 = suprimentos{[Name="dim_localestoque"]}[Data]
+				in
+				    dim_localestoque1
+
+	annotation PBI_ResultType = Table
+

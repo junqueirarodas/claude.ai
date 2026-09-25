@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Compra de Produtos e Ressuprimento"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3f6610af-a948-4975-8e45-a3e71f689e40"
+  }
+}

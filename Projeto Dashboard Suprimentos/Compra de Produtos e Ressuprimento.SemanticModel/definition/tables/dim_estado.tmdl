@@ -1,0 +1,67 @@
+table dim_estado
+	lineageTag: 7d448605-c06e-4569-bc56-021d5152e07d
+
+	column sk_estado
+		dataType: int64
+		formatString: 0
+		lineageTag: ed79f304-0088-474f-bc4b-233469f09881
+		summarizeBy: none
+		sourceColumn: sk_estado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_pais
+		dataType: int64
+		formatString: 0
+		lineageTag: 006fb461-d72e-483a-99a4-84b6433e0d10
+		summarizeBy: none
+		sourceColumn: nk_pais
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_estado
+		dataType: string
+		lineageTag: 1c1e99de-ddd9-4a6d-856d-8453c20d5f7e
+		summarizeBy: none
+		sourceColumn: nk_estado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_estado
+		dataType: string
+		lineageTag: bbda8214-88f9-42e6-bf76-6910ae484c21
+		summarizeBy: none
+		sourceColumn: nm_estado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nacional
+		dataType: string
+		lineageTag: b446049e-19ee-4f8b-80fe-a8322491ac19
+		summarizeBy: none
+		sourceColumn: ds_nacional
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_estado = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_estado1 = public{[Name="dim_estado"]}[Data]
+				in
+				    dim_estado1
+
+	annotation PBI_ResultType = Table
+

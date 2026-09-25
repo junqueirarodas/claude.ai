@@ -1,0 +1,327 @@
+table dim_tempoperiodo
+	lineageTag: c837c820-5e07-4e48-a433-2a9257e9279d
+
+	column sk_tempoperiodo
+		dataType: int64
+		formatString: 0
+		lineageTag: f9abe82b-4017-41c8-8399-1eb92af44d2e
+		summarizeBy: none
+		sourceColumn: sk_tempoperiodo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_ano
+		dataType: int64
+		formatString: 0
+		lineageTag: b31dcb9f-c60a-4f91-a151-dacabaaeda21
+		summarizeBy: sum
+		sourceColumn: nk_ano
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 25a6dd04-6d68-4c6d-9720-76d5943ba63c
+		summarizeBy: sum
+		sourceColumn: nk_mes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_datainicio
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a7f7a22b-1db4-40b6-a87c-f552d435af34
+		summarizeBy: none
+		sourceColumn: dt_datainicio
+
+		variation Variation
+			isDefault
+			relationship: b74bec08-d71c-4b17-af8a-02751e1861e3
+			defaultHierarchy: LocalDateTable_6cdac1b2-dcf9-45c1-97c0-94aa5a38e402.'Hierarquia de datas'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dt_datafinal
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 235e9a53-4b33-484f-a815-08f601f00d42
+		summarizeBy: none
+		sourceColumn: dt_datafinal
+
+		variation Variation
+			isDefault
+			relationship: 5cb4c5fd-ae64-4ee5-8fa6-936ae13ad541
+			defaultHierarchy: LocalDateTable_ddb340a3-0123-4a86-8e54-60d3551a220d.'Hierarquia de datas'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column vl_qtd_dias
+		dataType: int64
+		formatString: 0
+		lineageTag: 5fa23240-0093-4423-a604-a6ae24984cc7
+		summarizeBy: sum
+		sourceColumn: vl_qtd_dias
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_mes
+		dataType: string
+		lineageTag: 631dae43-8206-4c24-ab86-7c16fda9c999
+		summarizeBy: none
+		sourceColumn: ds_nome_mes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_mes_abrev
+		dataType: string
+		lineageTag: 3b74875b-2909-41f3-9159-ff17389ea847
+		summarizeBy: none
+		sourceColumn: ds_nome_mes_abrev
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_bimestre
+		dataType: string
+		lineageTag: 245fda01-9d38-4811-9a9e-7073c56d9dd6
+		summarizeBy: none
+		sourceColumn: ds_bimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_bimestre
+		dataType: string
+		lineageTag: 1b8c488b-9370-41f8-ab40-82d118a8db77
+		summarizeBy: none
+		sourceColumn: ds_nome_bimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_trimestre
+		dataType: string
+		lineageTag: 98de3d75-b5a1-4925-aeb9-12bd88fd0ff2
+		summarizeBy: none
+		sourceColumn: ds_trimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_trimestre
+		dataType: string
+		lineageTag: ddc7be06-76ef-4df2-b5db-a0f2e4b93fb8
+		summarizeBy: none
+		sourceColumn: ds_nome_trimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_quadrimestre
+		dataType: string
+		lineageTag: f2ef7119-f814-40fb-949e-cc662c618256
+		summarizeBy: none
+		sourceColumn: ds_quadrimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_quadrimestre
+		dataType: string
+		lineageTag: d8ad716c-f500-44e6-bd0f-8d1bacaff0f7
+		summarizeBy: none
+		sourceColumn: ds_nome_quadrimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_semestre
+		dataType: string
+		lineageTag: 9e8b42a7-7faa-4f54-8dba-8a3c65449cc5
+		summarizeBy: none
+		sourceColumn: ds_semestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_semestre
+		dataType: string
+		lineageTag: 41fb7e45-bc69-47bd-9673-6bdd1161007b
+		summarizeBy: none
+		sourceColumn: ds_nome_semestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_safra
+		dataType: string
+		lineageTag: 2b7fcb6b-7230-416a-b2e6-feabd0aced1b
+		summarizeBy: none
+		sourceColumn: ds_safra
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_inicio
+		dataType: int64
+		formatString: 0
+		lineageTag: 425138bd-2e20-4c96-bfdb-ecd8efb8c1e8
+		summarizeBy: sum
+		sourceColumn: ds_anosafra_inicio
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_final
+		dataType: int64
+		formatString: 0
+		lineageTag: c3c61cc2-7794-4666-b03e-7ba40819cb5e
+		summarizeBy: sum
+		sourceColumn: ds_anosafra_final
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_bimestre
+		dataType: string
+		lineageTag: 0cf11911-eeff-41f5-88e7-1c68fedcfa82
+		summarizeBy: none
+		sourceColumn: ds_anosafra_bimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_nome_bimestre
+		dataType: string
+		lineageTag: 3fdf185b-1b6b-4f6f-8e89-32f46b9fbb06
+		summarizeBy: none
+		sourceColumn: ds_anosafra_nome_bimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_trimestre
+		dataType: string
+		lineageTag: 6ed45123-fa1a-4a65-a658-cbe92c9e6d5c
+		summarizeBy: none
+		sourceColumn: ds_anosafra_trimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_nome_trimestre
+		dataType: string
+		lineageTag: 1dbd3dba-3809-4a84-bd60-d77c24c29767
+		summarizeBy: none
+		sourceColumn: ds_anosafra_nome_trimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_quadrimestre
+		dataType: string
+		lineageTag: ef5d0c2b-28fd-4cdd-b141-bd6b5327c441
+		summarizeBy: none
+		sourceColumn: ds_anosafra_quadrimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_nome_quadrimestre
+		dataType: string
+		lineageTag: 94738bb8-1c6c-4bfc-a8a9-9e6e99f4c4a8
+		summarizeBy: none
+		sourceColumn: ds_anosafra_nome_quadrimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_semestre
+		dataType: string
+		lineageTag: 5866a60d-43a3-424e-8096-2cfe75e84782
+		summarizeBy: none
+		sourceColumn: ds_anosafra_semestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_nome_semestre
+		dataType: string
+		lineageTag: 9cfb7bfb-86bf-4103-a140-2e3376115677
+		summarizeBy: none
+		sourceColumn: ds_anosafra_nome_semestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_referencia_mes_ano
+		dataType: string
+		lineageTag: a1f76088-5a92-45c9-a5da-7a43f62ff738
+		summarizeBy: none
+		sourceColumn: ds_referencia_mes_ano
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_referencia_ano_mes
+		dataType: string
+		lineageTag: 4ecd02d3-c437-4b41-af96-69d267bffa8f
+		summarizeBy: none
+		sourceColumn: ds_referencia_ano_mes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_tempoperiodo = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_tempoperiodo1 = public{[Name="dim_tempoperiodo"]}[Data]
+				in
+				    dim_tempoperiodo1
+
+	annotation PBI_ResultType = Table
+

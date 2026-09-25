@@ -1,0 +1,57 @@
+table dim_pais
+	lineageTag: b67854e8-0147-4455-9ea5-ee996eaf1aca
+
+	column sk_pais
+		dataType: int64
+		formatString: 0
+		lineageTag: 46813bba-aceb-4ad2-8e70-ab5b5d1398a7
+		summarizeBy: none
+		sourceColumn: sk_pais
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_pais
+		dataType: int64
+		formatString: 0
+		lineageTag: 43ce1810-b2a0-4f14-8306-1e118710a049
+		summarizeBy: none
+		sourceColumn: nk_pais
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_pais
+		dataType: string
+		lineageTag: c795a698-a4f5-49a7-8835-a1f03418e57c
+		summarizeBy: none
+		sourceColumn: nm_pais
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_siglapais
+		dataType: string
+		lineageTag: cc2ff015-0174-4c51-8eac-523bc128db50
+		summarizeBy: none
+		sourceColumn: ds_siglapais
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_pais = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_pais1 = public{[Name="dim_pais"]}[Data]
+				in
+				    dim_pais1
+
+	annotation PBI_ResultType = Table
+

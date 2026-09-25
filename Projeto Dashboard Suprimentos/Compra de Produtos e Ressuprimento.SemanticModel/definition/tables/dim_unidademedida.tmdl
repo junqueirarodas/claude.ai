@@ -1,0 +1,78 @@
+table dim_unidademedida
+	lineageTag: e97fb56e-b85c-4267-b09b-1844ff02bf99
+
+	column sk_unidademedida
+		dataType: int64
+		formatString: 0
+		lineageTag: ab35b401-0778-438d-973f-0e6a7da1e47b
+		summarizeBy: none
+		sourceColumn: sk_unidademedida
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codund
+		dataType: string
+		lineageTag: 6541cf90-3c66-4c32-970d-1dd1f399f64c
+		summarizeBy: none
+		sourceColumn: nk_codund
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_unidade
+		dataType: string
+		lineageTag: c9b0f97b-34ac-4e77-a119-5d2de0ec43a6
+		summarizeBy: none
+		sourceColumn: ds_unidade
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_codundconversao
+		dataType: string
+		lineageTag: ace84a04-ddd8-41d2-9cde-f114740a1840
+		summarizeBy: none
+		sourceColumn: ds_codundconversao
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_unidadeconversao
+		dataType: string
+		lineageTag: 5a19e2b8-08c0-430a-936b-5a9f5362e7c1
+		summarizeBy: none
+		sourceColumn: ds_unidadeconversao
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_fatorconversao
+		dataType: double
+		lineageTag: 1b88e397-d007-4e98-befe-33742e07fb62
+		summarizeBy: none
+		sourceColumn: vl_fatorconversao
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition dim_unidademedida = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_unidademedida1 = public{[Name="dim_unidademedida"]}[Data]
+				in
+				    dim_unidademedida1
+
+	annotation PBI_ResultType = Table
+

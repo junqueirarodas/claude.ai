@@ -1,0 +1,67 @@
+table dim_municipio
+	lineageTag: 12eef95c-029e-469f-98f6-ee66c0374d7f
+
+	column sk_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: ce7298b1-0ef3-4fcd-83a6-9c8fc44d2b86
+		summarizeBy: none
+		sourceColumn: sk_municipio
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_pais
+		dataType: int64
+		formatString: 0
+		lineageTag: af67d5c1-d6cb-48ae-9e68-a228a2ce5ac8
+		summarizeBy: none
+		sourceColumn: nk_pais
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_estado
+		dataType: string
+		lineageTag: b2db2e5f-422e-4d99-a5bb-bcc67fee46ef
+		summarizeBy: none
+		sourceColumn: nk_estado
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_municipio
+		dataType: string
+		lineageTag: f809ddc6-f47f-48a4-bee4-dc8311cdbcd5
+		summarizeBy: none
+		sourceColumn: nk_municipio
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_municipio
+		dataType: string
+		lineageTag: 0685f958-b75d-4e73-86b7-cfbcd281c6aa
+		summarizeBy: none
+		sourceColumn: nm_municipio
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_municipio = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_municipio1 = public{[Name="dim_municipio"]}[Data]
+				in
+				    dim_municipio1
+
+	annotation PBI_ResultType = Table
+

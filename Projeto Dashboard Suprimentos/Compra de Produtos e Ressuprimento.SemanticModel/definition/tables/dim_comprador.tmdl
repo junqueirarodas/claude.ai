@@ -1,0 +1,77 @@
+table dim_comprador
+	lineageTag: 83683da4-f22e-4d39-8c7d-15f1768fcf0e
+
+	column sk_comprador
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a8de20b-f8f9-4a1d-8fb0-943f280f6a00
+		summarizeBy: none
+		sourceColumn: sk_comprador
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e613a7f-992a-421d-99f1-ec9bc9b6f7ea
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_comprador
+		dataType: string
+		lineageTag: 2a7efc9b-ea51-4035-a46b-90d111fc3243
+		summarizeBy: none
+		sourceColumn: nk_comprador
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_comprador
+		dataType: string
+		lineageTag: 800b9b6c-c0e7-4ae1-9d45-cd02caba7268
+		summarizeBy: none
+		sourceColumn: nm_comprador
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_cpf
+		dataType: string
+		lineageTag: c0956ea4-6502-4610-b644-d128dc73562f
+		summarizeBy: none
+		sourceColumn: ds_cpf
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_email
+		dataType: string
+		lineageTag: 4bf85ecc-c857-4d7c-96f0-e88d71538938
+		summarizeBy: none
+		sourceColumn: ds_email
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_comprador = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    suprimentos = Fonte{[Schema="suprimentos"]}[Data],
+				    dim_comprador1 = suprimentos{[Name="dim_comprador"]}[Data]
+				in
+				    dim_comprador1
+
+	annotation PBI_ResultType = Table
+
