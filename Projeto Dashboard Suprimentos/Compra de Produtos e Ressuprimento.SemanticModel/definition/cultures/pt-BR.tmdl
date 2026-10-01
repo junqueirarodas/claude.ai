@@ -673,6 +673,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Nº Fluig": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1071,6 +1081,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Urgente": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1331,6 +1351,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Responsável Aprovação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1399,6 +1429,16 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Nº Movimento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1514,6 +1554,16 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Nº Cotação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2265,6 +2315,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Status Cotação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2640,6 +2700,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Nº Ordem": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2922,6 +2992,16 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Nº Fluig": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -3298,6 +3378,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Responsável": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3626,6 +3716,16 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Status Recebimento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4298,6 +4398,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Área Destino Solicitação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -4953,6 +5063,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Tipo Solicitação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -5324,6 +5444,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Fornecedor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -5510,6 +5640,16 @@ cultureInfo pt-BR
 			        },
 			        {
 			          "Unidades": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Filial": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -10906,6 +11046,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "UF": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -11208,6 +11358,26 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Município": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Municipio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -11739,9 +11909,6 @@ cultureInfo pt-BR
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "_blank": {
@@ -11750,7 +11917,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "entity__medida.abertura_solicitação_até_aprovação": {
+			    "entity__medida.abertura_até_aprovação": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
@@ -11760,13 +11927,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "abertura solicitação até aprovação": {
+			          "abertura até aprovação": {
 			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "entity__medida.aprovação_solicitação_até_cotação": {
+			    "entity__medida.aprovação_até_cotação": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
@@ -11776,13 +11943,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "aprovação solicitação até cotação": {
+			          "aprovação até cotação": {
 			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "entity__medida.cotação_até_compra": {
+			    "entity__medida.cotação_até_ordem_compra": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
@@ -11792,13 +11959,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "cotação até compra": {
+			          "cotação até ordem compra": {
 			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "entity__medida.compra_até_aprovação_ordem": {
+			    "entity__medida.ordem_compra_até_aprovação": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
@@ -11808,13 +11975,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "compra até aprovação ordem": {
+			          "ordem compra até aprovação": {
 			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "entity__medida.aprovação_ordem_até_recebimento": {
+			    "entity__medida.aprovação_até_recebimento": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
@@ -11824,7 +11991,7 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "aprovação ordem até recebimento": {
+			          "aprovação até recebimento": {
 			            "State": "Generated"
 			          }
 			        }
@@ -11892,6 +12059,1007 @@ cultureInfo pt-BR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.ds_entregafutura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "ds_entregafutura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ds entregafutura": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ds_entregafutura": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_registros_fato": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Registros (Fato)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "qtd registros (fato)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd registros": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.rank_fornecedor_atraso_entrega": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Rank Fornecedor (Atraso Entrega)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "rank fornecedor (atraso entrega)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rank fornecedor": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_solicitações_pendentes_de_aprovação_produtos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Solicitações Pendentes de Aprovação (Produtos)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd solicitações pendentes de aprovação (produtos)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd solicitações pendentes de aprovação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_solicitações_pendentes_de_aprovação_NR_solicitação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Solicitações Pendentes de Aprovação (NR Solicitação)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd solicitações pendentes de aprovação (NR solicitação)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd solicitações pendentes de aprovação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_solicitações_pendentes_de_aprovação_atraso_48h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Solicitações Pendentes de Aprovação (Atraso 48h)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd solicitações pendentes de aprovação (atraso 48h)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd solicitações pendentes de aprovação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.data_e_horário_abertura_fluig": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Data e Horário Abertura Fluig"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data e horário abertura fluig": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information e horário abertura fluig": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "fact e horário abertura fluig": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "info e horário abertura fluig": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "statistic e horário abertura fluig": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "document e horário abertura fluig": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "figure e horário abertura fluig": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "record e horário abertura fluig": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Abertura Fluig": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity__medida.prazo_solicitação_compras_horas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Prazo Solicitação Compras (Horas)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prazo solicitação compras (horas)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prazo solicitação compras": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Prazo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.indicador_prazo_aprovação_solicitação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Indicador Prazo Aprovação Solicitação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador prazo aprovação solicitação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.indicador_prazo_aprovação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "Indicador Prazo Aprovação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador prazo aprovação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_solicitações_pendentes_de_cotação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Solicitações Pendentes de Cotação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd solicitações pendentes de cotação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_produtos_pendentes_de_cotação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Produtos Pendentes de Cotação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd produtos pendentes de cotação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_solicitações_pendentes_de_cotação_atraso_24h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Solicitações Pendentes de Cotação (Atraso 24h)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd solicitações pendentes de cotação (atraso 24h)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd solicitações pendentes de cotação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.data_e_horário_aprovação_solicitação_fluig": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Data e Horário Aprovação Solicitação Fluig"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data e horário aprovação solicitação fluig": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Aprovação Fluig": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity__medida.prazo_cotação_horas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Prazo Cotação (Horas)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prazo cotação (horas)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prazo cotação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Prazo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.indicador_prazo_envio_cotação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Indicador Prazo Envio Cotação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador prazo envio cotação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.indicador_prazo_envio_cotação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "Indicador Prazo Envio Cotação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador prazo envio cotação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_cotações_pendentes_de_envio_ao_fornecedor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Cotações Pendentes de Envio ao Fornecedor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd cotações pendentes de envio ao fornecedor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_cotações_aguardando_resposta_do_fornecedor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Cotações Aguardando Resposta do Fornecedor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd cotações aguardando resposta do fornecedor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_cotações_aguardando_negociação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Cotações Aguardando Negociação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd cotações aguardando negociação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_produtos_pendentes_de_negociação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Produtos Pendentes de Negociação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd produtos pendentes de negociação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_cotações_pendentes_de_negociação_atraso_48h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Cotações Pendentes de Negociação (Atraso 48h)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd cotações pendentes de negociação (atraso 48h)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd cotações pendentes de negociação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.data_e_horário_emissão_cotação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Data e Horário Emissão Cotação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data e horário emissão cotação": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information e horário emissão cotação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "fact e horário emissão cotação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "info e horário emissão cotação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "statistic e horário emissão cotação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "document e horário emissão cotação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "figure e horário emissão cotação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "record e horário emissão cotação": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Emissão Cotação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity__medida.prazo_negociação_horas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Prazo Negociação (Horas)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prazo negociação (horas)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prazo negociação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Prazo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.indicador_prazo_negociação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Indicador Prazo Negociação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador prazo negociação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.indicador_prazo_negociação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "Indicador Prazo Negociação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador prazo negociação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_ordens_de_compra_aguardando_aprovação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Ordens de Compra Aguardando Aprovação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd ordens de compra aguardando aprovação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_produtos_de_ordem_de_compra_aguardando_aprovação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Produtos de Ordem de Compra Aguardando Aprovação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd produtos de ordem de compra aguardando aprovação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_produtos_aguardando_aprovação_com_cotações_insuficientes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Produtos Aguardando Aprovação com Cotações Insuficientes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd produtos aguardando aprovação com cotações insuficientes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_produtos_aguardando_aprovação_com_variação_preço_15": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Produtos Aguardando Aprovação com Variação Preço 15%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd produtos aguardando aprovação com variação preço 15%": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_ordens_compra_pendentes_de_aprovação_atraso_48h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Qtd Ordens Compra Pendentes de Aprovação (Atraso 48h)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd ordens compra pendentes de aprovação (atraso 48h)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd ordens compra pendentes de aprovação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.data_e_horário_emissão_ordem_compra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Data e Horário Emissão Ordem Compra"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data e horário emissão ordem compra": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Emissão Ordem": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity__medida.prazo_ordem_compra_horas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Prazo Ordem Compra (Horas)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prazo ordem compra (horas)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prazo ordem compra": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.indicador_prazo_ordem_compra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "Indicador Prazo Ordem Compra"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador prazo ordem compra": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.vl_precomedioultimacompra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "vl_precomedioultimacompra"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vl precomedioultimacompra": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vl_precomedioultimacompra": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.vl_variacaoprecomedioultimacompra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "vl_variacaoprecomedioultimacompra"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vl variacaoprecomedioultimacompra": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vl_variacaoprecomedioultimacompra": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.vl_percmediovariacaoultimacompra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "vl_percmediovariacaoultimacompra"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vl percmediovariacaoultimacompra": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vl_percmediovariacaoultimacompra": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_requisitantesolicitante.solicitante_requisitante_capitalizado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_requisitantesolicitante",
+			          "ConceptualProperty": "Solicitante/Requisitante (Capitalizado)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "solicitante/requisitante (capitalizado)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "solicitante": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "solicitante requisitante ( capitalizado )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "requisitante (capitalizado)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Solicitante/Requisitante": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "localdatetable_24c165808ac746208464aa5b458b510c.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "LocalDateTable_24c16580-8ac7-4620-8464-aa5b458b510c",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Date Entrega": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -18785,6 +19953,1194 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
+			    "dim_requisitantesolicitante_has_solicitante_requisitante_capitalizado": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_requisitantesolicitante"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_requisitantesolicitante": {
+			          "Target": {
+			            "Entity": "dim_requisitantesolicitante"
+			          }
+			        },
+			        "dim_requisitantesolicitante.solicitante_requisitante_capitalizado": {
+			          "Target": {
+			            "Entity": "dim_requisitantesolicitante.solicitante_requisitante_capitalizado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_requisitantesolicitante"
+			            },
+			            "Object": {
+			              "Role": "dim_requisitantesolicitante.solicitante_requisitante_capitalizado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_requisitantesolicitantes_have_solicitante_requisitante_capitalizado"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_vl_percmediovariacaoultimacompra": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.vl_percmediovariacaoultimacompra": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.vl_percmediovariacaoultimacompra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.vl_percmediovariacaoultimacompra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_vl_percmediovariacaoultimacompras"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_vl_variacaoprecomedioultimacompra": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.vl_variacaoprecomedioultimacompra": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.vl_variacaoprecomedioultimacompra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.vl_variacaoprecomedioultimacompra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_vl_variacaoprecomedioultimacompras"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_vl_precomedioultimacompra": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.vl_precomedioultimacompra": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.vl_precomedioultimacompra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.vl_precomedioultimacompra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_vl_precomedioultimacompras"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_indicador_prazo_ordem_compra": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.indicador_prazo_ordem_compra": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.indicador_prazo_ordem_compra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.indicador_prazo_ordem_compra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_indicador_prazo_ordem_compras"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_prazo_ordem_compra_horas": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.prazo_ordem_compra_horas": {
+			          "Target": {
+			            "Entity": "entity__medida.prazo_ordem_compra_horas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.prazo_ordem_compra_horas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_prazo_ordem_compra_horas"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_data_e_horário_emissão_ordem_compra": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.data_e_horário_emissão_ordem_compra": {
+			          "Target": {
+			            "Entity": "entity__medida.data_e_horário_emissão_ordem_compra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.data_e_horário_emissão_ordem_compra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_data_e_horário_emissão_ordem_compra"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_ordens_compra_pendentes_de_aprovação_atraso_48h": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_ordens_compra_pendentes_de_aprovação_atraso_48h": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_ordens_compra_pendentes_de_aprovação_atraso_48h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_ordens_compra_pendentes_de_aprovação_atraso_48h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_ordens_compra_pendentes_de_aprovação_atraso_48h"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_produtos_aguardando_aprovação_com_variação_preço_15": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_produtos_aguardando_aprovação_com_variação_preço_15": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_produtos_aguardando_aprovação_com_variação_preço_15"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_produtos_aguardando_aprovação_com_variação_preço_15"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_produtos_aguardando_aprovação_com_variação_preço_15"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_produtos_aguardando_aprovação_com_cotações_insuficientes": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_produtos_aguardando_aprovação_com_cotações_insuficientes": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_produtos_aguardando_aprovação_com_cotações_insuficientes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_produtos_aguardando_aprovação_com_cotações_insuficientes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_produtos_aguardando_aprovação_com_cotações_insuficientes"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_produtos_de_ordem_de_compra_aguardando_aprovação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_produtos_de_ordem_de_compra_aguardando_aprovação": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_produtos_de_ordem_de_compra_aguardando_aprovação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_produtos_de_ordem_de_compra_aguardando_aprovação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_produtos_de_ordem_de_compra_aguardando_aprovação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_ordens_de_compra_aguardando_aprovação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_ordens_de_compra_aguardando_aprovação": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_ordens_de_compra_aguardando_aprovação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_ordens_de_compra_aguardando_aprovação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_ordens_de_compra_aguardando_aprovação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_indicador_prazo_negociação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.indicador_prazo_negociação": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.indicador_prazo_negociação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.indicador_prazo_negociação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_indicador_prazo_negociaçãos"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_indicador_prazo_negociação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.indicador_prazo_negociação": {
+			          "Target": {
+			            "Entity": "entity__medida.indicador_prazo_negociação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.indicador_prazo_negociação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_indicador_prazo_negociação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_prazo_negociação_horas": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.prazo_negociação_horas": {
+			          "Target": {
+			            "Entity": "entity__medida.prazo_negociação_horas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.prazo_negociação_horas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_prazo_negociação_horas"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_data_e_horário_emissão_cotação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.data_e_horário_emissão_cotação": {
+			          "Target": {
+			            "Entity": "entity__medida.data_e_horário_emissão_cotação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.data_e_horário_emissão_cotação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_data_e_horário_emissão_cotação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_cotações_pendentes_de_negociação_atraso_48h": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_cotações_pendentes_de_negociação_atraso_48h": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_cotações_pendentes_de_negociação_atraso_48h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_cotações_pendentes_de_negociação_atraso_48h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_cotações_pendentes_de_negociação_atraso_48h"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_produtos_pendentes_de_negociação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_produtos_pendentes_de_negociação": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_produtos_pendentes_de_negociação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_produtos_pendentes_de_negociação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_produtos_pendentes_de_negociação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_cotações_aguardando_negociação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_cotações_aguardando_negociação": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_cotações_aguardando_negociação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_cotações_aguardando_negociação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_cotações_aguardando_negociação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_cotações_aguardando_resposta_do_fornecedor": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_cotações_aguardando_resposta_do_fornecedor": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_cotações_aguardando_resposta_do_fornecedor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_cotações_aguardando_resposta_do_fornecedor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_cotações_aguardando_resposta_do_fornecedor"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_cotações_pendentes_de_envio_ao_fornecedor": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_cotações_pendentes_de_envio_ao_fornecedor": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_cotações_pendentes_de_envio_ao_fornecedor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_cotações_pendentes_de_envio_ao_fornecedor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_cotações_pendentes_de_envio_ao_fornecedor"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_indicador_prazo_envio_cotação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.indicador_prazo_envio_cotação": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.indicador_prazo_envio_cotação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.indicador_prazo_envio_cotação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_indicador_prazo_envio_cotaçãos"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_indicador_prazo_envio_cotação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.indicador_prazo_envio_cotação": {
+			          "Target": {
+			            "Entity": "entity__medida.indicador_prazo_envio_cotação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.indicador_prazo_envio_cotação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_indicador_prazo_envio_cotação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_prazo_cotação_horas": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.prazo_cotação_horas": {
+			          "Target": {
+			            "Entity": "entity__medida.prazo_cotação_horas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.prazo_cotação_horas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_prazo_cotação_horas"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_data_e_horário_aprovação_solicitação_fluig": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.data_e_horário_aprovação_solicitação_fluig": {
+			          "Target": {
+			            "Entity": "entity__medida.data_e_horário_aprovação_solicitação_fluig"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.data_e_horário_aprovação_solicitação_fluig"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_data_e_horário_aprovação_solicitação_fluig"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_solicitações_pendentes_de_cotação_atraso_24h": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_solicitações_pendentes_de_cotação_atraso_24h": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_solicitações_pendentes_de_cotação_atraso_24h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_solicitações_pendentes_de_cotação_atraso_24h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_solicitações_pendentes_de_cotação_atraso_24h"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_produtos_pendentes_de_cotação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_produtos_pendentes_de_cotação": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_produtos_pendentes_de_cotação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_produtos_pendentes_de_cotação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_produtos_pendentes_de_cotação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_solicitações_pendentes_de_cotação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_solicitações_pendentes_de_cotação": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_solicitações_pendentes_de_cotação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_solicitações_pendentes_de_cotação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_solicitações_pendentes_de_cotação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_indicador_prazo_aprovação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.indicador_prazo_aprovação": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.indicador_prazo_aprovação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.indicador_prazo_aprovação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_indicador_prazo_aprovaçãos"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_indicador_prazo_aprovação_solicitação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.indicador_prazo_aprovação_solicitação": {
+			          "Target": {
+			            "Entity": "entity__medida.indicador_prazo_aprovação_solicitação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.indicador_prazo_aprovação_solicitação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_indicador_prazo_aprovação_solicitação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_prazo_solicitação_compras_horas": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.prazo_solicitação_compras_horas": {
+			          "Target": {
+			            "Entity": "entity__medida.prazo_solicitação_compras_horas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.prazo_solicitação_compras_horas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_prazo_solicitação_compras_horas"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_data_e_horário_abertura_fluig": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.data_e_horário_abertura_fluig": {
+			          "Target": {
+			            "Entity": "entity__medida.data_e_horário_abertura_fluig"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.data_e_horário_abertura_fluig"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_data_e_horário_abertura_fluig"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_solicitações_pendentes_de_aprovação_atraso_48h": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_solicitações_pendentes_de_aprovação_atraso_48h": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_solicitações_pendentes_de_aprovação_atraso_48h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_solicitações_pendentes_de_aprovação_atraso_48h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_solicitações_pendentes_de_aprovação_atraso_48h"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_solicitações_pendentes_de_aprovação_NR_solicitação": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_solicitações_pendentes_de_aprovação_NR_solicitação": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_solicitações_pendentes_de_aprovação_NR_solicitação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_solicitações_pendentes_de_aprovação_NR_solicitação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_solicitações_pendentes_de_aprovação_NR_solicitação"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_entity__medida_qtd_solicitações_pendentes_de_aprovação_produtos": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "entity__medida.qtd_solicitações_pendentes_de_aprovação_produtos": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_solicitações_pendentes_de_aprovação_produtos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_solicitações_pendentes_de_aprovação_produtos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_qtd_solicitações_pendentes_de_aprovação_produtos"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_ds_entregafutura": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.ds_entregafutura": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.ds_entregafutura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.ds_entregafutura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_ds_entregafuturas"
+			        }
+			      ]
+			    },
 			    "fat_compraproduto_has_entity__medida_lead_time_geral": {
 			      "Binding": {
 			        "ConceptualEntity": "fat_compraproduto"
@@ -18818,7 +21174,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fat_compraproduto_has_entity__medida_aprovação_ordem_até_recebimento": {
+			    "fat_compraproduto_has_entity__medida_aprovação_até_recebimento": {
 			      "Binding": {
 			        "ConceptualEntity": "fat_compraproduto"
 			      },
@@ -18829,9 +21185,9 @@ cultureInfo pt-BR
 			            "Entity": "fat_compraproduto"
 			          }
 			        },
-			        "entity__medida.aprovação_ordem_até_recebimento": {
+			        "entity__medida.aprovação_até_recebimento": {
 			          "Target": {
-			            "Entity": "entity__medida.aprovação_ordem_até_recebimento"
+			            "Entity": "entity__medida.aprovação_até_recebimento"
 			          }
 			        }
 			      },
@@ -18842,16 +21198,16 @@ cultureInfo pt-BR
 			              "Role": "fat_compraproduto"
 			            },
 			            "Object": {
-			              "Role": "entity__medida.aprovação_ordem_até_recebimento"
+			              "Role": "entity__medida.aprovação_até_recebimento"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fat_compraprodutos_have_aprovação_ordem_até_recebimento"
+			          "ID": "fat_compraprodutos_have_aprovação_até_recebimento"
 			        }
 			      ]
 			    },
-			    "fat_compraproduto_has_entity__medida_compra_até_aprovação_ordem": {
+			    "fat_compraproduto_has_entity__medida_ordem_compra_até_aprovação": {
 			      "Binding": {
 			        "ConceptualEntity": "fat_compraproduto"
 			      },
@@ -18862,9 +21218,9 @@ cultureInfo pt-BR
 			            "Entity": "fat_compraproduto"
 			          }
 			        },
-			        "entity__medida.compra_até_aprovação_ordem": {
+			        "entity__medida.ordem_compra_até_aprovação": {
 			          "Target": {
-			            "Entity": "entity__medida.compra_até_aprovação_ordem"
+			            "Entity": "entity__medida.ordem_compra_até_aprovação"
 			          }
 			        }
 			      },
@@ -18875,16 +21231,16 @@ cultureInfo pt-BR
 			              "Role": "fat_compraproduto"
 			            },
 			            "Object": {
-			              "Role": "entity__medida.compra_até_aprovação_ordem"
+			              "Role": "entity__medida.ordem_compra_até_aprovação"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fat_compraprodutos_have_compra_até_aprovação_ordem"
+			          "ID": "fat_compraprodutos_have_ordem_compra_até_aprovação"
 			        }
 			      ]
 			    },
-			    "fat_compraproduto_has_entity__medida_cotação_até_compra": {
+			    "fat_compraproduto_has_entity__medida_cotação_até_ordem_compra": {
 			      "Binding": {
 			        "ConceptualEntity": "fat_compraproduto"
 			      },
@@ -18895,9 +21251,9 @@ cultureInfo pt-BR
 			            "Entity": "fat_compraproduto"
 			          }
 			        },
-			        "entity__medida.cotação_até_compra": {
+			        "entity__medida.cotação_até_ordem_compra": {
 			          "Target": {
-			            "Entity": "entity__medida.cotação_até_compra"
+			            "Entity": "entity__medida.cotação_até_ordem_compra"
 			          }
 			        }
 			      },
@@ -18908,16 +21264,16 @@ cultureInfo pt-BR
 			              "Role": "fat_compraproduto"
 			            },
 			            "Object": {
-			              "Role": "entity__medida.cotação_até_compra"
+			              "Role": "entity__medida.cotação_até_ordem_compra"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fat_compraprodutos_have_cotação_até_compra"
+			          "ID": "fat_compraprodutos_have_cotação_até_ordem_compra"
 			        }
 			      ]
 			    },
-			    "fat_compraproduto_has_entity__medida_aprovação_solicitação_até_cotação": {
+			    "fat_compraproduto_has_entity__medida_aprovação_até_cotação": {
 			      "Binding": {
 			        "ConceptualEntity": "fat_compraproduto"
 			      },
@@ -18928,9 +21284,9 @@ cultureInfo pt-BR
 			            "Entity": "fat_compraproduto"
 			          }
 			        },
-			        "entity__medida.aprovação_solicitação_até_cotação": {
+			        "entity__medida.aprovação_até_cotação": {
 			          "Target": {
-			            "Entity": "entity__medida.aprovação_solicitação_até_cotação"
+			            "Entity": "entity__medida.aprovação_até_cotação"
 			          }
 			        }
 			      },
@@ -18941,16 +21297,16 @@ cultureInfo pt-BR
 			              "Role": "fat_compraproduto"
 			            },
 			            "Object": {
-			              "Role": "entity__medida.aprovação_solicitação_até_cotação"
+			              "Role": "entity__medida.aprovação_até_cotação"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fat_compraprodutos_have_aprovação_solicitação_até_cotação"
+			          "ID": "fat_compraprodutos_have_aprovação_até_cotação"
 			        }
 			      ]
 			    },
-			    "fat_compraproduto_has_entity__medida_abertura_solicitação_até_aprovação": {
+			    "fat_compraproduto_has_entity__medida_abertura_até_aprovação": {
 			      "Binding": {
 			        "ConceptualEntity": "fat_compraproduto"
 			      },
@@ -18961,9 +21317,9 @@ cultureInfo pt-BR
 			            "Entity": "fat_compraproduto"
 			          }
 			        },
-			        "entity__medida.abertura_solicitação_até_aprovação": {
+			        "entity__medida.abertura_até_aprovação": {
 			          "Target": {
-			            "Entity": "entity__medida.abertura_solicitação_até_aprovação"
+			            "Entity": "entity__medida.abertura_até_aprovação"
 			          }
 			        }
 			      },
@@ -18974,12 +21330,45 @@ cultureInfo pt-BR
 			              "Role": "fat_compraproduto"
 			            },
 			            "Object": {
-			              "Role": "entity__medida.abertura_solicitação_até_aprovação"
+			              "Role": "entity__medida.abertura_até_aprovação"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fat_compraprodutos_have_abertura_solicitação_até_aprovação"
+			          "ID": "fat_compraprodutos_have_abertura_até_aprovação"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_entity__blank": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.entity__blank": {
+			          "Target": {
+			            "Entity": "entity__medida.entity__blank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.entity__blank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have__blanks"
 			        }
 			      ]
 			    },

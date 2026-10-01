@@ -53,6 +53,12 @@ table dim_requisitantesolicitante
 
 		annotation SummarizationSetBy = Automatic
 
+	/// Coluna calculada: versão capitalizada (Title Case) de dim_requisitantesolicitante[nm_requisitantesolicitante], usada para exibir o nome do solicitante com a primeira letra de cada palavra em maiúscula na tabela da página 'Solicitação Compras'.
+	column 'Solicitante/Requisitante (Capitalizado)' = VAR OriginalText = dim_requisitantesolicitante[nm_requisitantesolicitante] VAR PathText = SUBSTITUTE(OriginalText, " ", "|") VAR NumWords = PATHLENGTH(PathText) RETURN IF(ISBLANK(OriginalText), BLANK(), CONCATENATEX(GENERATESERIES(1, NumWords), VAR Word = PATHITEM(PathText, [Value]) VAR FirstLetter = UPPER(LEFT(Word,1)) VAR Rest = LOWER(MID(Word,2,LEN(Word))) RETURN FirstLetter & Rest, " ", [Value], ASC))
+		dataType: string
+		displayFolder: Suporte
+		lineageTag: a41930f8-dcec-4241-babe-436782e82fff
+
 	partition dim_requisitantesolicitante = m
 		mode: import
 		source =

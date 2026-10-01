@@ -1,0 +1,676 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "e45abd274270ac2d765a",
+  "position": {
+    "x": 235,
+    "y": 294,
+    "z": 70000,
+    "height": 425,
+    "width": 1045,
+    "tabOrder": 69000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_filial"
+                    }
+                  },
+                  "Property": "nm_nomeabreviado"
+                }
+              },
+              "queryRef": "dim_filial.nm_nomeabreviado",
+              "nativeQueryRef": "Filial",
+              "displayName": "Filial"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_areadestinosolicitacao"
+                    }
+                  },
+                  "Property": "ds_areadestinosolicitacao"
+                }
+              },
+              "queryRef": "dim_areadestinosolicitacao.ds_areadestinosolicitacao",
+              "nativeQueryRef": "Área Destino Solicitação",
+              "displayName": "Área Destino Solicitação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "nr_processosolicitacaofluig"
+                }
+              },
+              "queryRef": "Sum(fat_compraproduto.nr_processosolicitacaofluig)",
+              "nativeQueryRef": "nr_processosolicitacaofluig",
+              "displayName": "Nº Fluig"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Data e Horário Abertura Fluig"
+                }
+              },
+              "queryRef": "_Medidas.Abertura Fluig",
+              "nativeQueryRef": "Abertura Fluig",
+              "displayName": "Abertura Fluig"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "nm_responsavelaprovacaosolicitacao"
+                }
+              },
+              "queryRef": "fat_compraproduto.nm_responsavelaprovacaosolicitacao",
+              "nativeQueryRef": "Responsável Aprovação",
+              "displayName": "Responsável Aprovação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "ds_urgente"
+                }
+              },
+              "queryRef": "fat_compraproduto.ds_urgente",
+              "nativeQueryRef": "Urgente",
+              "displayName": "Urgente"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Prazo Solicitação Compras (Horas)"
+                }
+              },
+              "queryRef": "_Medidas.Prazo",
+              "nativeQueryRef": "Prazo",
+              "displayName": "Prazo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Indicador Prazo Aprovação Solicitação"
+                }
+              },
+              "queryRef": "_Medidas.Indicador Prazo Aprovação",
+              "nativeQueryRef": " ",
+              "displayName": " "
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_requisitantesolicitante"
+                    }
+                  },
+                  "Property": "Solicitante/Requisitante (Capitalizado)"
+                }
+              },
+              "queryRef": "dim_requisitantesolicitante.Solicitante (Capitalizado)",
+              "nativeQueryRef": "Solicitante/Requisitante",
+              "displayName": "Solicitante/Requisitante"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "Data e Horário Abertura Fluig"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "fat_compraproduto"
+                                        }
+                                      },
+                                      "Property": "ds_urgente"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'Sim'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#FF0000'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "fat_compraproduto.ds_urgente"
+          }
+        },
+        {
+          "properties": {
+            "icon": {
+              "kind": "Icon",
+              "layout": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Before'"
+                  }
+                }
+              },
+              "verticalAlignment": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Top'"
+                  }
+                }
+              },
+              "value": {
+                "expr": {
+                  "Conditional": {
+                    "Cases": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "_Medidas"
+                                  }
+                                },
+                                "Property": "Indicador Prazo Aprovação Solicitação"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'No Prazo'"
+                              }
+                            }
+                          },
+                          "Annotations": {
+                            "PowerBI.SQExprEvaluationKind": 1,
+                            "PowerBI.SQExprTextOperatorOption": 2
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleHigh'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "_Medidas"
+                                  }
+                                },
+                                "Property": "Indicador Prazo Aprovação Solicitação"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'Em Atraso'"
+                              }
+                            }
+                          },
+                          "Annotations": {
+                            "PowerBI.SQExprEvaluationKind": 1,
+                            "PowerBI.SQExprTextOperatorOption": 2
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleLow'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_Medidas.Indicador Prazo Aprovação"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "_Medidas.Indicador Prazo Aprovação"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "fat_compraproduto.nm_responsavelaprovacaosolicitacao"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "375D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dim_areadestinosolicitacao.ds_areadestinosolicitacao"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "dim_filial.nm_nomeabreviado"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "94.64878665437345D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Abertura Fluig"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "73ce8447300228119e01",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Registros (Fato)"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "Qtd Registros (Fato)"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "3430d61205341a663382",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_statussolicitacaofluig"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "f",
+              "Entity": "fat_compraproduto",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "ds_statussolicitacaofluig"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Pendente'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "requireSingleSelect": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "cee64c1d38e0d881e846",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_filial"
+              }
+            },
+            "Property": "nm_nomeabreviado"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "938bd83976706227132a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_areadestinosolicitacao"
+              }
+            },
+            "Property": "ds_areadestinosolicitacao"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "529735dc980b0aa9ba78",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "nr_processosolicitacaofluig"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0a4b1841b868d3039155",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Data e Horário Abertura Fluig"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a8cc722852d68212647d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "nm_responsavelaprovacaosolicitacao"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1aebfe60434ad1a80db3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_urgente"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e8bfb41b17a852925d30",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Prazo Solicitação Compras (Horas)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e5aceb1c7a03c4db5e18",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Indicador Prazo Aprovação Solicitação"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3a2652ce296bd4d6d6a9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_requisitantesolicitante"
+              }
+            },
+            "Property": "Solicitante/Requisitante (Capitalizado)"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
