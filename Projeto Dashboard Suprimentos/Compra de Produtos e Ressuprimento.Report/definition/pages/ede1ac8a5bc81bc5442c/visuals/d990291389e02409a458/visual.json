@@ -35,21 +35,6 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dim_tiposolicitacaocompra"
-                    }
-                  },
-                  "Property": "ds_tiposolicitacaocompra"
-                }
-              },
-              "queryRef": "dim_tiposolicitacaocompra.ds_tiposolicitacaocompra",
-              "nativeQueryRef": "Tipo Solicitação",
-              "displayName": "Tipo Solicitação"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
                       "Entity": "dim_areadestinosolicitacao"
                     }
                   },
@@ -149,6 +134,21 @@
               "queryRef": "fat_compraproduto.ds_statuscotacao",
               "nativeQueryRef": "Status Cotação",
               "displayName": "Status Cotação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_comprador"
+                    }
+                  },
+                  "Property": "nm_comprador"
+                }
+              },
+              "queryRef": "dim_comprador.nm_comprador",
+              "nativeQueryRef": "Comprador",
+              "displayName": "Comprador"
             }
           ]
         }
@@ -157,16 +157,16 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "dim_areadestinosolicitacao"
+                    "Entity": "_Medidas"
                   }
                 },
-                "Property": "ds_areadestinosolicitacao"
+                "Property": "Data e Horário Emissão Cotação"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -376,29 +376,13 @@
       ],
       "columnWidth": [
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "393.85092972201414D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "dim_areadestinosolicitacao.ds_areadestinosolicitacao"
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "57D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "dim_filial.nm_nomeabreviado"
           }
@@ -518,7 +502,8 @@
             "Property": "ds_tiposolicitacaocompra"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "howCreated": "User"
       },
       {
         "name": "16285a08bbae9aad29bd",
@@ -635,48 +620,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "cf87f70a039a10940529",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Data e Horário Emissão Cotação"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5543a30e0850092bed25",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Prazo Negociação (Horas)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "4042f54056dcc403e0ba",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Indicador Prazo Negociação"
-          }
-        },
-        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

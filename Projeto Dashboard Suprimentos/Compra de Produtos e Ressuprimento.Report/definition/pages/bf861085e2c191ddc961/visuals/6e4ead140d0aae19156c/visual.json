@@ -4,10 +4,10 @@
   "position": {
     "x": 513.80952380952385,
     "y": 229,
-    "z": 78000,
+    "z": 76000,
     "height": 60,
     "width": 70,
-    "tabOrder": 79000
+    "tabOrder": 76000
   },
   "visual": {
     "visualType": "card",
@@ -386,20 +386,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "a6bf194e11085cd00524",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd Produtos Aguardando Aprovação com Cotações Insuficientes"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   },

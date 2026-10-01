@@ -35,21 +35,6 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dim_tiposolicitacaocompra"
-                    }
-                  },
-                  "Property": "ds_tiposolicitacaocompra"
-                }
-              },
-              "queryRef": "dim_tiposolicitacaocompra.ds_tiposolicitacaocompra",
-              "nativeQueryRef": "Tipo Solicitação",
-              "displayName": "Tipo Solicitação"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
                       "Entity": "dim_areadestinosolicitacao"
                     }
                   },
@@ -196,7 +181,7 @@
                 "Property": "Data e Horário Aprovação Solicitação Fluig"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -812,7 +797,8 @@
             "Property": "ds_tiposolicitacaocompra"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "howCreated": "User"
       },
       {
         "name": "16285a08bbae9aad29bd",
@@ -888,48 +874,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "01cfdbda33e0e8054e02",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Data e Horário Aprovação Solicitação Fluig"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "fc85726238e493b3e403",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Prazo Cotação (Horas)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "dc44672780cdb7a7078d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Indicador Prazo Envio Cotação"
-          }
-        },
-        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

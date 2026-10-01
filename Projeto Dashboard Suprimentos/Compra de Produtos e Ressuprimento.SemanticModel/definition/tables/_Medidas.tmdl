@@ -168,7 +168,7 @@ table _Medidas
 			VAR DataAbertura = SELECTEDVALUE ( fat_compraproduto[dt_aberturasolicitacaofluig] )
 			VAR HoraAbertura = SELECTEDVALUE ( fat_compraproduto[hr_aberturasolicitacaofluig] )
 			VAR Abertura = DataAbertura + TIMEVALUE ( HoraAbertura )
-			VAR LimiteAtraso = NOW () - 1
+			VAR LimiteAtraso = NOW () - 2
 			RETURN
 			    IF (
 			        NOT ISBLANK ( Abertura ) && Abertura <= LimiteAtraso,
@@ -397,6 +397,41 @@ table _Medidas
 		formatString: 0.0 "h"
 		displayFolder: KPIs
 		lineageTag: 05d1bfea-91aa-4b28-836c-0040b4b4782a
+
+	/// Retorna a maior data prevista de entrega (dt_previstaentregaordemcompra) considerando valores distintos de nr_identificadorordemcompra na tabela fat_compraproduto.
+	measure 'Maior Data Entrega Ordem Compra' = MAXX(DISTINCT(fat_compraproduto[nr_identificadorordemcompra]), CALCULATE(MAX(fat_compraproduto[dt_previstaentregaordemcompra])))
+		formatString: dd/mm/yyyy
+		displayFolder: Datas
+		lineageTag: 640337ef-2b9c-4374-9755-0fc96808cc42
+
+	/// Prazo em dias contado a partir da maior data de entrega da ordem de compra em relação a hoje. Lógica implementada diretamente (sem referenciar a medida 'Maior Data Entrega Ordem Compra') para melhor performance: MAXX sobre valores distintos de nr_identificadorordemcompra do CALCULATE(MAX(dt_previstaentregaordemcompra)). Valor positivo = dias restantes até a entrega; valor negativo = dias em atraso. Retorna 0 quando a data de entrega for branco/nulo.
+	measure 'Prazo Entrega Ordem Compra (dias)' = VAR _MaiorData = MAXX(DISTINCT(fat_compraproduto[nr_identificadorordemcompra]), CALCULATE(MAX(fat_compraproduto[dt_previstaentregaordemcompra]))) RETURN IF(ISBLANK(_MaiorData), 0, DATEDIFF(TODAY(), _MaiorData, DAY))
+		formatString: 0
+		displayFolder: Datas
+		lineageTag: a719e22f-d892-420b-81fc-798930ecaca8
+
+	/// Indicador de prazo de entrega para ordens de compra com status de recebimento 'Pendente recebimento' ou 'Parcialmente recebido'. Lógica implementada diretamente (sem referenciar a medida 'Maior Data Entrega Ordem Compra') para melhor performance: CALCULATE(MAXX(DISTINCT(nr_identificadorordemcompra), CALCULATE(MAX(dt_previstaentregaordemcompra))), filtro de status). Retorna 'Em Atraso' quando a maior data de entrega for maior que hoje, e 'No Prazo' caso contrário (inclusive quando em branco).
+	measure 'Indicador Prazo Entrega (Recebimento)' = VAR _MaiorData = CALCULATE(MAXX(DISTINCT(fat_compraproduto[nr_identificadorordemcompra]), CALCULATE(MAX(fat_compraproduto[dt_previstaentregaordemcompra]))), fat_compraproduto[ds_statusrecebimento] IN { "Pendente recebimento", "Parcialmente recebido" }) RETURN IF(_MaiorData > TODAY(), "Em Atraso", "No Prazo")
+		displayFolder: Datas
+		lineageTag: 1dd4a108-3456-4f7d-aa8e-2267c2f088d9
+
+	/// Medida de suporte para formatação condicional da coluna 'Data Entrega' na tabela da página 'Recebimento'. Retorna vermelho (#FF0000) quando a maior data de entrega for maior que hoje, e verde (#008000) caso contrário.
+	measure 'Cor Fonte Data Entrega' = IF([Maior Data Entrega Ordem Compra] >= TODAY(), "#008000", "#FF0000")
+		isHidden
+		displayFolder: Suporte
+		lineageTag: 41c90cf1-2e3b-4905-bd95-ce78e47b22fb
+
+	/// Total de ordens de compra distintas (nr_identificadorordemcompra) com status de recebimento 'Pendente recebimento' ou 'Parcialmente recebido', desconsiderando valores em branco/nulo de nr_identificadorordemcompra. Retorna 0 quando o resultado for branco/nulo (+0).
+	measure 'Qtd Ordens Compra Pendente Recebimento' = CALCULATE(DISTINCTCOUNT(fat_compraproduto[nr_identificadorordemcompra]), fat_compraproduto[ds_statusrecebimento] IN { "Pendente recebimento", "Parcialmente recebido" }, NOT ISBLANK(fat_compraproduto[nr_identificadorordemcompra])) + 0
+		formatString: #,##0
+		displayFolder: KPIs
+		lineageTag: 231e6cbf-b331-49fa-936f-9b77dd0fbe7c
+
+	/// Total de produtos (linhas) de ordens de compra com status de recebimento 'Pendente recebimento' ou 'Parcialmente recebido', desconsiderando valores em branco/nulo de nr_identificadorordemcompra na tabela fat_compraproduto. Retorna 0 quando o resultado for branco/nulo (+0).
+	measure 'Qtd Produtos de Ordem Compra Pendente Recebimento' = CALCULATE(COUNTROWS(fat_compraproduto), fat_compraproduto[ds_statusrecebimento] IN { "Pendente recebimento", "Parcialmente recebido" }, NOT ISBLANK(fat_compraproduto[nr_identificadorordemcompra])) + 0
+		formatString: #,##0
+		displayFolder: KPIs
+		lineageTag: cad034c0-dbbf-4085-b884-14a1d61eff89
 
 	column _Blank
 		lineageTag: 2acaf452-428f-42a9-a23f-1b260f68c27e

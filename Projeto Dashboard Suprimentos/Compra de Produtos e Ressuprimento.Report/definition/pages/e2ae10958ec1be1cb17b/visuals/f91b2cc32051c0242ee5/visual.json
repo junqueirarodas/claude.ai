@@ -125,15 +125,30 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "LocalDateTable_24c16580-8ac7-4620-8464-aa5b458b510c"
+                      "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "Date"
+                  "Property": "ds_urgente"
                 }
               },
-              "queryRef": "LocalDateTable_24c16580-8ac7-4620-8464-aa5b458b510c.Date",
-              "nativeQueryRef": "Date Entrega",
-              "displayName": "Date Entrega"
+              "queryRef": "fat_compraproduto.ds_urgente",
+              "nativeQueryRef": "Urgente",
+              "displayName": "Urgente"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Maior Data Entrega Ordem Compra"
+                }
+              },
+              "queryRef": "_Medidas.Maior Data Entrega Ordem Compra",
+              "nativeQueryRef": "Data Entrega",
+              "displayName": "Data Entrega"
             },
             {
               "field": {
@@ -149,36 +164,6 @@
               "queryRef": "fat_compraproduto.ds_statusrecebimento",
               "nativeQueryRef": "Status Recebimento",
               "displayName": "Status Recebimento"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "fat_compraproduto"
-                    }
-                  },
-                  "Property": "ds_urgente"
-                }
-              },
-              "queryRef": "fat_compraproduto.ds_urgente",
-              "nativeQueryRef": "Urgente",
-              "displayName": "Urgente"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "fat_compraproduto"
-                    }
-                  },
-                  "Property": "Indicador Prazo Ordem Compra"
-                }
-              },
-              "queryRef": "fat_compraproduto.Indicador Prazo Ordem Compra",
-              "nativeQueryRef": " ",
-              "displayName": " "
             }
           ]
         }
@@ -187,16 +172,16 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "fat_compraproduto"
+                    "Entity": "_Medidas"
                   }
                 },
-                "Property": "ds_statusrecebimento"
+                "Property": "Maior Data Entrega Ordem Compra"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -304,99 +289,18 @@
         },
         {
           "properties": {
-            "icon": {
-              "kind": "Icon",
-              "layout": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'Before'"
-                  }
-                }
-              },
-              "verticalAlignment": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'Top'"
-                  }
-                }
-              },
-              "value": {
-                "expr": {
-                  "Conditional": {
-                    "Cases": [
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Aggregation": {
-                                "Expression": {
-                                  "Column": {
-                                    "Expression": {
-                                      "SourceRef": {
-                                        "Entity": "fat_compraproduto"
-                                      }
-                                    },
-                                    "Property": "Indicador Prazo Ordem Compra"
-                                  }
-                                },
-                                "Function": 3
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "'No Prazo'"
-                              }
-                            }
-                          },
-                          "Annotations": {
-                            "PowerBI.SQExprEvaluationKind": 1,
-                            "PowerBI.SQExprTextOperatorOption": 2
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'CircleHigh'"
-                          }
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
                         }
                       },
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Aggregation": {
-                                "Expression": {
-                                  "Column": {
-                                    "Expression": {
-                                      "SourceRef": {
-                                        "Entity": "fat_compraproduto"
-                                      }
-                                    },
-                                    "Property": "Indicador Prazo Ordem Compra"
-                                  }
-                                },
-                                "Function": 3
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "'Em Atraso'"
-                              }
-                            }
-                          },
-                          "Annotations": {
-                            "PowerBI.SQExprEvaluationKind": 1,
-                            "PowerBI.SQExprTextOperatorOption": 2
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'CircleLow'"
-                          }
-                        }
-                      }
-                    ]
+                      "Property": "Cor Fonte Data Entrega"
+                    }
                   }
                 }
               }
@@ -410,21 +314,13 @@
                 }
               }
             ],
-            "metadata": "fat_compraproduto.Indicador Prazo Ordem Compra"
+            "metadata": "_Medidas.Maior Data Entrega Ordem Compra"
           }
         }
       ],
       "columnWidth": [
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "57D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "dim_filial.nm_nomeabreviado"
           }
@@ -690,7 +586,8 @@
             "Property": "Indicador Prazo Ordem Compra"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "howCreated": "User"
       },
       {
         "name": "c082fbfe8b492c9d0637",
@@ -750,7 +647,8 @@
             "Property": "Date"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "howCreated": "User"
       },
       {
         "name": "fd2a0ac7805494aaaa0a",
@@ -812,6 +710,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "885f110ac7cc768e0e40",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Maior Data Entrega Ordem Compra"
+          }
+        },
+        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

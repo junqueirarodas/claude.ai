@@ -23,11 +23,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtd Ordens de Compra Aguardando Aprovação"
+                  "Property": "Qtd Ordens Compra Pendente Recebimento"
                 }
               },
-              "queryRef": "_Medidas.Qtd Ordens de Compra Aguardando Aprovação",
-              "nativeQueryRef": "Qtd Ordens de Compra Aguardando Aprovação"
+              "queryRef": "_Medidas.Qtd Ordens Compra Pendente Recebimento",
+              "nativeQueryRef": "Qtd Ordens Compra Pendente Recebimento"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Qtd Ordens de Compra Aguardando Aprovação"
+                "Property": "Qtd Ordens Compra Pendente Recebimento"
               }
             },
             "direction": "Descending"
@@ -365,6 +365,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "51ac5f1796615bce5b3c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Ordens Compra Pendente Recebimento"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   },

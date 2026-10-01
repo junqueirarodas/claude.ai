@@ -4,10 +4,10 @@
   "position": {
     "x": 472.22222222222223,
     "y": 7.7777777777777777,
-    "z": 106001,
+    "z": 105000,
     "height": 68.888888888888886,
     "width": 468.88888888888886,
-    "tabOrder": 107001
+    "tabOrder": 105000
   },
   "visual": {
     "visualType": "slicer",
@@ -234,20 +234,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "6d1dfa7c613ee0be4d26",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_fornecedor"
-              }
-            },
-            "Property": "ds_fornecedor"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

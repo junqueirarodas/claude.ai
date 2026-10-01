@@ -226,20 +226,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "b6e93b37d7e776457e1e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_safra"
-              }
-            },
-            "Property": "ds_descricao"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

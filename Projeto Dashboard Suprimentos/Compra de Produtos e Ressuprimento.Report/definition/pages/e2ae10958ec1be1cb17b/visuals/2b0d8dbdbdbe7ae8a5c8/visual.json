@@ -23,11 +23,12 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtd Produtos de Ordem de Compra Aguardando Aprovação"
+                  "Property": "Qtd Produtos de Ordem Compra Pendente Recebimento"
                 }
               },
-              "queryRef": "_Medidas.Qtd Produtos de Ordem de Compra Aguardando Aprovação",
-              "nativeQueryRef": "Qtd Produtos de Ordem de Compra Aguardando Aprovação"
+              "queryRef": "_Medidas.Qtd Produtos de Ordem Compra Pendente Recebimento",
+              "nativeQueryRef": "Qtd Produtos de Ordem Compra Pendente Recebimento",
+              "format": "0"
             }
           ]
         }
@@ -42,7 +43,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Qtd Produtos de Ordem de Compra Aguardando Aprovação"
+                "Property": "Qtd Produtos de Ordem Compra Pendente Recebimento"
               }
             },
             "direction": "Descending"
@@ -91,6 +92,20 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
                 }
               }
             }
@@ -301,6 +316,24 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8e16a30308e52935d990",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Produtos de Ordem Compra Pendente Recebimento"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   },
   "howCreated": "InsertVisualButton"
 }

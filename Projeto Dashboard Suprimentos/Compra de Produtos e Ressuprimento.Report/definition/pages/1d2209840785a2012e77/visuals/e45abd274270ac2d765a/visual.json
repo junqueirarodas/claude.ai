@@ -143,10 +143,10 @@
                       "Entity": "dim_requisitantesolicitante"
                     }
                   },
-                  "Property": "Solicitante/Requisitante (Capitalizado)"
+                  "Property": "nm_requisitantesolicitante"
                 }
               },
-              "queryRef": "dim_requisitantesolicitante.Solicitante (Capitalizado)",
+              "queryRef": "dim_requisitantesolicitante.nm_requisitantesolicitante",
               "nativeQueryRef": "Solicitante/Requisitante",
               "displayName": "Solicitante/Requisitante"
             }
@@ -544,132 +544,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "cee64c1d38e0d881e846",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_filial"
-              }
-            },
-            "Property": "nm_nomeabreviado"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "938bd83976706227132a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_areadestinosolicitacao"
-              }
-            },
-            "Property": "ds_areadestinosolicitacao"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "529735dc980b0aa9ba78",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "nr_processosolicitacaofluig"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0a4b1841b868d3039155",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Data e Horário Abertura Fluig"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "a8cc722852d68212647d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "nm_responsavelaprovacaosolicitacao"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "1aebfe60434ad1a80db3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "ds_urgente"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e8bfb41b17a852925d30",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Prazo Solicitação Compras (Horas)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e5aceb1c7a03c4db5e18",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Indicador Prazo Aprovação Solicitação"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3a2652ce296bd4d6d6a9",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_requisitantesolicitante"
-              }
-            },
-            "Property": "Solicitante/Requisitante (Capitalizado)"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

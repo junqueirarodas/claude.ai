@@ -4,7 +4,7 @@
   "position": {
     "x": 239,
     "y": 8,
-    "z": 14000,
+    "z": 13000,
     "height": 66,
     "width": 110,
     "tabOrder": 7000
@@ -226,20 +226,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "d0afbda16b5c1a66b154",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_safra"
-              }
-            },
-            "Property": "ds_descricao"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

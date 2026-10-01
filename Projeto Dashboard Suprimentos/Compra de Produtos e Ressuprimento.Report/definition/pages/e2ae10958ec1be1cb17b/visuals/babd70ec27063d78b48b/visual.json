@@ -184,23 +184,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "35bc5dcd015d5082cd25",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "Indicador Prazo Ordem Compra"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  },
   "howCreated": "InsertVisualButton"
 }

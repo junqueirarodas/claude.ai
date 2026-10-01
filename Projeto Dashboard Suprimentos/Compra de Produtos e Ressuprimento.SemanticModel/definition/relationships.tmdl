@@ -206,3 +206,8 @@ relationship 2480e623-b066-7325-b7e5-18ac64ac8c84
 	fromColumn: fat_compraproduto.sk_glb_contagerencial
 	toColumn: dim_glb_contagerencial.sk_glb_contagerencial
 
+relationship 31c82fcb-9275-4fd2-bbe7-ceb5460c9921
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_previstaentregaordemcompra
+	toColumn: LocalDateTable_ee8bbbd7-7fc7-4942-9f54-7ad9e9c9fab3.Date
+

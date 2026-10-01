@@ -218,23 +218,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4d48962838333a882a04",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "Indicador Prazo Envio Cotação"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  },
   "howCreated": "InsertVisualButton"
 }

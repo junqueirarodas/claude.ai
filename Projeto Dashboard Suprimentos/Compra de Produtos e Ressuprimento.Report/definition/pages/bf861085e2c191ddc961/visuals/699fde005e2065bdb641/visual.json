@@ -4,10 +4,10 @@
   "position": {
     "x": 237.72222222222223,
     "y": 169,
-    "z": 34000,
+    "z": 32000,
     "height": 60,
     "width": 70,
-    "tabOrder": 32000
+    "tabOrder": 29000
   },
   "visual": {
     "visualType": "card",
@@ -399,20 +399,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "5234e8fadc33d2853a57",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd Produtos de Ordem de Compra Aguardando Aprovação"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   },

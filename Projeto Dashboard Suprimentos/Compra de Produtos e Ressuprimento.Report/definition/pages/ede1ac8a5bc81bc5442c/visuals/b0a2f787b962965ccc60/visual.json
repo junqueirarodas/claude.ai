@@ -399,20 +399,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "3360a729c6c2d6054b07",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd Produtos Pendentes de Negociação"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   },

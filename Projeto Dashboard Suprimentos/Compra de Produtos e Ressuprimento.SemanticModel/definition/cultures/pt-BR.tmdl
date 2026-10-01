@@ -4949,6 +4949,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Solicitante/Requisitante": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -5062,16 +5072,6 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "Tipo Solicitação": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -12911,6 +12911,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.75
 			          }
+			        },
+			        {
+			          "Prazo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -12999,61 +13009,312 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "dim_requisitantesolicitante.solicitante_requisitante_capitalizado": {
+			    "fat_compraproduto.dt_previstaentregaordemcompra": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_requisitantesolicitante",
-			          "ConceptualProperty": "Solicitante/Requisitante (Capitalizado)"
+			          "ConceptualEntity": "fat_compraproduto",
+			          "ConceptualProperty": "dt_previstaentregaordemcompra"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "solicitante/requisitante (capitalizado)": {
+			          "dt previstaentregaordemcompra": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "solicitante": {
+			          "dt_previstaentregaordemcompra": {
+			            "Type": "Noun",
 			            "State": "Generated",
-			            "Weight": 0.97
+			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "solicitante requisitante ( capitalizado )": {
+			          "date": {
 			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "requisitante (capitalizado)": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "Solicitante/Requisitante": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
+			            "Weight": 0.7
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
-			    "localdatetable_24c165808ac746208464aa5b458b510c.date": {
+			    "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "LocalDateTable_24c16580-8ac7-4620-8464-aa5b458b510c",
-			          "ConceptualProperty": "Date"
+			          "ConceptualEntity": "fat_compraproduto",
+			          "VariationSource": "dt_previstaentregaordemcompra",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Date Entrega": {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.dt_previstaentregaordemcompra.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "VariationSource": "dt_previstaentregaordemcompra",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dt previstaentregaordemcompra ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.dt_previstaentregaordemcompra.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "VariationSource": "dt_previstaentregaordemcompra",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dt previstaentregaordemcompra trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.dt_previstaentregaordemcompra.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "VariationSource": "dt_previstaentregaordemcompra",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dt previstaentregaordemcompra mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fat_compraproduto.dt_previstaentregaordemcompra.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fat_compraproduto",
+			          "VariationSource": "dt_previstaentregaordemcompra",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dt previstaentregaordemcompra dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.maior_data_entrega_ordem_compra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Maior Data Entrega Ordem Compra"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maior data entrega ordem compra": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "maior information entrega ordem compra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "maior fact entrega ordem compra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "maior info entrega ordem compra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "maior statistic entrega ordem compra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "maior document entrega ordem compra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "maior figure entrega ordem compra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "maior record entrega ordem compra": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Data Entrega": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -13062,10 +13323,308 @@ cultureInfo pt-BR
 			            "Weight": 0.9
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
+			    "fat_compraproduto_dt_previstaentregaordemcompra_trimestre_has_fat_compraproduto_dt_previstaentregaordemcompra_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto.dt_previstaentregaordemcompra.trimestre": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra.mê": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres16"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_dt_previstaentregaordemcompra_ano_has_fat_compraproduto_dt_previstaentregaordemcompra_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto.dt_previstaentregaordemcompra.ano": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.ano"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra.trimestre": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.ano"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos16"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_dt_previstaentregaordemcompra_hierarquia_de_data_has_fat_compraproduto_dt_previstaentregaordemcompra_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra.dia": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_dt_previstaentregaordemcompra_hierarquia_de_data_has_fat_compraproduto_dt_previstaentregaordemcompra_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra.mê": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_dt_previstaentregaordemcompra_hierarquia_de_data_has_fat_compraproduto_dt_previstaentregaordemcompra_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra.trimestre": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_dt_previstaentregaordemcompra_hierarquia_de_data_has_fat_compraproduto_dt_previstaentregaordemcompra_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra.ano": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_dt_previstaentregaordemcompra_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto.dt_previstaentregaordemcompra": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dt_previstaentregaordemcompras_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
 			    "dim_tempoperiodo_dt_datafinal_mê_has_dim_tempoperiodo_dt_datafinal_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "dim_tempoperiodo"
@@ -13161,7 +13720,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
+			          "ID": "trimestres_have_mê1"
 			        },
 			        {
 			          "Attribute": {
@@ -13174,7 +13733,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
+			          "ID": "mê_have_trimestres1"
 			        },
 			        {
 			          "Preposition": {
@@ -13227,7 +13786,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
+			          "ID": "anos_have_trimestres1"
 			        },
 			        {
 			          "Attribute": {
@@ -13240,7 +13799,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
+			          "ID": "trimestres_have_anos1"
 			        },
 			        {
 			          "Preposition": {
@@ -13293,7 +13852,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
+			          "ID": "hierarquia_de_data_have_dias1"
 			        }
 			      ]
 			    },
@@ -13326,7 +13885,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
+			          "ID": "hierarquia_de_data_have_mê1"
 			        }
 			      ]
 			    },
@@ -13359,7 +13918,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
+			          "ID": "hierarquia_de_data_have_trimestres1"
 			        }
 			      ]
 			    },
@@ -13392,7 +13951,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
+			          "ID": "hierarquia_de_data_have_anos1"
 			        }
 			      ]
 			    },
@@ -13524,7 +14083,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê1"
+			          "ID": "trimestres_have_mê2"
 			        },
 			        {
 			          "Attribute": {
@@ -13537,7 +14096,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres1"
+			          "ID": "mê_have_trimestres2"
 			        },
 			        {
 			          "Preposition": {
@@ -13590,7 +14149,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres1"
+			          "ID": "anos_have_trimestres2"
 			        },
 			        {
 			          "Attribute": {
@@ -13603,7 +14162,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos1"
+			          "ID": "trimestres_have_anos2"
 			        },
 			        {
 			          "Preposition": {
@@ -13656,7 +14215,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias1"
+			          "ID": "hierarquia_de_data_have_dias2"
 			        }
 			      ]
 			    },
@@ -13689,7 +14248,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
+			          "ID": "hierarquia_de_data_have_mê2"
 			        }
 			      ]
 			    },
@@ -13722,7 +14281,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
+			          "ID": "hierarquia_de_data_have_trimestres2"
 			        }
 			      ]
 			    },
@@ -13755,7 +14314,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
+			          "ID": "hierarquia_de_data_have_anos2"
 			        }
 			      ]
 			    },
@@ -13887,7 +14446,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê2"
+			          "ID": "trimestres_have_mê3"
 			        },
 			        {
 			          "Attribute": {
@@ -13900,7 +14459,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres2"
+			          "ID": "mê_have_trimestres3"
 			        },
 			        {
 			          "Preposition": {
@@ -13953,7 +14512,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres2"
+			          "ID": "anos_have_trimestres3"
 			        },
 			        {
 			          "Attribute": {
@@ -13966,7 +14525,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos2"
+			          "ID": "trimestres_have_anos3"
 			        },
 			        {
 			          "Preposition": {
@@ -14019,7 +14578,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias2"
+			          "ID": "hierarquia_de_data_have_dias3"
 			        }
 			      ]
 			    },
@@ -14052,7 +14611,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê2"
+			          "ID": "hierarquia_de_data_have_mê3"
 			        }
 			      ]
 			    },
@@ -14085,7 +14644,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres2"
+			          "ID": "hierarquia_de_data_have_trimestres3"
 			        }
 			      ]
 			    },
@@ -14118,7 +14677,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos2"
+			          "ID": "hierarquia_de_data_have_anos3"
 			        }
 			      ]
 			    },
@@ -14250,7 +14809,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê3"
+			          "ID": "trimestres_have_mê4"
 			        },
 			        {
 			          "Attribute": {
@@ -14263,7 +14822,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres3"
+			          "ID": "mê_have_trimestres4"
 			        },
 			        {
 			          "Preposition": {
@@ -14316,7 +14875,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres3"
+			          "ID": "anos_have_trimestres4"
 			        },
 			        {
 			          "Attribute": {
@@ -14329,7 +14888,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos3"
+			          "ID": "trimestres_have_anos4"
 			        },
 			        {
 			          "Preposition": {
@@ -14382,7 +14941,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias3"
+			          "ID": "hierarquia_de_data_have_dias4"
 			        }
 			      ]
 			    },
@@ -14415,7 +14974,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê3"
+			          "ID": "hierarquia_de_data_have_mê4"
 			        }
 			      ]
 			    },
@@ -14448,7 +15007,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres3"
+			          "ID": "hierarquia_de_data_have_trimestres4"
 			        }
 			      ]
 			    },
@@ -14481,7 +15040,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos3"
+			          "ID": "hierarquia_de_data_have_anos4"
 			        }
 			      ]
 			    },
@@ -14613,7 +15172,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê4"
+			          "ID": "trimestres_have_mê5"
 			        },
 			        {
 			          "Attribute": {
@@ -14626,7 +15185,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres4"
+			          "ID": "mê_have_trimestres5"
 			        },
 			        {
 			          "Preposition": {
@@ -14679,7 +15238,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres4"
+			          "ID": "anos_have_trimestres5"
 			        },
 			        {
 			          "Attribute": {
@@ -14692,7 +15251,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos4"
+			          "ID": "trimestres_have_anos5"
 			        },
 			        {
 			          "Preposition": {
@@ -14745,7 +15304,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias4"
+			          "ID": "hierarquia_de_data_have_dias5"
 			        }
 			      ]
 			    },
@@ -14778,7 +15337,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê4"
+			          "ID": "hierarquia_de_data_have_mê5"
 			        }
 			      ]
 			    },
@@ -14811,7 +15370,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres4"
+			          "ID": "hierarquia_de_data_have_trimestres5"
 			        }
 			      ]
 			    },
@@ -14844,7 +15403,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos4"
+			          "ID": "hierarquia_de_data_have_anos5"
 			        }
 			      ]
 			    },
@@ -14976,7 +15535,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê5"
+			          "ID": "trimestres_have_mê6"
 			        },
 			        {
 			          "Attribute": {
@@ -14989,7 +15548,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres5"
+			          "ID": "mê_have_trimestres6"
 			        },
 			        {
 			          "Preposition": {
@@ -15042,7 +15601,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres5"
+			          "ID": "anos_have_trimestres6"
 			        },
 			        {
 			          "Attribute": {
@@ -15055,7 +15614,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos5"
+			          "ID": "trimestres_have_anos6"
 			        },
 			        {
 			          "Preposition": {
@@ -15108,7 +15667,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias5"
+			          "ID": "hierarquia_de_data_have_dias6"
 			        }
 			      ]
 			    },
@@ -15141,7 +15700,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê5"
+			          "ID": "hierarquia_de_data_have_mê6"
 			        }
 			      ]
 			    },
@@ -15174,7 +15733,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres5"
+			          "ID": "hierarquia_de_data_have_trimestres6"
 			        }
 			      ]
 			    },
@@ -15207,7 +15766,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos5"
+			          "ID": "hierarquia_de_data_have_anos6"
 			        }
 			      ]
 			    },
@@ -15339,7 +15898,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê6"
+			          "ID": "trimestres_have_mê7"
 			        },
 			        {
 			          "Attribute": {
@@ -15352,7 +15911,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres6"
+			          "ID": "mê_have_trimestres7"
 			        },
 			        {
 			          "Preposition": {
@@ -15405,7 +15964,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres6"
+			          "ID": "anos_have_trimestres7"
 			        },
 			        {
 			          "Attribute": {
@@ -15418,7 +15977,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos6"
+			          "ID": "trimestres_have_anos7"
 			        },
 			        {
 			          "Preposition": {
@@ -15471,7 +16030,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias6"
+			          "ID": "hierarquia_de_data_have_dias7"
 			        }
 			      ]
 			    },
@@ -15504,7 +16063,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê6"
+			          "ID": "hierarquia_de_data_have_mê7"
 			        }
 			      ]
 			    },
@@ -15537,7 +16096,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres6"
+			          "ID": "hierarquia_de_data_have_trimestres7"
 			        }
 			      ]
 			    },
@@ -15570,7 +16129,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos6"
+			          "ID": "hierarquia_de_data_have_anos7"
 			        }
 			      ]
 			    },
@@ -15702,7 +16261,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê7"
+			          "ID": "trimestres_have_mê8"
 			        },
 			        {
 			          "Attribute": {
@@ -15715,7 +16274,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres7"
+			          "ID": "mê_have_trimestres8"
 			        },
 			        {
 			          "Preposition": {
@@ -15768,7 +16327,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres7"
+			          "ID": "anos_have_trimestres8"
 			        },
 			        {
 			          "Attribute": {
@@ -15781,7 +16340,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos7"
+			          "ID": "trimestres_have_anos8"
 			        },
 			        {
 			          "Preposition": {
@@ -15834,7 +16393,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias7"
+			          "ID": "hierarquia_de_data_have_dias8"
 			        }
 			      ]
 			    },
@@ -15867,7 +16426,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê7"
+			          "ID": "hierarquia_de_data_have_mê8"
 			        }
 			      ]
 			    },
@@ -15900,7 +16459,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres7"
+			          "ID": "hierarquia_de_data_have_trimestres8"
 			        }
 			      ]
 			    },
@@ -15933,7 +16492,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos7"
+			          "ID": "hierarquia_de_data_have_anos8"
 			        }
 			      ]
 			    },
@@ -16065,7 +16624,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê8"
+			          "ID": "trimestres_have_mê9"
 			        },
 			        {
 			          "Attribute": {
@@ -16078,7 +16637,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres8"
+			          "ID": "mê_have_trimestres9"
 			        },
 			        {
 			          "Preposition": {
@@ -16131,7 +16690,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres8"
+			          "ID": "anos_have_trimestres9"
 			        },
 			        {
 			          "Attribute": {
@@ -16144,7 +16703,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos8"
+			          "ID": "trimestres_have_anos9"
 			        },
 			        {
 			          "Preposition": {
@@ -16197,7 +16756,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias8"
+			          "ID": "hierarquia_de_data_have_dias9"
 			        }
 			      ]
 			    },
@@ -16230,7 +16789,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê8"
+			          "ID": "hierarquia_de_data_have_mê9"
 			        }
 			      ]
 			    },
@@ -16263,7 +16822,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres8"
+			          "ID": "hierarquia_de_data_have_trimestres9"
 			        }
 			      ]
 			    },
@@ -16296,7 +16855,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos8"
+			          "ID": "hierarquia_de_data_have_anos9"
 			        }
 			      ]
 			    },
@@ -16428,7 +16987,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê9"
+			          "ID": "trimestres_have_mê10"
 			        },
 			        {
 			          "Attribute": {
@@ -16441,7 +17000,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres9"
+			          "ID": "mê_have_trimestres10"
 			        },
 			        {
 			          "Preposition": {
@@ -16494,7 +17053,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres9"
+			          "ID": "anos_have_trimestres10"
 			        },
 			        {
 			          "Attribute": {
@@ -16507,7 +17066,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos9"
+			          "ID": "trimestres_have_anos10"
 			        },
 			        {
 			          "Preposition": {
@@ -16560,7 +17119,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias9"
+			          "ID": "hierarquia_de_data_have_dias10"
 			        }
 			      ]
 			    },
@@ -16593,7 +17152,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê9"
+			          "ID": "hierarquia_de_data_have_mê10"
 			        }
 			      ]
 			    },
@@ -16626,7 +17185,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres9"
+			          "ID": "hierarquia_de_data_have_trimestres10"
 			        }
 			      ]
 			    },
@@ -16659,7 +17218,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos9"
+			          "ID": "hierarquia_de_data_have_anos10"
 			        }
 			      ]
 			    },
@@ -16791,7 +17350,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê10"
+			          "ID": "trimestres_have_mê11"
 			        },
 			        {
 			          "Attribute": {
@@ -16804,7 +17363,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres10"
+			          "ID": "mê_have_trimestres11"
 			        },
 			        {
 			          "Preposition": {
@@ -16857,7 +17416,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres10"
+			          "ID": "anos_have_trimestres11"
 			        },
 			        {
 			          "Attribute": {
@@ -16870,7 +17429,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos10"
+			          "ID": "trimestres_have_anos11"
 			        },
 			        {
 			          "Preposition": {
@@ -16923,7 +17482,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias10"
+			          "ID": "hierarquia_de_data_have_dias11"
 			        }
 			      ]
 			    },
@@ -16956,7 +17515,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê10"
+			          "ID": "hierarquia_de_data_have_mê11"
 			        }
 			      ]
 			    },
@@ -16989,7 +17548,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres10"
+			          "ID": "hierarquia_de_data_have_trimestres11"
 			        }
 			      ]
 			    },
@@ -17022,7 +17581,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos10"
+			          "ID": "hierarquia_de_data_have_anos11"
 			        }
 			      ]
 			    },
@@ -17154,7 +17713,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê11"
+			          "ID": "trimestres_have_mê12"
 			        },
 			        {
 			          "Attribute": {
@@ -17167,7 +17726,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres11"
+			          "ID": "mê_have_trimestres12"
 			        },
 			        {
 			          "Preposition": {
@@ -17220,7 +17779,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres11"
+			          "ID": "anos_have_trimestres12"
 			        },
 			        {
 			          "Attribute": {
@@ -17233,7 +17792,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos11"
+			          "ID": "trimestres_have_anos12"
 			        },
 			        {
 			          "Preposition": {
@@ -17286,7 +17845,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias11"
+			          "ID": "hierarquia_de_data_have_dias12"
 			        }
 			      ]
 			    },
@@ -17319,7 +17878,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê11"
+			          "ID": "hierarquia_de_data_have_mê12"
 			        }
 			      ]
 			    },
@@ -17352,7 +17911,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres11"
+			          "ID": "hierarquia_de_data_have_trimestres12"
 			        }
 			      ]
 			    },
@@ -17385,7 +17944,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos11"
+			          "ID": "hierarquia_de_data_have_anos12"
 			        }
 			      ]
 			    },
@@ -17517,7 +18076,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê12"
+			          "ID": "trimestres_have_mê13"
 			        },
 			        {
 			          "Attribute": {
@@ -17530,7 +18089,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres12"
+			          "ID": "mê_have_trimestres13"
 			        },
 			        {
 			          "Preposition": {
@@ -17583,7 +18142,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres12"
+			          "ID": "anos_have_trimestres13"
 			        },
 			        {
 			          "Attribute": {
@@ -17596,7 +18155,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos12"
+			          "ID": "trimestres_have_anos13"
 			        },
 			        {
 			          "Preposition": {
@@ -17649,7 +18208,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias12"
+			          "ID": "hierarquia_de_data_have_dias13"
 			        }
 			      ]
 			    },
@@ -17682,7 +18241,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê12"
+			          "ID": "hierarquia_de_data_have_mê13"
 			        }
 			      ]
 			    },
@@ -17715,7 +18274,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres12"
+			          "ID": "hierarquia_de_data_have_trimestres13"
 			        }
 			      ]
 			    },
@@ -17748,7 +18307,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos12"
+			          "ID": "hierarquia_de_data_have_anos13"
 			        }
 			      ]
 			    },
@@ -17880,7 +18439,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê13"
+			          "ID": "trimestres_have_mê14"
 			        },
 			        {
 			          "Attribute": {
@@ -17893,7 +18452,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres13"
+			          "ID": "mê_have_trimestres14"
 			        },
 			        {
 			          "Preposition": {
@@ -17946,7 +18505,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres13"
+			          "ID": "anos_have_trimestres14"
 			        },
 			        {
 			          "Attribute": {
@@ -17959,7 +18518,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos13"
+			          "ID": "trimestres_have_anos14"
 			        },
 			        {
 			          "Preposition": {
@@ -18012,7 +18571,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias13"
+			          "ID": "hierarquia_de_data_have_dias14"
 			        }
 			      ]
 			    },
@@ -18045,7 +18604,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê13"
+			          "ID": "hierarquia_de_data_have_mê14"
 			        }
 			      ]
 			    },
@@ -18078,7 +18637,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres13"
+			          "ID": "hierarquia_de_data_have_trimestres14"
 			        }
 			      ]
 			    },
@@ -18111,7 +18670,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos13"
+			          "ID": "hierarquia_de_data_have_anos14"
 			        }
 			      ]
 			    },
@@ -18243,7 +18802,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê14"
+			          "ID": "trimestres_have_mê15"
 			        },
 			        {
 			          "Attribute": {
@@ -18256,7 +18815,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres14"
+			          "ID": "mê_have_trimestres15"
 			        },
 			        {
 			          "Preposition": {
@@ -18309,7 +18868,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres14"
+			          "ID": "anos_have_trimestres15"
 			        },
 			        {
 			          "Attribute": {
@@ -18322,7 +18881,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos14"
+			          "ID": "trimestres_have_anos15"
 			        },
 			        {
 			          "Preposition": {
@@ -18375,7 +18934,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias14"
+			          "ID": "hierarquia_de_data_have_dias15"
 			        }
 			      ]
 			    },
@@ -18408,7 +18967,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê14"
+			          "ID": "hierarquia_de_data_have_mê15"
 			        }
 			      ]
 			    },
@@ -18441,7 +19000,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres14"
+			          "ID": "hierarquia_de_data_have_trimestres15"
 			        }
 			      ]
 			    },
@@ -18474,7 +19033,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos14"
+			          "ID": "hierarquia_de_data_have_anos15"
 			        }
 			      ]
 			    },
@@ -18606,7 +19165,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê15"
+			          "ID": "trimestres_have_mê16"
 			        },
 			        {
 			          "Attribute": {
@@ -18619,7 +19178,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres15"
+			          "ID": "mê_have_trimestres16"
 			        },
 			        {
 			          "Preposition": {
@@ -18672,7 +19231,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres15"
+			          "ID": "anos_have_trimestres16"
 			        },
 			        {
 			          "Attribute": {
@@ -18685,7 +19244,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos15"
+			          "ID": "trimestres_have_anos16"
 			        },
 			        {
 			          "Preposition": {
@@ -18738,7 +19297,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias15"
+			          "ID": "hierarquia_de_data_have_dias16"
 			        }
 			      ]
 			    },
@@ -18771,7 +19330,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê15"
+			          "ID": "hierarquia_de_data_have_mê16"
 			        }
 			      ]
 			    },
@@ -18804,7 +19363,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres15"
+			          "ID": "hierarquia_de_data_have_trimestres16"
 			        }
 			      ]
 			    },
@@ -18837,7 +19396,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos15"
+			          "ID": "hierarquia_de_data_have_anos16"
 			        }
 			      ]
 			    },
@@ -19953,20 +20512,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "dim_requisitantesolicitante_has_solicitante_requisitante_capitalizado": {
+			    "fat_compraproduto_has_entity__medida_maior_data_entrega_ordem_compra": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_requisitantesolicitante"
+			        "ConceptualEntity": "fat_compraproduto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dim_requisitantesolicitante": {
+			        "fat_compraproduto": {
 			          "Target": {
-			            "Entity": "dim_requisitantesolicitante"
+			            "Entity": "fat_compraproduto"
 			          }
 			        },
-			        "dim_requisitantesolicitante.solicitante_requisitante_capitalizado": {
+			        "entity__medida.maior_data_entrega_ordem_compra": {
 			          "Target": {
-			            "Entity": "dim_requisitantesolicitante.solicitante_requisitante_capitalizado"
+			            "Entity": "entity__medida.maior_data_entrega_ordem_compra"
 			          }
 			        }
 			      },
@@ -19974,15 +20533,48 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dim_requisitantesolicitante"
+			              "Role": "fat_compraproduto"
 			            },
 			            "Object": {
-			              "Role": "dim_requisitantesolicitante.solicitante_requisitante_capitalizado"
+			              "Role": "entity__medida.maior_data_entrega_ordem_compra"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dim_requisitantesolicitantes_have_solicitante_requisitante_capitalizado"
+			          "ID": "fat_compraprodutos_have_maior_data_entrega_ordem_compra"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_has_dt_previstaentregaordemcompra": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto": {
+			          "Target": {
+			            "Entity": "fat_compraproduto"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fat_compraprodutos_have_dt_previstaentregaordemcompras"
 			        }
 			      ]
 			    },
@@ -30543,6 +31135,72 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fat_compraprodutos_have_nr_processosolicitacaofluigs"
+			        }
+			      ]
+			    },
+			    "fat_compraproduto_dt_previstaentregaordemcompra_mê_has_fat_compraproduto_dt_previstaentregaordemcompra_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fat_compraproduto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fat_compraproduto.dt_previstaentregaordemcompra.mê": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			          }
+			        },
+			        "fat_compraproduto.dt_previstaentregaordemcompra.dia": {
+			          "Target": {
+			            "Entity": "fat_compraproduto.dt_previstaentregaordemcompra.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias16"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.dia"
+			            },
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê16"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fat_compraproduto.dt_previstaentregaordemcompra.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê16"
 			        }
 			      ]
 			    }

@@ -4,10 +4,10 @@
   "position": {
     "x": 11,
     "y": 625,
-    "z": 72000,
+    "z": 70000,
     "height": 68,
     "width": 213,
-    "tabOrder": 73000
+    "tabOrder": 70000
   },
   "visual": {
     "visualType": "slicer",
@@ -176,24 +176,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9c48ac091dd203c79929",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "Indicador Prazo Ordem Compra"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   },
   "howCreated": "InsertVisualButton"
 }

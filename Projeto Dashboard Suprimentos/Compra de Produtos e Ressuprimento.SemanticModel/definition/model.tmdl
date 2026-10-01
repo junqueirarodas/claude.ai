@@ -54,6 +54,7 @@ ref table dim_municipio
 ref table dim_glb_departamentos
 ref table dim_glb_contagerencial
 ref table _Medidas
+ref table LocalDateTable_ee8bbbd7-7fc7-4942-9f54-7ad9e9c9fab3
 
 ref cultureInfo pt-BR
 

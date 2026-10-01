@@ -4,10 +4,10 @@
   "position": {
     "x": 237.67389044797838,
     "y": 288.82070470844991,
-    "z": 91000,
+    "z": 89000,
     "height": 60,
     "width": 70,
-    "tabOrder": 92000
+    "tabOrder": 89000
   },
   "visual": {
     "visualType": "card",
@@ -399,20 +399,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "7f5511a7dbdd5496095c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd Produtos Aguardando Aprovação com Variação Preço 15%"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   },

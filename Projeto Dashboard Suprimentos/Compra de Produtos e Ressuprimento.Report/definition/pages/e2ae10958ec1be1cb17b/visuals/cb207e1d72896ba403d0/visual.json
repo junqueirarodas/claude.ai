@@ -227,20 +227,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "09281f6a5150049067c2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_tempoperiodo"
-              }
-            },
-            "Property": "ds_referencia_mes_ano"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

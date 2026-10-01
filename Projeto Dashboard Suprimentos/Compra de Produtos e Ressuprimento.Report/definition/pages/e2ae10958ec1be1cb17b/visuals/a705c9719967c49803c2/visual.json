@@ -234,20 +234,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "55414792062e122a667d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_fornecedor"
-              }
-            },
-            "Property": "ds_fornecedor"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }
