@@ -1,0 +1,213 @@
+relationship aa8b0f74-a99d-4f03-ad4b-096b94027625
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_aberturasolicitacaofluig
+	toColumn: LocalDateTable_7329e7fe-38f5-4f72-aa0d-73c5599f0a02.Date
+
+relationship 7935c87c-33e9-4828-944f-aecd8b3dd97f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_aprovacaosolicitacao
+	toColumn: LocalDateTable_79c69dfa-2fa7-466b-a5d0-d33441a81577.Date
+
+relationship 739bcfb8-9126-4129-9e74-7417876419f2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_emissaocotacao
+	toColumn: LocalDateTable_b261a665-bd37-4406-86ac-84d316ed0bdb.Date
+
+relationship 543a3d01-30a5-479d-8d27-d652392e89df
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_previstaentregacotacao
+	toColumn: LocalDateTable_24c16580-8ac7-4620-8464-aa5b458b510c.Date
+
+relationship b6789c91-f43e-4e78-ba32-38bbecd2433d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_emissaopedidocompra
+	toColumn: LocalDateTable_80c691f9-23d5-412f-950f-c349c42a7bae.Date
+
+relationship 9cb2e7a1-b3c5-484a-ae64-0320acfd0d6f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_emissaoordemcompra
+	toColumn: LocalDateTable_280be8a5-d6e5-41b3-b3d6-e2ddfa71c1c5.Date
+
+relationship 84260e65-8f99-4ebe-91fe-3a8888f78d2d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_aprovacaoordemcompra
+	toColumn: LocalDateTable_57dbfc6b-a19c-4e22-b877-faaf4d926a1b.Date
+
+relationship 9133f4c2-0986-4338-907b-b712ec95c3a2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_emissaorecebimento
+	toColumn: LocalDateTable_434470d1-479f-4f7e-807b-3bc198dfcea7.Date
+
+relationship 036521ed-eb45-4941-9e07-43b18b84630f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_ultimacompra
+	toColumn: LocalDateTable_c8e3e479-4fcf-4a33-9512-6ab79875cb41.Date
+
+relationship 68c6ed65-3dc7-474f-8eaa-40a39628dbda
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_produtos.dt_ultimacompra
+	toColumn: LocalDateTable_98da5b0a-e113-4625-b0ba-67bc63e04bf0.Date
+
+relationship 0647540f-5552-4f5b-b186-63ef4681a363
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_produtos.dt_ultimabaixaestoque
+	toColumn: LocalDateTable_6ac5a03d-000a-4612-86e7-95be62097810.Date
+
+relationship e99b31e5-f002-4d75-9941-0bd8a95c5d1c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_safra.dt_fim
+	toColumn: LocalDateTable_a7bb572d-494b-43b1-aaf0-2ad73fe5b2a0.Date
+
+relationship ca77f29a-8083-4744-bc64-16c422c21b8d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_safra.dt_inicio
+	toColumn: LocalDateTable_62f46089-7811-45a1-93a2-854ed28e34a4.Date
+
+relationship 553f3fd8-b171-40c2-abee-355b6ad703b7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_tempo.dt_data
+	toColumn: LocalDateTable_68433cd7-004f-4f85-b029-cf62ba44ded6.Date
+
+relationship b74bec08-d71c-4b17-af8a-02751e1861e3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_tempoperiodo.dt_datainicio
+	toColumn: LocalDateTable_6cdac1b2-dcf9-45c1-97c0-94aa5a38e402.Date
+
+relationship 5cb4c5fd-ae64-4ee5-8fa6-936ae13ad541
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_tempoperiodo.dt_datafinal
+	toColumn: LocalDateTable_ddb340a3-0123-4a86-8e54-60d3551a220d.Date
+
+relationship 4e856917-80e7-4ddf-8c9a-4d9b30443e41
+	fromColumn: fat_compraproduto.sk_atividadecultura
+	toColumn: dim_atividadecultura.sk_atividadecultura
+
+	annotation PBI_IsFromSource = FS
+
+relationship a97fdd30-cf3c-407d-ac51-36d702ccfff7
+	fromColumn: fat_compraproduto.sk_empresa
+	toColumn: dim_empresa.sk_empresa
+
+	annotation PBI_IsFromSource = FS
+
+relationship c746f4fa-1f49-4107-9d0c-5e230a10feb1
+	fromColumn: fat_compraproduto.sk_filial
+	toColumn: dim_filial.sk_filial
+
+	annotation PBI_IsFromSource = FS
+
+relationship 82a8b1c0-0f0b-459e-b242-a99d4874a981
+	fromColumn: fat_compraproduto.sk_fornecedor
+	toColumn: dim_fornecedor.sk_fornecedor
+
+	annotation PBI_IsFromSource = FS
+
+relationship ae9e296e-03b4-4f16-9485-73cbf7d65b96
+	fromColumn: fat_compraproduto.sk_produtofamilia
+	toColumn: dim_produtofamilia.sk_produtofamilia
+
+	annotation PBI_IsFromSource = FS
+
+relationship 7705fffd-97f2-4a0f-bc00-91df55661ed3
+	fromColumn: fat_compraproduto.sk_produtogrupo
+	toColumn: dim_produtogrupo.sk_produtogrupo
+
+	annotation PBI_IsFromSource = FS
+
+relationship 1caa9ca6-56d9-4cab-85a5-8223d2d6e8fe
+	fromColumn: fat_compraproduto.sk_produto
+	toColumn: dim_produtos.sk_produto
+
+	annotation PBI_IsFromSource = FS
+
+relationship 7f63baaa-808a-46d2-8ef0-01bfd2c82154
+	fromColumn: fat_compraproduto.sk_produtotipo
+	toColumn: dim_produtotipo.sk_produtotipo
+
+	annotation PBI_IsFromSource = FS
+
+relationship dfe9269c-0fb4-4457-a085-283e1761105e
+	fromColumn: fat_compraproduto.sk_regional
+	toColumn: dim_regional.sk_regional
+
+	annotation PBI_IsFromSource = FS
+
+relationship e5c5a4d7-1e4a-4c8a-bf6c-26a2b1d73ce3
+	fromColumn: fat_compraproduto.sk_safra
+	toColumn: dim_safra.sk_safra
+
+	annotation PBI_IsFromSource = FS
+
+relationship f57aa65f-578c-4e68-a719-75c64d938f27
+	fromColumn: fat_compraproduto.sk_tempo
+	toColumn: dim_tempo.sk_data
+
+	annotation PBI_IsFromSource = FS
+
+relationship 5110702d-9f6c-4d0a-a894-38ccdadf3ed0
+	fromColumn: fat_compraproduto.sk_tempoperiodo
+	toColumn: dim_tempoperiodo.sk_tempoperiodo
+
+	annotation PBI_IsFromSource = FS
+
+relationship 76fb7ac7-a2eb-48d9-859a-9b5c175200a7
+	fromColumn: fat_compraproduto.sk_unidademedida
+	toColumn: dim_unidademedida.sk_unidademedida
+
+	annotation PBI_IsFromSource = FS
+
+relationship ca858460-170d-470a-9f95-4cfc237530c4
+	fromColumn: fat_compraproduto.sk_areadestinosolicitacao
+	toColumn: dim_areadestinosolicitacao.sk_areadestinosolicitacao
+
+	annotation PBI_IsFromSource = FS
+
+relationship 5c433099-392f-47c0-81e7-325ce358379b
+	fromColumn: fat_compraproduto.sk_comprador
+	toColumn: dim_comprador.sk_comprador
+
+	annotation PBI_IsFromSource = FS
+
+relationship 20ad2453-0905-4503-aeb4-30b3ccb09907
+	fromColumn: fat_compraproduto.sk_localestoque
+	toColumn: dim_localestoque.sk_localestoque
+
+	annotation PBI_IsFromSource = FS
+
+relationship 081931cb-2117-4e0a-b1fc-4d939e3331a0
+	fromColumn: fat_compraproduto.sk_requisitantesolicitante
+	toColumn: dim_requisitantesolicitante.sk_requisitantesolicitante
+
+	annotation PBI_IsFromSource = FS
+
+relationship 57e0a38b-12ac-4616-8f4c-c8fed3a78677
+	fromColumn: fat_compraproduto.sk_tiposolicitacaocompra
+	toColumn: dim_tiposolicitacaocompra.sk_tiposolicitacaocompra
+
+	annotation PBI_IsFromSource = FS
+
+relationship 98624d81-bb4a-5cda-fdf5-a50f967a11ed
+	fromColumn: fat_compraproduto.sk_municipio
+	toColumn: dim_municipio.sk_municipio
+
+relationship ea9d678a-c16a-3d0c-7e75-87351a73928b
+	fromColumn: fat_compraproduto.sk_estado
+	toColumn: dim_estado.sk_estado
+
+relationship 77fd6fc3-bad3-a452-47e3-cd6372d24a84
+	fromColumn: fat_compraproduto.sk_pais
+	toColumn: dim_pais.sk_pais
+
+relationship 26922a3c-77d8-fd22-0fbd-63481fd8d207
+	fromColumn: fat_compraproduto.sk_glb_departamento
+	toColumn: dim_glb_departamentos.sk_glb_departamento
+
+relationship 2480e623-b066-7325-b7e5-18ac64ac8c84
+	fromColumn: fat_compraproduto.sk_glb_contagerencial
+	toColumn: dim_glb_contagerencial.sk_glb_contagerencial
+
+relationship 31c82fcb-9275-4fd2-bbe7-ceb5460c9921
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fat_compraproduto.dt_previstaentregaordemcompra
+	toColumn: LocalDateTable_ee8bbbd7-7fc7-4942-9f54-7ad9e9c9fab3.Date
+

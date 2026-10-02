@@ -1,0 +1,739 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f91b2cc32051c0242ee5",
+  "position": {
+    "x": 234.28571428571431,
+    "y": 354.28571428571433,
+    "z": 51000,
+    "height": 365,
+    "width": 1045.7142857142858,
+    "tabOrder": 50000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_filial"
+                    }
+                  },
+                  "Property": "nm_nomeabreviado"
+                }
+              },
+              "queryRef": "dim_filial.nm_nomeabreviado",
+              "nativeQueryRef": "Filial",
+              "displayName": "Filial"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "nr_movimentoordemcompra"
+                }
+              },
+              "queryRef": "fat_compraproduto.nr_movimentoordemcompra",
+              "nativeQueryRef": "Nº Ordem",
+              "displayName": "Nº Ordem"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Data e Horário Emissão Ordem Compra"
+                }
+              },
+              "queryRef": "_Medidas.Data e Horário Emissão Ordem Compra",
+              "nativeQueryRef": "Data e Horário Emissão Ordem Compra",
+              "displayName": "Emissão Ordem"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "nr_processoordemcompra"
+                }
+              },
+              "queryRef": "Sum(fat_compraproduto.nr_processoordemcompra)",
+              "nativeQueryRef": "nr_processoordemcompra",
+              "displayName": "Nº Fluig"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_fornecedor"
+                    }
+                  },
+                  "Property": "ds_fornecedor"
+                }
+              },
+              "queryRef": "dim_fornecedor.ds_fornecedor",
+              "nativeQueryRef": "Fornecedor",
+              "displayName": "Fornecedor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_estado"
+                    }
+                  },
+                  "Property": "nk_estado"
+                }
+              },
+              "queryRef": "dim_estado.nk_estado",
+              "nativeQueryRef": "UF",
+              "displayName": "UF"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_municipio"
+                    }
+                  },
+                  "Property": "nm_municipio"
+                }
+              },
+              "queryRef": "dim_municipio.nm_municipio",
+              "nativeQueryRef": "Municipio",
+              "displayName": "Municipio"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "ds_urgente"
+                }
+              },
+              "queryRef": "fat_compraproduto.ds_urgente",
+              "nativeQueryRef": "Urgente",
+              "displayName": "Urgente"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Maior Data Entrega Ordem Compra"
+                }
+              },
+              "queryRef": "_Medidas.Maior Data Entrega Ordem Compra",
+              "nativeQueryRef": "Data Entrega",
+              "displayName": "Data Entrega"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "ds_statusrecebimento"
+                }
+              },
+              "queryRef": "fat_compraproduto.ds_statusrecebimento",
+              "nativeQueryRef": "Status Recebimento",
+              "displayName": "Status Recebimento"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fat_compraproduto"
+                  }
+                },
+                "Property": "ds_statusrecebimento"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "fat_compraproduto"
+                                        }
+                                      },
+                                      "Property": "ds_urgente"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'Sim'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#FF0000'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "fat_compraproduto.ds_urgente"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Cor Fonte Data Entrega"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_Medidas.Maior Data Entrega Ordem Compra"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "57D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dim_filial.nm_nomeabreviado"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "316.1122587097112D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dim_fornecedor.ds_fornecedor"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a2bc40a258ce5575dd0a",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_filial"
+              }
+            },
+            "Property": "nm_nomeabreviado"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "73ce8447300228119e01",
+        "ordinal": 1,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Registros (Fato)"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "Qtd Registros (Fato)"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "6d6f7caa990b7050854a",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_tiposolicitacaocompra"
+              }
+            },
+            "Property": "ds_tiposolicitacaocompra"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "16285a08bbae9aad29bd",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_urgente"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6f7a66a826e039076914",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_fornecedor"
+              }
+            },
+            "Property": "ds_fornecedor"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "2f38631131de50b26182",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "LocalDateTable_280be8a5-d6e5-41b3-b3d6-e2ddfa71c1c5"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "ec6eba75262079c360d1",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "hr_emissaoordemcompra"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "2fd62624e1d49b4d9d41",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_statusaprovacaoordemcompra"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "f",
+              "Entity": "fat_compraproduto",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "ds_statusaprovacaoordemcompra"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Aprovado'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "ae1af069989345e0da05",
+        "ordinal": 8,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "nr_movimentoordemcompra"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ec321169cd2763130720",
+        "ordinal": 9,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "nr_processoordemcompra"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "408d3fb93c92a0b5544e",
+        "ordinal": 10,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "Indicador Prazo Ordem Compra"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "c082fbfe8b492c9d0637",
+        "ordinal": 11,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_estado"
+              }
+            },
+            "Property": "nk_estado"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "bc4f2ec0ad7170a0a293",
+        "ordinal": 12,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_municipio"
+              }
+            },
+            "Property": "nm_municipio"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "49febf882a745b04c132",
+        "ordinal": 13,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Data e Horário Emissão Ordem Compra"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "449cd915bb758676a940",
+        "ordinal": 14,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "LocalDateTable_24c16580-8ac7-4620-8464-aa5b458b510c"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "fd2a0ac7805494aaaa0a",
+        "ordinal": 15,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_statusrecebimento"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "f",
+              "Entity": "fat_compraproduto",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "ds_statusrecebimento"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Parcialmente recebido'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Pendente recebimento'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "09374d3b59214dd88083",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Maior Data Entrega Ordem Compra"
+          }
+        },
+        "type": "Advanced"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

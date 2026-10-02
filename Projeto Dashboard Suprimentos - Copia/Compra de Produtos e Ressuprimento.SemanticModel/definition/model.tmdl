@@ -1,0 +1,60 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["fat_compraproduto","dim_areadestinosolicitacao","dim_comprador","dim_localestoque","dim_requisitantesolicitante","dim_tiposolicitacaocompra","dim_atividadecultura","dim_empresa","dim_fornecedor","dim_filial","dim_produtos","dim_produtogrupo","dim_produtofamilia","dim_produtotipo","dim_regional","dim_safra","dim_tempo","dim_tempoperiodo","dim_unidademedida","dim_estado","dim_pais","dim_municipio","dim_glb_departamentos","dim_glb_contagerencial"]
+
+annotation PBI_ProTooling = ["DevMode","MCP-PBIModeling"]
+
+ref table fat_compraproduto
+ref table DateTableTemplate_75da492b-6a65-465a-a87a-65e4e0ef9c22
+ref table LocalDateTable_7329e7fe-38f5-4f72-aa0d-73c5599f0a02
+ref table LocalDateTable_79c69dfa-2fa7-466b-a5d0-d33441a81577
+ref table LocalDateTable_b261a665-bd37-4406-86ac-84d316ed0bdb
+ref table LocalDateTable_24c16580-8ac7-4620-8464-aa5b458b510c
+ref table LocalDateTable_80c691f9-23d5-412f-950f-c349c42a7bae
+ref table LocalDateTable_280be8a5-d6e5-41b3-b3d6-e2ddfa71c1c5
+ref table LocalDateTable_57dbfc6b-a19c-4e22-b877-faaf4d926a1b
+ref table LocalDateTable_434470d1-479f-4f7e-807b-3bc198dfcea7
+ref table LocalDateTable_c8e3e479-4fcf-4a33-9512-6ab79875cb41
+ref table dim_areadestinosolicitacao
+ref table dim_comprador
+ref table dim_localestoque
+ref table dim_requisitantesolicitante
+ref table dim_tiposolicitacaocompra
+ref table dim_atividadecultura
+ref table dim_empresa
+ref table dim_fornecedor
+ref table dim_filial
+ref table dim_produtos
+ref table LocalDateTable_98da5b0a-e113-4625-b0ba-67bc63e04bf0
+ref table LocalDateTable_6ac5a03d-000a-4612-86e7-95be62097810
+ref table dim_produtogrupo
+ref table dim_produtofamilia
+ref table dim_produtotipo
+ref table dim_regional
+ref table dim_safra
+ref table LocalDateTable_a7bb572d-494b-43b1-aaf0-2ad73fe5b2a0
+ref table LocalDateTable_62f46089-7811-45a1-93a2-854ed28e34a4
+ref table dim_tempo
+ref table LocalDateTable_68433cd7-004f-4f85-b029-cf62ba44ded6
+ref table dim_tempoperiodo
+ref table LocalDateTable_6cdac1b2-dcf9-45c1-97c0-94aa5a38e402
+ref table LocalDateTable_ddb340a3-0123-4a86-8e54-60d3551a220d
+ref table dim_unidademedida
+ref table dim_estado
+ref table dim_pais
+ref table dim_municipio
+ref table dim_glb_departamentos
+ref table dim_glb_contagerencial
+ref table _Medidas
+ref table LocalDateTable_ee8bbbd7-7fc7-4942-9f54-7ad9e9c9fab3
+
+ref cultureInfo pt-BR
+
