@@ -1135,7 +1135,7 @@ table fat_compraproduto
 		annotation SummarizationSetBy = Automatic
 
 	/// Coluna calculada (não medida) para permitir uso em slicer: retorna "Em Atraso" quando a abertura da solicitação (dt_aberturasolicitacaofluig + hr_aberturasolicitacaofluig) ultrapassou 24 horas em relação ao momento do último cálculo/atualização do modelo (NOW()), e "No Prazo" caso contrário (inclusive quando em branco). Diferente da medida equivalente, o valor é fixado no momento da atualização dos dados, não recalculado em tempo real.
-	column 'Indicador Prazo Aprovação' =
+	column 'Indicador Prazo Aprovação Solicitação (24h)' =
 			VAR Abertura = fat_compraproduto[dt_aberturasolicitacaofluig] + TIMEVALUE ( fat_compraproduto[hr_aberturasolicitacaofluig] )
 			VAR LimiteAtraso = NOW () - 1
 			RETURN
@@ -1154,7 +1154,7 @@ table fat_compraproduto
 		annotation SummarizationSetBy = Automatic
 
 	/// Coluna calculada (não medida) para permitir uso em slicer: retorna "Em Atraso" quando a aprovação da solicitação (dt_aprovacaosolicitacao + hr_aprovacaosolicitacao) ultrapassou 24 horas em relação ao momento do último cálculo/atualização do modelo (NOW()), e "No Prazo" caso contrário (inclusive quando em branco). Equivalente à medida 'Indicador Prazo Envio Cotação'.
-	column 'Indicador Prazo Envio Cotação' =
+	column 'Indicador Prazo Envio Cotação (24h)' =
 			VAR Aprovacao = fat_compraproduto[dt_aprovacaosolicitacao] + TIMEVALUE ( fat_compraproduto[hr_aprovacaosolicitacao] )
 			VAR LimiteAtraso = NOW () - 1
 			RETURN
@@ -1173,7 +1173,7 @@ table fat_compraproduto
 		annotation SummarizationSetBy = Automatic
 
 	/// Coluna calculada (não medida) para permitir uso em slicer: retorna "Em Atraso" quando a emissão da cotação (dt_emissaocotacao + hr_emissaocotacao) ultrapassou 24 horas em relação ao momento do último cálculo/atualização do modelo (NOW()), e "No Prazo" caso contrário (inclusive quando em branco). Equivalente à medida 'Indicador Prazo Negociação'.
-	column 'Indicador Prazo Negociação' =
+	column 'Indicador Prazo Negociação (48h)' =
 			VAR Emissao = fat_compraproduto[dt_emissaocotacao] + TIMEVALUE ( fat_compraproduto[hr_emissaocotacao] )
 			VAR LimiteAtraso = NOW () - 2
 			RETURN
@@ -1192,9 +1192,9 @@ table fat_compraproduto
 		annotation SummarizationSetBy = Automatic
 
 	/// Coluna calculada (não medida) para permitir uso em slicer: retorna "Em Atraso" quando a emissão da ordem de compra (dt_emissaoordemcompra + hr_emissaoordemcompra) ultrapassou 48 horas em relação ao momento do último cálculo/atualização do modelo (NOW()), e "No Prazo" caso contrário (inclusive quando em branco).
-	column 'Indicador Prazo Ordem Compra' =
+	column 'Indicador Prazo Ordem Compra (24h)' =
 			VAR Emissao = fat_compraproduto[dt_emissaoordemcompra] + TIMEVALUE ( fat_compraproduto[hr_emissaoordemcompra] )
-			VAR LimiteAtraso = NOW () - 2
+			VAR LimiteAtraso = NOW () - 1
 			RETURN
 			    IF (
 			        NOT ISBLANK ( Emissao ) && Emissao <= LimiteAtraso,
@@ -1275,21 +1275,24 @@ table fat_compraproduto
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Indicador Atraso Recebimento 72h' =
+	column 'Indicador Atraso Recebimento (72h)' =
 			IF(
 			    fat_compraproduto[ds_statusrecebimento] IN { "Pendente recebimento", "Parcialmente recebido" } &&
 			    NOT ISBLANK(fat_compraproduto[nr_identificadorordemcompra]) &&
 			    NOT ISBLANK(fat_compraproduto[dt_emissaoordemcompra]) &&
 			    NOT ISBLANK(fat_compraproduto[hr_emissaoordemcompra]) &&
 			    (fat_compraproduto[dt_emissaoordemcompra] + TIMEVALUE(fat_compraproduto[hr_emissaoordemcompra])) <= NOW() - 3,
-			    "Em Atraso (72h)",
+			    "Em Atraso",
 			    "No Prazo"
 			)
 		dataType: string
 		displayFolder: Suporte
 		lineageTag: e23bdcae-f971-4301-bafb-023389008974
+		summarizeBy: none
 
 		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
 
 	column ds_solicitacaocombustivel
 		dataType: string
@@ -1298,6 +1301,62 @@ table fat_compraproduto
 		sourceColumn: ds_solicitacaocombustivel
 
 		annotation SummarizationSetBy = Automatic
+
+	/// Indica se a ordem de compra (nr_identificadorordemcompra) possui pelo menos um item com ds_statusrespostacotacao igual a "[Não Urgente] Cotações insuficientes" ou "[Urgente] Cotações insuficientes". Retorna "Sim" ou "Não" ("Não" também quando a linha não tem ordem de compra).
+	column 'Indicador Cotações Insuficientes' =
+			VAR _OC = fat_compraproduto[nr_identificadorordemcompra]
+			RETURN
+			IF(
+			    ISBLANK(_OC),
+			    "Não",
+			    IF(
+			        NOT ISEMPTY(
+			            CALCULATETABLE(
+			                fat_compraproduto,
+			                ALL(fat_compraproduto),
+			                fat_compraproduto[nr_identificadorordemcompra] = _OC,
+			                fat_compraproduto[ds_statusrespostacotacao] IN {"[Não Urgente] Cotações insuficientes", "[Urgente] Cotações insuficientes"}
+			            )
+			        ),
+			        "Sim",
+			        "Não"
+			    )
+			)
+		dataType: string
+		displayFolder: Suporte
+		lineageTag: acd7137f-978a-4cb9-b611-8f71622e7b7a
+
+	/// Retorna "Sim" para todas as linhas de uma ordem de compra (nr_identificadorordemcompra) que tenha pelo menos um item com ds_statusaprovacaoordemcompra = "Aprovação em andamento" e variação de preço acima de 15% (se vl_precomedioultimacompra > 0, usa vl_percmediovariacaoultimacompra > 0.15; caso contrário usa vl_percvariacaoultimacompra > 0.15). Caso contrário, ou sem ordem de compra, retorna "Não". Assim, contar valores distintos de nr_identificadorordemcompra com "Sim" dá a quantidade de ordens com variação acima de 15%.
+	column 'Indicador Variação Preço Médio 15%' =
+			VAR _OC = fat_compraproduto[nr_identificadorordemcompra]
+			RETURN
+			IF(
+			    ISBLANK(_OC),
+			    "Não",
+			    IF(
+			        NOT ISEMPTY(
+			            CALCULATETABLE(
+			                fat_compraproduto,
+			                ALL(fat_compraproduto),
+			                fat_compraproduto[nr_identificadorordemcompra] = _OC,
+			                fat_compraproduto[ds_statusaprovacaoordemcompra] = "Aprovação em andamento",
+			                FILTER(
+			                    ALL(fat_compraproduto),
+			                    IF(
+			                        fat_compraproduto[vl_precomedioultimacompra] > 0,
+			                        fat_compraproduto[vl_percmediovariacaoultimacompra] > 0.15,
+			                        fat_compraproduto[vl_percvariacaoultimacompra] > 0.15
+			                    )
+			                )
+			            )
+			        ),
+			        "Sim",
+			        "Não"
+			    )
+			)
+		dataType: string
+		displayFolder: Suporte
+		lineageTag: 68d47302-137b-4e38-9a75-f56d503e4c84
 
 	partition fat_compraproduto = m
 		mode: import

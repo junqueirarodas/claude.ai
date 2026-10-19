@@ -23,7 +23,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtd Ordens Compra Pendentes de Aprovação (Atraso 48h)"
+                  "Property": "Qtd Ordens Compra Pendentes de Aprovação (Atraso 24h)"
                 }
               },
               "queryRef": "_Medidas.Qtd Ordens Compra Pendentes de Aprovação (Atraso 48h)",
@@ -43,7 +43,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Qtd Ordens Compra Pendentes de Aprovação (Atraso 48h)"
+                "Property": "Qtd Ordens Compra Pendentes de Aprovação (Atraso 24h)"
               }
             },
             "direction": "Descending"

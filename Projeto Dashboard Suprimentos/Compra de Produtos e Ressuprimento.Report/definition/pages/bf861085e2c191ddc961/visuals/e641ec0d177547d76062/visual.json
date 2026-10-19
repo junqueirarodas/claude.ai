@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "e641ec0d177547d76062",
   "position": {
-    "x": 233.33333333333331,
-    "y": 415.55555555555554,
+    "x": 234.16666666666669,
+    "y": 415.83333333333337,
     "z": 66000,
-    "height": 304.44444444444446,
-    "width": 1046.6666666666667,
+    "height": 304.16666666666669,
+    "width": 1044.1666666666667,
     "tabOrder": 65000
   },
   "visual": {
@@ -42,8 +42,8 @@
                 }
               },
               "queryRef": "fat_compraproduto.nr_movimentoordemcompra",
-              "nativeQueryRef": "Nº Ordem",
-              "displayName": "Nº Ordem"
+              "nativeQueryRef": "Ordem",
+              "displayName": "Ordem"
             },
             {
               "field": {
@@ -194,6 +194,36 @@
               "queryRef": "dim_comprador.nm_comprador",
               "nativeQueryRef": "Comprador",
               "displayName": "Comprador"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "Indicador Cotações Insuficientes"
+                }
+              },
+              "queryRef": "fat_compraproduto.ds_ordemcompracotacaoinsuficiente",
+              "nativeQueryRef": "COT-Insuf",
+              "displayName": "COT-Insuf"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "Indicador Variação Preço Médio 15%"
+                }
+              },
+              "queryRef": "fat_compraproduto.Indicador Variação Preço Médio 15%",
+              "nativeQueryRef": "PRC>15%",
+              "displayName": "PRC>15%"
             }
           ]
         }
@@ -519,6 +549,130 @@
             ],
             "metadata": "fat_compraproduto.ds_solicitacaocombustivel"
           }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "fat_compraproduto"
+                                        }
+                                      },
+                                      "Property": "Indicador Cotações Insuficientes"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'Sim'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#F60808'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "fat_compraproduto.ds_ordemcompracotacaoinsuficiente"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "fat_compraproduto"
+                                        }
+                                      },
+                                      "Property": "Indicador Variação Preço Médio 15%"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'Sim'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#F60808'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "fat_compraproduto.Indicador Variação Preço Médio 15%"
+          }
         }
       ],
       "columnWidth": [
@@ -741,7 +895,7 @@
                 "Entity": "fat_compraproduto"
               }
             },
-            "Property": "Indicador Prazo Ordem Compra"
+            "Property": "Indicador Prazo Ordem Compra (24h)"
           }
         },
         "type": "Categorical",
@@ -828,6 +982,48 @@
               }
             },
             "Property": "nm_comprador"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "15c0ffcf8f0c8fed32bf",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_solicitacaocombustivel"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "61816897321df8e626ca",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "Indicador Cotações Insuficientes"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "003242b118710307305b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "Indicador Variação Preço Médio 15%"
           }
         },
         "type": "Categorical"

@@ -60,7 +60,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#3D3C3B'"
+                      "Value": "'#F60808'"
                     }
                   }
                 }
@@ -399,6 +399,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "7ab44306d46aae2383b2",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Ordens Compra Pendentes de Recebimento (Atraso 72h)"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   },

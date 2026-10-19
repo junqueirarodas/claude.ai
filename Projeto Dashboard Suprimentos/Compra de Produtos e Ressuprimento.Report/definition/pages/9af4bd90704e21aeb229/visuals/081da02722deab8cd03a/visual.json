@@ -303,5 +303,23 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5ce857ea6ac38809e46e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Solicitações Pendentes de Cotação (Atraso 24h)"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  },
   "howCreated": "InsertVisualButton"
 }

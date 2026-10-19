@@ -399,6 +399,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "03f0a2a50f2b580d91c7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Cotações Pendentes de Negociação (Atraso 48h)"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   },

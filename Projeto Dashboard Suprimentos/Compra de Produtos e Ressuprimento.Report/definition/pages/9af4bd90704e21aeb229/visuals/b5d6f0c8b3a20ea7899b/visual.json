@@ -404,7 +404,7 @@
                                 },
                                 "Right": {
                                   "Literal": {
-                                    "Value": "48D"
+                                    "Value": "24D"
                                   }
                                 }
                               }
@@ -475,7 +475,7 @@
                                 },
                                 "Right": {
                                   "Literal": {
-                                    "Value": "48D"
+                                    "Value": "24D"
                                   }
                                 }
                               }
@@ -612,15 +612,7 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "82D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "fat_compraproduto.ds_statuscotacao"
           }

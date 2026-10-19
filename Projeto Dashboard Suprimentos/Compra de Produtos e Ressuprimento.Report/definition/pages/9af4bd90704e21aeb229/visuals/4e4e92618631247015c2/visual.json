@@ -399,6 +399,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "96ef3b0e3d20b488e5d5",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Cotações Pendentes de Envio ao Fornecedor"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   },

@@ -303,5 +303,23 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "764b7b130a88f814c415",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Cotações Pendentes de Envio ao Fornecedor"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  },
   "howCreated": "InsertVisualButton"
 }

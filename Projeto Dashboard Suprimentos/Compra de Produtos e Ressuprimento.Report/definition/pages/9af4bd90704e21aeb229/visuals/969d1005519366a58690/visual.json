@@ -372,6 +372,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "5af56ff73492bf3daca0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Solicitações Pendentes de Cotação (Atraso 24h)"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   },

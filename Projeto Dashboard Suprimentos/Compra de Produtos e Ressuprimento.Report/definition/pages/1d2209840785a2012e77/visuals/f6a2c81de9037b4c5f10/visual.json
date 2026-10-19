@@ -23,11 +23,11 @@
                       "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "Indicador Prazo Aprovação"
+                  "Property": "Indicador Prazo Aprovação Solicitação (24h)"
                 }
               },
               "queryRef": "fat_compraproduto.Indicador Prazo Aprovação",
-              "nativeQueryRef": "Indicador Prazo Aprovação",
+              "nativeQueryRef": "Indicador Prazo Aprovação Solicitação (24h)",
               "active": true
             }
           ]
@@ -176,6 +176,24 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "dad158b474bfe6428da7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "Indicador Prazo Aprovação Solicitação (24h)"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   },
   "howCreated": "InsertVisualButton"
 }

@@ -582,6 +582,13 @@
                   "Value": "'Lead Time médio por Filial (dias)'"
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
             }
           }
         }

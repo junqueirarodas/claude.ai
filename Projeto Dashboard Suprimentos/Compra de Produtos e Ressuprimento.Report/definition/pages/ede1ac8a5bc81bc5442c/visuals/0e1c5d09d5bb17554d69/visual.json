@@ -399,6 +399,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "f5bffe0a3b0698f79d8c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Cotações Aguardando Negociação"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   },

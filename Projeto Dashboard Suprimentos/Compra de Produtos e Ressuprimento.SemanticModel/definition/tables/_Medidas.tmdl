@@ -120,9 +120,9 @@ table _Medidas
 		lineageTag: bc15f89c-331f-447b-8516-eb200813c39d
 
 	/// Quantidade de solicitações de compra distintas (nr_processosolicitacaofluig) pendentes de aprovação (ds_statussolicitacaofluig = "Pendente") cuja abertura (dt_aberturasolicitacaofluig + hr_aberturasolicitacaofluig) já ultrapassou 24 horas em relação ao momento atual (NOW()). O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
-	measure 'Qtd Solicitações Pendentes de Aprovação (Atraso 48h)' =
+	measure 'Qtd Solicitações Pendentes de Aprovação (Atraso 24h)' =
 			VAR LimiteAtraso =
-			    NOW () - 2
+			    NOW () - 1
 			RETURN
 			    CALCULATE (
 			        DISTINCTCOUNT ( fat_compraproduto[nr_processosolicitacaofluig] ),
@@ -211,20 +211,53 @@ table _Medidas
 		displayFolder: KPIs
 		lineageTag: ccd452eb-d57e-47a7-bfc9-540d3498a77e
 
-	/// Quantidade de cotações distintas (nr_cotacao) pendentes de envio ao fornecedor: fat_compraproduto[ds_statuscotacao] = "Composição" e fat_compraproduto[nr_cotacao] não em branco/nulo. O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
-	measure 'Qtd Cotações Pendentes de Envio ao Fornecedor' = CALCULATE(DISTINCTCOUNT(fat_compraproduto[nr_cotacao]), fat_compraproduto[ds_statuscotacao] = "Composição", NOT ISBLANK(fat_compraproduto[nr_cotacao])) + 0
+	/// Quantidade de cotações pendentes de envio ao fornecedor: fat_compraproduto[ds_statuscotacao] = "Composição" e fat_compraproduto[nr_cotacao] não em branco/nulo. Conta combinações distintas de nr_cotacao e dim_filial[nm_nomeabreviado] (uma cotação com várias filiais conta uma vez por filial). O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
+	measure 'Qtd Cotações Pendentes de Envio ao Fornecedor' =
+			CALCULATE(
+			    COUNTROWS(
+			        SUMMARIZE(
+			            fat_compraproduto,
+			            fat_compraproduto[nr_cotacao],
+			            dim_filial[nm_nomeabreviado]
+			        )
+			    ),
+			    fat_compraproduto[ds_statuscotacao] = "Composição",
+			    NOT ISBLANK(fat_compraproduto[nr_cotacao])
+			) + 0
 		formatString: #,##0
 		displayFolder: KPIs
 		lineageTag: cb85e01c-ad18-4e34-829b-c51af39245d6
 
-	/// Quantidade de cotações distintas (nr_cotacao) aguardando resposta do fornecedor: fat_compraproduto[ds_statuscotacao] = "Aguardando Resposta Fornecedores" (valor exato encontrado na coluna; texto solicitado "Aguardando resposta do fornecedor" não existia) e fat_compraproduto[nr_cotacao] não em branco/nulo. O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
-	measure 'Qtd Cotações Aguardando Resposta do Fornecedor' = CALCULATE(DISTINCTCOUNT(fat_compraproduto[nr_cotacao]), fat_compraproduto[ds_statuscotacao] = "Aguardando Resposta Fornecedores", NOT ISBLANK(fat_compraproduto[nr_cotacao])) + 0
+	/// Quantidade de cotações aguardando resposta do fornecedor: fat_compraproduto[ds_statuscotacao] = "Aguardando Resposta Fornecedores" (valor exato da coluna) e fat_compraproduto[nr_cotacao] não em branco/nulo. Conta combinações distintas de nr_cotacao e dim_filial[nm_nomeabreviado] (uma cotação com várias filiais conta uma vez por filial). O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
+	measure 'Qtd Cotações Aguardando Resposta do Fornecedor' =
+			CALCULATE(
+			    COUNTROWS(
+			        SUMMARIZE(
+			            fat_compraproduto,
+			            fat_compraproduto[nr_cotacao],
+			            dim_filial[nm_nomeabreviado]
+			        )
+			    ),
+			    fat_compraproduto[ds_statuscotacao] = "Aguardando Resposta Fornecedores",
+			    NOT ISBLANK(fat_compraproduto[nr_cotacao])
+			) + 0
 		formatString: #,##0
 		displayFolder: KPIs
 		lineageTag: 285953d9-4e2a-4b8b-a106-73ec6e723025
 
-	/// Quantidade de cotações distintas (nr_cotacao) aguardando negociação: fat_compraproduto[ds_statuscotacao] igual a "Ordem de Compra Parcialmente Gerada", "Quadro Comparativo", "Negociação da Melhor Oferta", "Liberada" ou "Aguardando Análise da Cotação", e fat_compraproduto[nr_cotacao] não em branco/nulo. ATENÇÃO: dos 5 status, somente "Negociação da Melhor Oferta" existe atualmente na coluna ds_statuscotacao (valores reais: Não Cotado, Pedido de Compra, Concluída, Aguardando Resposta Fornecedores, Negociação da Melhor Oferta, Composição); os outros 4 não batem com nenhum valor existente e contribuem 0 até que passem a existir. O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
-	measure 'Qtd Cotações Aguardando Negociação' = CALCULATE(DISTINCTCOUNT(fat_compraproduto[nr_cotacao]), fat_compraproduto[ds_statuscotacao] IN {"Ordem de Compra Parcialmente Gerada", "Quadro Comparativo", "Negociação da Melhor Oferta", "Liberada", "Aguardando Análise da Cotação"}, NOT ISBLANK(fat_compraproduto[nr_cotacao])) + 0
+	/// Quantidade de cotações aguardando negociação: fat_compraproduto[ds_statuscotacao] igual a "Ordem de Compra Parcialmente Gerada", "Quadro Comparativo", "Negociação da Melhor Oferta", "Liberada" ou "Aguardando Análise da Cotação", e fat_compraproduto[nr_cotacao] não em branco/nulo. Conta combinações distintas de nr_cotacao e dim_filial[nm_nomeabreviado] (uma cotação com várias filiais conta uma vez por filial). ATENÇÃO: dos 5 status, somente "Negociação da Melhor Oferta" existe atualmente na coluna ds_statuscotacao; os outros 4 contribuem 0 até que passem a existir. O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
+	measure 'Qtd Cotações Aguardando Negociação' =
+			CALCULATE(
+			    COUNTROWS(
+			        SUMMARIZE(
+			            fat_compraproduto,
+			            fat_compraproduto[nr_cotacao],
+			            dim_filial[nm_nomeabreviado]
+			        )
+			    ),
+			    fat_compraproduto[ds_statuscotacao] IN {"Ordem de Compra Parcialmente Gerada", "Quadro Comparativo", "Negociação da Melhor Oferta", "Liberada", "Aguardando Análise da Cotação"},
+			    NOT ISBLANK(fat_compraproduto[nr_cotacao])
+			) + 0
 		formatString: #,##0
 		displayFolder: KPIs
 		lineageTag: e38b6e5e-8d29-494f-957c-f0fe71f8cbf2
@@ -235,12 +268,18 @@ table _Medidas
 		displayFolder: KPIs
 		lineageTag: d718ea2e-e392-49c3-a786-87dcdd94eb14
 
-	/// Quantidade de cotações distintas (nr_cotacao) pendentes de negociação com mais de 48 horas: fat_compraproduto[ds_statuscotacao] igual a "Aguardando Resposta Fornecedores", "Ordem de Compra Parcialmente Gerada", "Quadro Comparativo", "Negociação da Melhor Oferta", "Liberada" ou "Aguardando Análise da Cotação"; nr_cotacao não em branco/nulo (ajustado por confirmação do usuário: pedido original dizia 'igual a branco/nulo', o que tornaria DISTINCTCOUNT(nr_cotacao) sempre 0 ou 1); prazo contado a partir de dt_emissaocotacao + hr_emissaocotacao, mais de 48h em relação a NOW(). ATENÇÃO: dos 6 status, apenas "Aguardando Resposta Fornecedores" e "Negociação da Melhor Oferta" existem atualmente em ds_statuscotacao; os demais contribuem 0 até que passem a existir. O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
+	/// Quantidade de cotações pendentes de negociação com mais de 48 horas: fat_compraproduto[ds_statuscotacao] igual a "Aguardando Resposta Fornecedores", "Ordem de Compra Parcialmente Gerada", "Quadro Comparativo", "Negociação da Melhor Oferta", "Liberada" ou "Aguardando Análise da Cotação"; nr_cotacao não em branco/nulo; prazo contado a partir de dt_emissaocotacao + hr_emissaocotacao, mais de 48h em relação a NOW(). Conta combinações distintas de nr_cotacao e dim_filial[nm_nomeabreviado] (uma cotação com várias filiais conta uma vez por filial). ATENÇÃO: dos 6 status, apenas "Aguardando Resposta Fornecedores" e "Negociação da Melhor Oferta" existem atualmente em ds_statuscotacao; os demais contribuem 0 até que passem a existir. O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
 	measure 'Qtd Cotações Pendentes de Negociação (Atraso 48h)' =
 			VAR LimiteAtraso = NOW() - 2
 			RETURN
 			CALCULATE(
-			    DISTINCTCOUNT(fat_compraproduto[nr_cotacao]),
+			    COUNTROWS(
+			        SUMMARIZE(
+			            fat_compraproduto,
+			            fat_compraproduto[nr_cotacao],
+			            dim_filial[nm_nomeabreviado]
+			        )
+			    ),
 			    FILTER(
 			        fat_compraproduto,
 			        fat_compraproduto[ds_statuscotacao] IN {"Aguardando Resposta Fornecedores", "Ordem de Compra Parcialmente Gerada", "Quadro Comparativo", "Negociação da Melhor Oferta", "Liberada", "Aguardando Análise da Cotação"}
@@ -311,8 +350,8 @@ table _Medidas
 		lineageTag: c8966e83-bb58-4851-8de1-3b824c9b1c3e
 
 	/// Quantidade de ordens de compra distintas (nr_identificadorordemcompra) pendentes de aprovação com mais de 48 horas: fat_compraproduto[ds_statusaprovacaoordemcompra] = "Aprovação em andamento", nr_identificadorordemcompra não em branco/nulo, prazo contado a partir de dt_emissaoordemcompra + hr_emissaoordemcompra, mais de 48h em relação a NOW(). O "+ 0" garante retorno 0 (em vez de BLANK) quando não houver registros no contexto de filtro atual.
-	measure 'Qtd Ordens Compra Pendentes de Aprovação (Atraso 48h)' =
-			VAR LimiteAtraso = NOW() - 2
+	measure 'Qtd Ordens Compra Pendentes de Aprovação (Atraso 24h)' =
+			VAR LimiteAtraso = NOW() - 1
 			RETURN
 			CALCULATE(
 			    DISTINCTCOUNT(fat_compraproduto[nr_identificadorordemcompra]),

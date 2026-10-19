@@ -42,8 +42,8 @@
                 }
               },
               "queryRef": "fat_compraproduto.nr_movimentoordemcompra",
-              "nativeQueryRef": "Nº Ordem",
-              "displayName": "Nº Ordem"
+              "nativeQueryRef": "Ordem",
+              "displayName": "Ordem"
             },
             {
               "field": {
@@ -422,7 +422,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "330.764958987601D"
+                  "Value": "469.4145074829182D"
                 }
               }
             }
@@ -696,6 +696,34 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "ceb851e408001f2f6aca",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_solicitacaocombustivel"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ce41a08389787a534d4c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_comprador"
+              }
+            },
+            "Property": "nm_comprador"
+          }
+        },
+        "type": "Categorical"
       }
     ],
     "filterSortOrder": "Custom"

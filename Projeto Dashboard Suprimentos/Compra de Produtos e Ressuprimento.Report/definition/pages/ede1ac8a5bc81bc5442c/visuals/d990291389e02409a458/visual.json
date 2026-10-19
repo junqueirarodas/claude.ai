@@ -363,7 +363,7 @@
                                 },
                                 "Right": {
                                   "Literal": {
-                                    "Value": "33D"
+                                    "Value": "0D"
                                   }
                                 }
                               }
@@ -653,6 +653,13 @@
                         [
                           {
                             "Literal": {
+                              "Value": "'Não Cotado'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
                               "Value": "'Pedido de Compra'"
                             }
                           }
@@ -660,7 +667,7 @@
                         [
                           {
                             "Literal": {
-                              "Value": "'Não Cotado'"
+                              "Value": "'Composição'"
                             }
                           }
                         ]
@@ -752,6 +759,20 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "46abe5836bfb61fd6c86",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_solicitacaocombustivel"
+          }
+        },
+        "type": "Categorical"
       }
     ],
     "filterSortOrder": "Custom"

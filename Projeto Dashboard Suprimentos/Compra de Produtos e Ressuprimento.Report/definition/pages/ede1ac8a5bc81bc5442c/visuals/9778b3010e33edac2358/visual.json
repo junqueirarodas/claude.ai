@@ -365,6 +365,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "5fd5f452f460fc4ff728",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Cotações Aguardando Resposta do Fornecedor"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   },

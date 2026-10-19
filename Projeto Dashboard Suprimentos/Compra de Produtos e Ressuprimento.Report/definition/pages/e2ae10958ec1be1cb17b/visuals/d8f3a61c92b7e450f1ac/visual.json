@@ -23,11 +23,11 @@
                       "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "Indicador Atraso Recebimento 72h"
+                  "Property": "Indicador Atraso Recebimento (72h)"
                 }
               },
               "queryRef": "fat_compraproduto.Indicador Atraso Recebimento 72h",
-              "nativeQueryRef": "Indicador Atraso Recebimento 72h",
+              "nativeQueryRef": "Indicador Atraso Recebimento (72h)",
               "active": true
             }
           ]
@@ -74,7 +74,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Atraso Recebimento (72h)'"
+                  "Value": "'Prazo Recebimento'"
                 }
               }
             }
@@ -176,5 +176,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b15e09c238650e04e656",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "Indicador Atraso Recebimento (72h)"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

@@ -23,11 +23,11 @@
                       "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "Indicador Prazo Envio Cotação"
+                  "Property": "Indicador Prazo Envio Cotação (24h)"
                 }
               },
               "queryRef": "fat_compraproduto.Indicador Prazo Envio Cotação",
-              "nativeQueryRef": "Indicador Prazo Envio Cotação",
+              "nativeQueryRef": "Indicador Prazo Envio Cotação (24h)",
               "active": true
             }
           ]
@@ -183,6 +183,24 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "99a0b77adf808bfed39a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "Indicador Prazo Envio Cotação (24h)"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   },
   "howCreated": "InsertVisualButton"
 }

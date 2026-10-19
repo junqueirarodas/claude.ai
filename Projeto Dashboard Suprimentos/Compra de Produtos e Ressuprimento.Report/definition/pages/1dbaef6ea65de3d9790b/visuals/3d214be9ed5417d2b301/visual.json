@@ -225,6 +225,19 @@
             ]
           }
         }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -234,7 +247,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Performance Comprador na etapa Cotação/Negociação'"
+                  "Value": "'Performance Comprador na etapa Cotação/Negociação (dias)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -243,5 +263,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "23d2caf938e86cb2a4ff",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_comprador"
+              }
+            },
+            "Property": "nm_comprador"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1d0a145f76efdaa09536",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Cotação até Ordem Compra"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

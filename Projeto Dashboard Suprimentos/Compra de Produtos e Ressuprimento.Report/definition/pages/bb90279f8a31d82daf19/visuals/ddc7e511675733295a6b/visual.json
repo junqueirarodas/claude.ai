@@ -5,7 +5,7 @@
     "x": 0,
     "y": 0,
     "z": 0,
-    "height": 719.75683890577511,
+    "height": 720,
     "width": 1280,
     "tabOrder": 0
   },
@@ -59,6 +59,21 @@
               "queryRef": "fat_compraproduto.ds_ressuprimento",
               "nativeQueryRef": "RES",
               "displayName": "RES"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fat_compraproduto"
+                    }
+                  },
+                  "Property": "ds_urgente"
+                }
+              },
+              "queryRef": "fat_compraproduto.ds_urgente",
+              "nativeQueryRef": "URG",
+              "displayName": "URG"
             },
             {
               "field": {
@@ -158,22 +173,6 @@
                       "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "vl_perccotacaorespondida"
-                }
-              },
-              "queryRef": "Sum(fat_compraproduto.vl_perccotacaorespondida)",
-              "nativeQueryRef": "%COT.Res",
-              "displayName": "%COT.Res",
-              "format": "0.00%;-0.00%;0.00%"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "fat_compraproduto"
-                    }
-                  },
                   "Property": "vl_unitarionegociado"
                 }
               },
@@ -226,7 +225,7 @@
                 }
               },
               "queryRef": "Sum(fat_compraproduto.vl_precounitariocompra)",
-              "nativeQueryRef": "PRC.Neg1",
+              "nativeQueryRef": "vl_precounitariocompra",
               "displayName": "PRC.Neg",
               "format": "\"R$\" #,0.00;-\"R$\" #,0.00;\"R$\" #,0.00"
             },
@@ -254,13 +253,13 @@
                       "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "vl_variacaoprecoultimacompra"
+                  "Property": "vl_precomedioultimacompra"
                 }
               },
-              "queryRef": "Sum(fat_compraproduto.vl_variacaoprecoultimacompra)",
-              "nativeQueryRef": "Var.Ult.Com",
-              "displayName": "Var.Ult.Com",
-              "format": "\"R$\" #,0.###############;-\"R$\" #,0.###############;\"R$\" #,0.###############"
+              "queryRef": "Sum(fat_compraproduto.vl_precomedioultimacompra)",
+              "nativeQueryRef": "vl_precomedioultimacompra",
+              "displayName": "MD.Ult.Com",
+              "format": "\"R$\" #,0.00;-\"R$\" #,0.00;\"R$\" #,0.00"
             },
             {
               "field": {
@@ -270,38 +269,129 @@
                       "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "vl_percvariacaoultimacompra"
+                  "Property": "vl_percmediovariacaoultimacompra"
                 }
               },
-              "queryRef": "Sum(fat_compraproduto.vl_percvariacaoultimacompra)",
-              "nativeQueryRef": "%Ult.Com",
-              "displayName": "%Ult.Com",
+              "queryRef": "Sum(fat_compraproduto.vl_percmediovariacaoultimacompra)",
+              "nativeQueryRef": "vl_percmediovariacaoultimacompra1",
+              "displayName": "%MD.Ult.Com",
               "format": "0.00%;-0.00%;0.00%"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fat_compraproduto"
-                        }
-                      },
-                      "Property": "vl_totalcompra"
-                    }
-                  },
-                  "Function": 0
-                }
-              },
-              "queryRef": "Sum(fat_compraproduto.vl_totalcompra)",
-              "nativeQueryRef": "TOT.Com",
-              "displayName": "TOT.Com",
-              "format": "\"R$\" #,0.00;-\"R$\" #,0.00;\"R$\" #,0.00"
             }
           ]
         }
       }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "fat_compraproduto"
+                                        }
+                                      },
+                                      "Property": "ds_urgente"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'Sim'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#C62828'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "fat_compraproduto.ds_urgente"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'growToFit'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },
@@ -469,20 +559,6 @@
         "type": "Advanced"
       },
       {
-        "name": "95f8a346e607ad1fdcd8",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "vl_perccotacaorespondida"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "b1ac98cc4182f8a7868b",
         "field": {
           "Column": {
@@ -525,20 +601,6 @@
         "type": "Advanced"
       },
       {
-        "name": "44256dcc203f9f75fe88",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "vl_precounitariocompra"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "bbaebff73c5aef823bb1",
         "field": {
           "Column": {
@@ -548,53 +610,6 @@
               }
             },
             "Property": "vl_precounitarioultimacompra"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ff1340fd19dd63fe492e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "vl_variacaoprecoultimacompra"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "dcae8d443e8d21b688c6",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fat_compraproduto"
-              }
-            },
-            "Property": "vl_percvariacaoultimacompra"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "cff705173ca2f76728c0",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "fat_compraproduto"
-                  }
-                },
-                "Property": "vl_totalcompra"
-              }
-            },
-            "Function": 0
           }
         },
         "type": "Advanced"
@@ -612,6 +627,62 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "9472d9afb36d1818aef3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "ds_urgente"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "25c81a1f4c1693aa454c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "vl_precomedioultimacompra"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "eff5715c535f2dcb4f86",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "vl_precounitariocompra"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f0dc9119f084edd20790",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "vl_percmediovariacaoultimacompra"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

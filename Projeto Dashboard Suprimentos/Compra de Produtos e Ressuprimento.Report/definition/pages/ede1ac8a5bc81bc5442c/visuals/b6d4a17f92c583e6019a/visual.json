@@ -23,11 +23,11 @@
                       "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "Indicador Prazo Negociação"
+                  "Property": "Indicador Prazo Negociação (48h)"
                 }
               },
               "queryRef": "fat_compraproduto.Indicador Prazo Negociação",
-              "nativeQueryRef": "Indicador Prazo Negociação",
+              "nativeQueryRef": "Indicador Prazo Negociação (48h)",
               "active": true
             }
           ]
@@ -176,6 +176,24 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ecf98480fd2c91d0759d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "Indicador Prazo Negociação (48h)"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   },
   "howCreated": "InsertVisualButton"
 }

@@ -23,11 +23,11 @@
                       "Entity": "fat_compraproduto"
                     }
                   },
-                  "Property": "Indicador Prazo Ordem Compra"
+                  "Property": "Indicador Prazo Ordem Compra (24h)"
                 }
               },
               "queryRef": "fat_compraproduto.Indicador Prazo Ordem Compra",
-              "nativeQueryRef": "Indicador Prazo Ordem Compra",
+              "nativeQueryRef": "Indicador Prazo Ordem Compra (24h)",
               "active": true
             }
           ]
@@ -176,6 +176,24 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a2823cb9c9fc11733fbe",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fat_compraproduto"
+              }
+            },
+            "Property": "Indicador Prazo Ordem Compra (24h)"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   },
   "howCreated": "InsertVisualButton"
 }

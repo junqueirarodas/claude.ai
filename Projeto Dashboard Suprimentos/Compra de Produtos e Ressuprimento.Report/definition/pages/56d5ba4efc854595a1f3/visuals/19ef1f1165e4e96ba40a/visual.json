@@ -394,6 +394,13 @@
                   }
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
             }
           }
         }
@@ -458,6 +465,90 @@
         },
         "type": "Advanced",
         "howCreated": "User"
+      },
+      {
+        "name": "14a782ed93184f47efd9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Lead Time Geral"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7acaaf85f2f88cbdbb73",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Aprovação até Recebimento"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e965f29b3a28378d9849",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Ordem Compra até Aprovação"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9bc0f01a3955b95e59ca",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Cotação até Ordem Compra"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "680d1426df498ddbbfa9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Aprovação até Cotação"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "bac10ed71f6b2574161c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Abertura até Aprovação"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
