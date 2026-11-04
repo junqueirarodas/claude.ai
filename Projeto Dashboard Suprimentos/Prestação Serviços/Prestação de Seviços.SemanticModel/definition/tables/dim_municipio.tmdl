@@ -1,0 +1,55 @@
+table dim_municipio
+	lineageTag: 653059cc-3c5d-4915-a55f-e673c258eccc
+
+	column sk_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: 29c83cf7-446b-4800-9b11-d3300101671a
+		summarizeBy: none
+		sourceColumn: sk_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_pais
+		dataType: int64
+		formatString: 0
+		lineageTag: 23ce6b32-ed74-4a01-9453-a29a059c8051
+		summarizeBy: none
+		sourceColumn: nk_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_estado
+		dataType: string
+		lineageTag: bb34bb48-8c9a-4bb2-be21-e838bf089eb9
+		summarizeBy: none
+		sourceColumn: nk_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_municipio
+		dataType: string
+		lineageTag: 807a0b4e-5a62-430d-b61d-8a115d062653
+		summarizeBy: none
+		sourceColumn: nk_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_municipio
+		dataType: string
+		lineageTag: 7d1f889b-dd9b-43c2-b215-48b5f88f055a
+		summarizeBy: none
+		sourceColumn: nm_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_municipio = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_municipio1 = public{[Name="dim_municipio"]}[Data]
+				in
+				    dim_municipio1
+

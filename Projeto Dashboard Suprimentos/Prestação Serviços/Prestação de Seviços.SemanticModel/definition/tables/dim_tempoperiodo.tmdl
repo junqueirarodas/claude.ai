@@ -1,0 +1,257 @@
+table dim_tempoperiodo
+	lineageTag: 72209eb1-7b31-4fa6-8afe-85fb8a825557
+
+	column sk_tempoperiodo
+		dataType: int64
+		formatString: 0
+		lineageTag: c10d07b6-94c8-48bc-aba7-e16cc075faa8
+		summarizeBy: none
+		sourceColumn: sk_tempoperiodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ac351ca-a987-4f1c-b301-16e7126d90b9
+		summarizeBy: none
+		sourceColumn: nk_ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 3975dfaf-7994-4eb6-bd1c-818a9692b628
+		summarizeBy: none
+		sourceColumn: nk_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_datainicio
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5ef3fab4-6c3e-4c6c-bacb-793cbbae2840
+		summarizeBy: none
+		sourceColumn: dt_datainicio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dt_datafinal
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 554dc9ee-8cb8-4cda-b24a-08c9b482893f
+		summarizeBy: none
+		sourceColumn: dt_datafinal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column vl_qtd_dias
+		dataType: int64
+		formatString: 0
+		lineageTag: 48b0adb9-7948-46cf-a2a7-adde7a8da80b
+		summarizeBy: none
+		sourceColumn: vl_qtd_dias
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_mes
+		dataType: string
+		lineageTag: 25ef5a9b-2a24-4893-b03f-14b254057468
+		summarizeBy: none
+		sourceColumn: ds_nome_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_mes_abrev
+		dataType: string
+		lineageTag: c5d43340-7493-4253-9940-0b7bce402bbf
+		summarizeBy: none
+		sourceColumn: ds_nome_mes_abrev
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_bimestre
+		dataType: string
+		lineageTag: b94b2a4a-9a97-4c47-9291-17c2c666f663
+		summarizeBy: none
+		sourceColumn: ds_bimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_bimestre
+		dataType: string
+		lineageTag: f99354c6-31c0-4c62-b339-c10a798727f8
+		summarizeBy: none
+		sourceColumn: ds_nome_bimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_trimestre
+		dataType: string
+		lineageTag: c7cc4385-4ed1-469a-9069-705b971cdc1c
+		summarizeBy: none
+		sourceColumn: ds_trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_trimestre
+		dataType: string
+		lineageTag: 6d693c6c-04d5-4c24-9d90-2cb3147ead8c
+		summarizeBy: none
+		sourceColumn: ds_nome_trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_quadrimestre
+		dataType: string
+		lineageTag: 3bbecb8c-2a67-4dde-830e-19f6d535516e
+		summarizeBy: none
+		sourceColumn: ds_quadrimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_quadrimestre
+		dataType: string
+		lineageTag: 7116faac-313b-4650-8b92-92ebe57ff154
+		summarizeBy: none
+		sourceColumn: ds_nome_quadrimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_semestre
+		dataType: string
+		lineageTag: 79f29470-e5b8-4d71-9a15-74b42bc7439c
+		summarizeBy: none
+		sourceColumn: ds_semestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_semestre
+		dataType: string
+		lineageTag: e6365505-f0c3-443f-ab11-c89a1150966d
+		summarizeBy: none
+		sourceColumn: ds_nome_semestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_safra
+		dataType: string
+		lineageTag: 6745d927-5fc6-4c03-97c3-cb23628a3733
+		summarizeBy: none
+		sourceColumn: ds_safra
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_inicio
+		dataType: int64
+		formatString: 0
+		lineageTag: 5dc6eae3-0212-4a69-a713-c5e62a23db40
+		summarizeBy: none
+		sourceColumn: ds_anosafra_inicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_final
+		dataType: int64
+		formatString: 0
+		lineageTag: f7129a9a-372c-482d-a973-6d628721e563
+		summarizeBy: none
+		sourceColumn: ds_anosafra_final
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_bimestre
+		dataType: string
+		lineageTag: d4c36ac7-5553-4167-941e-78dd32ea4c26
+		summarizeBy: none
+		sourceColumn: ds_anosafra_bimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_nome_bimestre
+		dataType: string
+		lineageTag: acd0b396-ae2b-4432-b50e-29cbbd1665dc
+		summarizeBy: none
+		sourceColumn: ds_anosafra_nome_bimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_trimestre
+		dataType: string
+		lineageTag: f664f671-25e5-4093-a208-a922226d7e0c
+		summarizeBy: none
+		sourceColumn: ds_anosafra_trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_nome_trimestre
+		dataType: string
+		lineageTag: bf9a5545-474c-464d-810e-afb97cf16ea0
+		summarizeBy: none
+		sourceColumn: ds_anosafra_nome_trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_quadrimestre
+		dataType: string
+		lineageTag: 0bbce578-4cd6-41be-87f0-b7d87a0d4e42
+		summarizeBy: none
+		sourceColumn: ds_anosafra_quadrimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_nome_quadrimestre
+		dataType: string
+		lineageTag: aba95410-aedb-459d-b553-5b9c69eedd4b
+		summarizeBy: none
+		sourceColumn: ds_anosafra_nome_quadrimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_semestre
+		dataType: string
+		lineageTag: c8ebe239-80bf-4862-a7de-df880d336407
+		summarizeBy: none
+		sourceColumn: ds_anosafra_semestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_anosafra_nome_semestre
+		dataType: string
+		lineageTag: 3bc8f378-c4cf-495d-a4ef-090af06d371c
+		summarizeBy: none
+		sourceColumn: ds_anosafra_nome_semestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_referencia_mes_ano
+		dataType: string
+		lineageTag: 978c0edc-19f4-4eca-8bd4-94c69119da4f
+		summarizeBy: none
+		sourceColumn: ds_referencia_mes_ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_referencia_ano_mes
+		dataType: string
+		lineageTag: 33cb43ff-48ae-461c-af6f-2047dfb446ce
+		summarizeBy: none
+		sourceColumn: ds_referencia_ano_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_tempoperiodo = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_tempoperiodo1 = public{[Name="dim_tempoperiodo"]}[Data]
+				in
+				    dim_tempoperiodo1
+

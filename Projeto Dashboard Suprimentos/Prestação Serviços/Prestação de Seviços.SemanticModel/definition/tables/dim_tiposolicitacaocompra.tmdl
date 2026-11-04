@@ -1,0 +1,38 @@
+table dim_tiposolicitacaocompra
+	lineageTag: 556a6116-6624-4089-88b2-155656fdacef
+
+	column sk_tiposolicitacaocompra
+		dataType: int64
+		formatString: 0
+		lineageTag: b857d124-fc76-4cc4-8918-5b836435256c
+		summarizeBy: none
+		sourceColumn: sk_tiposolicitacaocompra
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_tiposolicitacaocompra
+		dataType: string
+		lineageTag: 8a095e6e-1a57-440f-adab-2b747ad9b4bc
+		summarizeBy: none
+		sourceColumn: nk_tiposolicitacaocompra
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_tiposolicitacaocompra
+		dataType: string
+		lineageTag: 9ccf9c45-c4e6-4258-84e7-831a9c742648
+		summarizeBy: none
+		sourceColumn: ds_tiposolicitacaocompra
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_tiposolicitacaocompra = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    suprimentos = Fonte{[Schema="suprimentos"]}[Data],
+				    dim_tiposolicitacaocompra1 = suprimentos{[Name="dim_tiposolicitacaocompra"]}[Data]
+				in
+				    dim_tiposolicitacaocompra1
+

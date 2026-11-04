@@ -1,0 +1,72 @@
+table dim_localestoque
+	lineageTag: 85c0a907-7f2e-4727-9cba-e1bbf091ac7f
+
+	column sk_localestoque
+		dataType: int64
+		formatString: 0
+		lineageTag: 5efce303-526d-4b51-8b0a-fa386961a97d
+		summarizeBy: none
+		sourceColumn: sk_localestoque
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 9669275d-4df0-4c79-8e3c-6ddcf1528b27
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codfilial
+		dataType: int64
+		formatString: 0
+		lineageTag: 472463d2-b035-40fa-867e-4f4d313afa44
+		summarizeBy: none
+		sourceColumn: nk_codfilial
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_localestoque
+		dataType: string
+		lineageTag: fbffb58f-bd9d-4249-bd30-8c773d3bc5de
+		summarizeBy: none
+		sourceColumn: nk_localestoque
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_localestoque
+		dataType: string
+		lineageTag: 97672233-5289-454f-ba4f-b5c878bebd7e
+		summarizeBy: none
+		sourceColumn: ds_localestoque
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_agrupadorlocalestoque
+		dataType: string
+		lineageTag: 9f820500-2f99-421d-8d2d-4b2091672b13
+		summarizeBy: none
+		sourceColumn: ds_agrupadorlocalestoque
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_ativo
+		dataType: string
+		lineageTag: 73998e4d-7826-4292-917a-f6ac2362eac5
+		summarizeBy: none
+		sourceColumn: ds_ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_localestoque = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    suprimentos = Fonte{[Schema="suprimentos"]}[Data],
+				    dim_localestoque1 = suprimentos{[Name="dim_localestoque"]}[Data]
+				in
+				    dim_localestoque1
+

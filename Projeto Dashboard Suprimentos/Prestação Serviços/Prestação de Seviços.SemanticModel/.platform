@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Prestação de Seviços"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4924b8e9-13fc-4692-86a5-0b8be04b980a"
+  }
+}

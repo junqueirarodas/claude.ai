@@ -1,0 +1,83 @@
+table dim_safra
+	lineageTag: 7482f9b8-9579-4712-ba8e-4c83be4c1b83
+
+	column sk_safra
+		dataType: int64
+		formatString: 0
+		lineageTag: 737569e5-3dc5-4ba6-b3c1-9d7ef8771ab9
+		summarizeBy: none
+		sourceColumn: sk_safra
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 575a023f-a0db-4580-9016-3c225f80840d
+		summarizeBy: sum
+		sourceColumn: nk_codcoligada
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codtb5flx
+		dataType: string
+		lineageTag: 94ad3d09-94b3-497a-9d45-bd710b88c648
+		summarizeBy: none
+		sourceColumn: nk_codtb5flx
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_descricao
+		dataType: string
+		lineageTag: 326c2b40-859f-499f-8ee4-9473f5f87eae
+		summarizeBy: none
+		sourceColumn: ds_descricao
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_fim
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ecda383e-8bba-4679-9549-e00020d6ea75
+		summarizeBy: none
+		sourceColumn: dt_fim
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dt_inicio
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f5826cf4-31fd-452c-a3d4-c56b52c2bd9b
+		summarizeBy: none
+		sourceColumn: dt_inicio
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition dim_safra = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_safra1 = public{[Name="dim_safra"]}[Data]
+				in
+				    dim_safra1
+
+	annotation PBI_ResultType = Table
+

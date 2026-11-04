@@ -1,0 +1,138 @@
+relationship 52a351c7-d642-4f46-b9e3-4413f09bfbec
+	fromColumn: fat_prestacaoservico.sk_atividadecultura
+	toColumn: dim_atividadecultura.sk_atividadecultura
+
+	annotation PBI_IsFromSource = FS
+
+relationship 685ef546-17b0-4541-ad2d-d1128dcfcd59
+	fromColumn: fat_prestacaoservico.sk_empresa
+	toColumn: dim_empresa.sk_empresa
+
+	annotation PBI_IsFromSource = FS
+
+relationship a4f08d4d-3411-4f7d-ae50-9f3fb5a98c4f
+	fromColumn: fat_prestacaoservico.sk_estado
+	toColumn: dim_estado.sk_estado
+
+	annotation PBI_IsFromSource = FS
+
+relationship a2b4bbdd-eb8d-434a-99b2-f8f40f28b7c3
+	fromColumn: fat_prestacaoservico.sk_filial
+	toColumn: dim_filial.sk_filial
+
+	annotation PBI_IsFromSource = FS
+
+relationship 8520e74c-6f3e-4f10-927b-f68621418b8f
+	fromColumn: fat_prestacaoservico.sk_fornecedor
+	toColumn: dim_fornecedor.sk_fornecedor
+
+	annotation PBI_IsFromSource = FS
+
+relationship 695cd63c-36c8-4044-a421-48bc1422bcc2
+	fromColumn: fat_prestacaoservico.sk_glb_contagerencial
+	toColumn: dim_glb_contagerencial.sk_glb_contagerencial
+
+	annotation PBI_IsFromSource = FS
+
+relationship 86548870-9abb-4f8b-a345-1941ba7c2ec6
+	fromColumn: fat_prestacaoservico.sk_glb_departamento
+	toColumn: dim_glb_departamentos.sk_glb_departamento
+
+	annotation PBI_IsFromSource = FS
+
+relationship fc593635-d896-4e0b-aef9-716ac0fcd685
+	fromColumn: fat_prestacaoservico.sk_municipio
+	toColumn: dim_municipio.sk_municipio
+
+	annotation PBI_IsFromSource = FS
+
+relationship c2038341-b66b-4283-9025-c3c795e67f37
+	fromColumn: fat_prestacaoservico.sk_pais
+	toColumn: dim_pais.sk_pais
+
+	annotation PBI_IsFromSource = FS
+
+relationship d150903a-36eb-4819-91fe-3efdd11ed18c
+	fromColumn: fat_prestacaoservico.sk_produtofamilia
+	toColumn: dim_produtofamilia.sk_produtofamilia
+
+	annotation PBI_IsFromSource = FS
+
+relationship bf5dc3b6-73d2-4fe2-8378-064ee64cf76f
+	fromColumn: fat_prestacaoservico.sk_produtogrupo
+	toColumn: dim_produtogrupo.sk_produtogrupo
+
+	annotation PBI_IsFromSource = FS
+
+relationship 826bff91-75d3-4f8b-a07c-1ade9ac04323
+	fromColumn: fat_prestacaoservico.sk_produto
+	toColumn: dim_produtos.sk_produto
+
+	annotation PBI_IsFromSource = FS
+
+relationship ac7f9110-e1a2-4d3e-88fc-52e801dd2b43
+	fromColumn: fat_prestacaoservico.sk_produtotipo
+	toColumn: dim_produtotipo.sk_produtotipo
+
+	annotation PBI_IsFromSource = FS
+
+relationship 939eb911-5836-458f-8ab3-8317ff6abbf6
+	fromColumn: fat_prestacaoservico.sk_regional
+	toColumn: dim_regional.sk_regional
+
+	annotation PBI_IsFromSource = FS
+
+relationship 77cbcbb7-4d19-4493-9be5-873ffa3619fe
+	fromColumn: fat_prestacaoservico.sk_safra
+	toColumn: dim_safra.sk_safra
+
+	annotation PBI_IsFromSource = FS
+
+relationship ff023798-d52f-4616-b040-355a98d86a01
+	fromColumn: fat_prestacaoservico.sk_tempo
+	toColumn: dim_tempo.sk_data
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4fa2005c-b07f-4b0c-997e-17bcd1a4a283
+	fromColumn: fat_prestacaoservico.sk_tempoperiodo
+	toColumn: dim_tempoperiodo.sk_tempoperiodo
+
+	annotation PBI_IsFromSource = FS
+
+relationship 2b25b03f-e476-456e-ae64-a9d2be0f9c7e
+	fromColumn: fat_prestacaoservico.sk_unidademedida
+	toColumn: dim_unidademedida.sk_unidademedida
+
+	annotation PBI_IsFromSource = FS
+
+relationship b0e03803-4cca-44ae-97aa-9550e84ca241
+	fromColumn: fat_prestacaoservico.sk_areadestinosolicitacao
+	toColumn: dim_areadestinosolicitacao.sk_areadestinosolicitacao
+
+	annotation PBI_IsFromSource = FS
+
+relationship d698351a-a937-486e-ab61-ed2fc8819f27
+	fromColumn: fat_prestacaoservico.sk_comprador
+	toColumn: dim_comprador.sk_comprador
+
+	annotation PBI_IsFromSource = FS
+
+relationship 1f0d5767-025d-4dff-a6d7-3106ae40e19b
+	fromColumn: fat_prestacaoservico.sk_localestoque
+	toColumn: dim_localestoque.sk_localestoque
+
+	annotation PBI_IsFromSource = FS
+
+relationship 6c1c7a9b-a2ea-48b2-a3b4-c2dd4d6005c8
+	fromColumn: fat_prestacaoservico.sk_requisitantesolicitante
+	toColumn: dim_requisitantesolicitante.sk_requisitantesolicitante
+
+	annotation PBI_IsFromSource = FS
+
+relationship 5d36b26f-60c5-403a-92e2-7d8a16a07d3f
+	fromColumn: fat_prestacaoservico.sk_tiposolicitacaocompra
+	toColumn: dim_tiposolicitacaocompra.sk_tiposolicitacaocompra
+
+	annotation PBI_IsFromSource = FS
+

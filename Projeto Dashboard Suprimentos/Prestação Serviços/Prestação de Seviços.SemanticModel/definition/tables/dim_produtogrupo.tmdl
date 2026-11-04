@@ -1,0 +1,47 @@
+table dim_produtogrupo
+	lineageTag: e95fe0f6-3a58-4a74-a2bf-f769c702eac9
+
+	column sk_produtogrupo
+		dataType: int64
+		formatString: 0
+		lineageTag: e70130d8-ad7c-4212-8f07-fbb6f1b9ff5f
+		summarizeBy: none
+		sourceColumn: sk_produtogrupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codtb2fat
+		dataType: string
+		lineageTag: ea8a88de-c119-44fe-81f1-6203c64d991f
+		summarizeBy: none
+		sourceColumn: nk_codtb2fat
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_produtogrupo
+		dataType: string
+		lineageTag: dcd5c2d1-2428-4afe-9e2f-d4eba47cd907
+		summarizeBy: none
+		sourceColumn: ds_produtogrupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: bb0474e6-4d3d-4111-810a-79096ec64fd0
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_produtogrupo = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_produtogrupo1 = public{[Name="dim_produtogrupo"]}[Data]
+				in
+				    dim_produtogrupo1
+

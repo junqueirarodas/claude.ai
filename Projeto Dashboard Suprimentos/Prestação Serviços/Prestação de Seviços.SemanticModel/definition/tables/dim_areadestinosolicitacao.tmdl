@@ -1,0 +1,38 @@
+table dim_areadestinosolicitacao
+	lineageTag: a91d50de-36dc-4e7b-8a8c-985c433d73c2
+
+	column sk_areadestinosolicitacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 8f680b5c-dbdc-4d77-afaa-0350fdf84406
+		summarizeBy: none
+		sourceColumn: sk_areadestinosolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_areadestinosolicitacao
+		dataType: string
+		lineageTag: 643e7637-15d5-4fca-9877-4a17e4416648
+		summarizeBy: none
+		sourceColumn: nk_areadestinosolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_areadestinosolicitacao
+		dataType: string
+		lineageTag: 9ece779c-feb5-4e07-b659-8e7cc985ba89
+		summarizeBy: none
+		sourceColumn: ds_areadestinosolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_areadestinosolicitacao = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    suprimentos = Fonte{[Schema="suprimentos"]}[Data],
+				    dim_areadestinosolicitacao1 = suprimentos{[Name="dim_areadestinosolicitacao"]}[Data]
+				in
+				    dim_areadestinosolicitacao1
+

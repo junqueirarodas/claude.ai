@@ -1,0 +1,56 @@
+table dim_glb_contagerencial
+	lineageTag: 5af20982-f4aa-4b21-949e-e9b4f0f448c2
+
+	column sk_glb_contagerencial
+		dataType: int64
+		formatString: 0
+		lineageTag: 48c3dcfd-100a-4c62-8d98-0bac61f776ce
+		summarizeBy: none
+		sourceColumn: sk_glb_contagerencial
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ab3d5d3-a89e-48a5-b298-1c5c199a2218
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcontagerencial
+		dataType: string
+		lineageTag: 992ff97d-2070-4e14-9fff-ef524cf4b61c
+		summarizeBy: none
+		sourceColumn: nk_codcontagerencial
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nomecontagerencial
+		dataType: string
+		lineageTag: c456a662-1912-4ae3-9914-94189d53f1b2
+		summarizeBy: none
+		sourceColumn: ds_nomecontagerencial
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcolcontagerencial
+		dataType: int64
+		formatString: 0
+		lineageTag: fd4e1900-0935-4833-acf2-fbcdac17e365
+		summarizeBy: none
+		sourceColumn: nk_codcolcontagerencial
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_glb_contagerencial = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_glb_contagerencial1 = public{[Name="dim_glb_contagerencial"]}[Data]
+				in
+				    dim_glb_contagerencial1
+

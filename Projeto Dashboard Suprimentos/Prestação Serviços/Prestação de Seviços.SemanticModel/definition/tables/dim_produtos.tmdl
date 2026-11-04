@@ -1,0 +1,353 @@
+table dim_produtos
+	lineageTag: 18c1bb4c-6302-48e9-843a-09a230a492e8
+
+	column sk_produto
+		dataType: int64
+		formatString: 0
+		lineageTag: a8afc7b8-c70c-4961-8721-1cacff6ef242
+		summarizeBy: none
+		sourceColumn: sk_produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_idprd
+		dataType: int64
+		formatString: 0
+		lineageTag: 95e2949e-0f09-4b01-98c7-55f39e40720c
+		summarizeBy: none
+		sourceColumn: nk_idprd
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nomeproduto
+		dataType: string
+		lineageTag: 4a7f7011-855e-4234-986f-857081edc4ae
+		summarizeBy: none
+		sourceColumn: ds_nomeproduto
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 708d8ed4-5cc3-40b4-a145-facc450ec644
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_pertencelistaprotecitrus
+		dataType: string
+		lineageTag: 0cb45e0b-5962-4057-891b-44ba0b631ecd
+		summarizeBy: none
+		sourceColumn: ds_pertencelistaprotecitrus
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_periodocarenciadefensivo
+		dataType: int64
+		formatString: 0
+		lineageTag: e35d56e1-73d0-4fda-af92-3088288b5b31
+		summarizeBy: none
+		sourceColumn: nr_periodocarenciadefensivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_ultimacompra
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 447d244f-0fb9-4210-9e1c-d8bbd753f7aa
+		summarizeBy: none
+		sourceColumn: dt_ultimacompra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column vl_precoultimacompra
+		dataType: double
+		lineageTag: df100da4-88eb-4487-bb43-e7e46f7ecbd4
+		summarizeBy: none
+		sourceColumn: vl_precoultimacompra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dt_ultimabaixaestoque
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: eeb700da-dabb-46de-8324-9701be73d733
+		summarizeBy: none
+		sourceColumn: dt_ultimabaixaestoque
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column vl_consumojaneiro
+		dataType: double
+		lineageTag: 564fce21-2145-42dc-a7d3-31bc72a624a6
+		summarizeBy: none
+		sourceColumn: vl_consumojaneiro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumofevereiro
+		dataType: double
+		lineageTag: e340a34a-7e4b-4ad6-8346-a641a031323e
+		summarizeBy: none
+		sourceColumn: vl_consumofevereiro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumomarco
+		dataType: double
+		lineageTag: 742f577f-13d9-40e2-b3f4-8bf3890cdca9
+		summarizeBy: none
+		sourceColumn: vl_consumomarco
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumoabril
+		dataType: double
+		lineageTag: 632484b5-8522-4c5b-89a8-e6daa2d88ce1
+		summarizeBy: none
+		sourceColumn: vl_consumoabril
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumomaio
+		dataType: double
+		lineageTag: a05821a0-d0be-4960-994f-0bc3dd8c8fde
+		summarizeBy: none
+		sourceColumn: vl_consumomaio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumojunho
+		dataType: double
+		lineageTag: 99e4a8a1-8b9d-435c-9284-f46d66687d85
+		summarizeBy: none
+		sourceColumn: vl_consumojunho
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumojulho
+		dataType: double
+		lineageTag: 7bcd062a-be07-4859-9bc6-c2a202bc123d
+		summarizeBy: none
+		sourceColumn: vl_consumojulho
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumoagosto
+		dataType: double
+		lineageTag: f2e61ea8-594e-4a36-ae5b-28fab8db9dce
+		summarizeBy: none
+		sourceColumn: vl_consumoagosto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumosetembro
+		dataType: double
+		lineageTag: 51f8b0ed-6aca-4661-9650-d1851dfcfd6d
+		summarizeBy: none
+		sourceColumn: vl_consumosetembro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumooutubro
+		dataType: double
+		lineageTag: 9d25a898-07f0-4ce1-9795-bbebf64e18de
+		summarizeBy: none
+		sourceColumn: vl_consumooutubro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumonovembro
+		dataType: double
+		lineageTag: 38c30346-4e44-4054-87e3-512b03161133
+		summarizeBy: none
+		sourceColumn: vl_consumonovembro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_consumodezembro
+		dataType: double
+		lineageTag: 42a8a9e8-6fa1-4856-aaba-ed439ac20ef5
+		summarizeBy: none
+		sourceColumn: vl_consumodezembro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquejaneiro
+		dataType: double
+		lineageTag: 0b1d1ad7-f23b-4bb4-92cc-3da806b406c4
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquejaneiro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquefevereiro
+		dataType: double
+		lineageTag: 50d088d5-49be-44c6-a54e-02d501f7338e
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquefevereiro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquemarco
+		dataType: double
+		lineageTag: fc269f06-ca82-4c31-a499-e9ec6e977b82
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquemarco
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoqueabril
+		dataType: double
+		lineageTag: 1156c356-231e-45ca-8599-6704c24e7ab8
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoqueabril
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquemaio
+		dataType: double
+		lineageTag: 9043638a-3206-4fed-b760-1b9cf41a3198
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquemaio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquejunho
+		dataType: double
+		lineageTag: fc70269b-b275-4d8e-a7b2-2a8d6249afd0
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquejunho
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquejulho
+		dataType: double
+		lineageTag: d9d74169-2dd3-4b38-bcd5-34d7ff9c824d
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquejulho
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoqueagosto
+		dataType: double
+		lineageTag: 1c8d006a-ec4e-4959-acbf-0cffd421eb5e
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoqueagosto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquesetembro
+		dataType: double
+		lineageTag: 65f7a924-5898-44e6-aab0-356981cecd23
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquesetembro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoqueoutubro
+		dataType: double
+		lineageTag: eb1e3c81-55b2-4230-9902-9bdf10ceea0f
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoqueoutubro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquenovembro
+		dataType: double
+		lineageTag: fd3c8c80-f4fe-4dd8-abcd-bf0f5f686626
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquenovembro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_frequenciabaixaestoquedezembro
+		dataType: double
+		lineageTag: ba1e8e13-b8c5-4546-a1f1-1a37800288b4
+		summarizeBy: none
+		sourceColumn: vl_frequenciabaixaestoquedezembro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ds_tipo
+		dataType: string
+		lineageTag: 40de3f79-be29-4056-9caf-50f23a2ed3b7
+		summarizeBy: none
+		sourceColumn: ds_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_ativo
+		dataType: string
+		lineageTag: f0db1488-3ebc-420d-8053-005c60953c4e
+		summarizeBy: none
+		sourceColumn: ds_ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_produtos = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_produtos1 = public{[Name="dim_produtos"]}[Data]
+				in
+				    dim_produtos1
+

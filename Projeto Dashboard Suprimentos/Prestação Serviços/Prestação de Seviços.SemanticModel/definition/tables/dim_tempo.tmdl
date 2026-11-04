@@ -1,0 +1,252 @@
+table dim_tempo
+	lineageTag: f8600ec5-07bd-4dae-a2e5-013e2013abc3
+
+	column sk_data
+		dataType: int64
+		formatString: 0
+		lineageTag: 879e39a8-e0ea-4589-bdf6-90a62cc1caef
+		summarizeBy: none
+		sourceColumn: sk_data
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: eefb3848-611e-4ddc-8704-e8e96e2bf1de
+		summarizeBy: none
+		sourceColumn: dt_data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ds_ano
+		dataType: int64
+		formatString: 0
+		lineageTag: b7710c29-68d5-4ad2-aa25-888b01c3b939
+		summarizeBy: none
+		sourceColumn: ds_ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_mes
+		dataType: int64
+		formatString: 0
+		lineageTag: e66d175e-e1f2-49dd-9a4f-a2af362458aa
+		summarizeBy: none
+		sourceColumn: ds_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_dia
+		dataType: int64
+		formatString: 0
+		lineageTag: a4c4c325-b1eb-432f-a161-9d8d5a30b962
+		summarizeBy: none
+		sourceColumn: ds_dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_dia_semana
+		dataType: int64
+		formatString: 0
+		lineageTag: 0f849296-8c86-4510-b1ac-fffb19f1b531
+		summarizeBy: none
+		sourceColumn: ds_dia_semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_dia_ano
+		dataType: int64
+		formatString: 0
+		lineageTag: bda4d9c8-59b4-4f82-860f-828d55cd4d90
+		summarizeBy: none
+		sourceColumn: ds_dia_ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_ano_bissexto
+		dataType: string
+		lineageTag: 0efd3462-c824-463b-8daa-b712bddf23c2
+		summarizeBy: none
+		sourceColumn: ds_ano_bissexto
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_dia_util
+		dataType: string
+		lineageTag: e182f4be-aef6-4173-bbe7-80ec843fe859
+		summarizeBy: none
+		sourceColumn: ds_dia_util
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_fim_semana
+		dataType: string
+		lineageTag: f281a34a-9606-42da-9b60-8d1c11460bc2
+		summarizeBy: none
+		sourceColumn: ds_fim_semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_feriado
+		dataType: string
+		lineageTag: bd22ad38-b403-4cb7-96a0-d27abd98bfb1
+		summarizeBy: none
+		sourceColumn: ds_feriado
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_pre_feriado
+		dataType: string
+		lineageTag: c530d12a-d4f4-47cd-9004-697a80dca377
+		summarizeBy: none
+		sourceColumn: ds_pre_feriado
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_pos_feriado
+		dataType: string
+		lineageTag: 6bd8cbbd-86e7-4e76-ab16-4765e4f1b6f6
+		summarizeBy: none
+		sourceColumn: ds_pos_feriado
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_feriado
+		dataType: string
+		lineageTag: cdcf2d82-70f2-470e-a997-3dac689c67c5
+		summarizeBy: none
+		sourceColumn: ds_nome_feriado
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_dia_semana
+		dataType: string
+		lineageTag: 3a96ff85-563a-4d8c-8fdd-b270c85fa254
+		summarizeBy: none
+		sourceColumn: ds_nome_dia_semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_dia_semana_abrev
+		dataType: string
+		lineageTag: c9e24531-d93c-4552-91d6-a3e6c74a26d5
+		summarizeBy: none
+		sourceColumn: ds_nome_dia_semana_abrev
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_mes
+		dataType: string
+		lineageTag: 7b45dd63-65b4-4239-bda9-879b4dcf5cef
+		summarizeBy: none
+		sourceColumn: ds_nome_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nome_mes_abrev
+		dataType: string
+		lineageTag: 999f66e5-aae5-4f55-9520-ea84667d608f
+		summarizeBy: none
+		sourceColumn: ds_nome_mes_abrev
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_quinzena
+		dataType: int64
+		formatString: 0
+		lineageTag: fbfcc127-7478-42f4-a596-ceb3cac991de
+		summarizeBy: none
+		sourceColumn: ds_quinzena
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_bimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: 629b2ad4-15a7-43c5-af6b-07687e741a96
+		summarizeBy: none
+		sourceColumn: ds_bimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_trimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: 544dabca-d17a-4be7-a80e-762f51d1bdf6
+		summarizeBy: none
+		sourceColumn: ds_trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_semestre
+		dataType: int64
+		formatString: 0
+		lineageTag: c93dce73-a2ff-4187-b068-9303086458b1
+		summarizeBy: none
+		sourceColumn: ds_semestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nr_semana_mes
+		dataType: int64
+		formatString: 0
+		lineageTag: f6b956bf-bb3d-43c4-97e1-9daba1660485
+		summarizeBy: none
+		sourceColumn: ds_nr_semana_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nr_semana_ano
+		dataType: int64
+		formatString: 0
+		lineageTag: a2613ea5-5071-4339-bbac-183c79cb21da
+		summarizeBy: none
+		sourceColumn: ds_nr_semana_ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_estacao_ano
+		dataType: string
+		lineageTag: 6d5a41c8-2de3-4db7-8371-4bde1f98d28b
+		summarizeBy: none
+		sourceColumn: ds_estacao_ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_data_por_extenso
+		dataType: string
+		lineageTag: 7c664782-c20a-4c89-ac24-e2b674c9f066
+		summarizeBy: none
+		sourceColumn: ds_data_por_extenso
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_evento
+		dataType: string
+		lineageTag: 2f936cd7-19ed-425d-bd9c-42ffeed0de82
+		summarizeBy: none
+		sourceColumn: ds_evento
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_semana
+		dataType: string
+		lineageTag: 90316d7b-791f-4e6e-948b-627ae1eb798d
+		summarizeBy: none
+		sourceColumn: ds_semana
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_tempo = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_tempo1 = public{[Name="dim_tempo"]}[Data]
+				in
+				    dim_tempo1
+

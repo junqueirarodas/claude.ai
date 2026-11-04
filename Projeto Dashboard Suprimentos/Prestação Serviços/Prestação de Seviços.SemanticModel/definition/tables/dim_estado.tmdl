@@ -1,0 +1,55 @@
+table dim_estado
+	lineageTag: db7a601b-2221-4a17-ac5f-13366fc6b573
+
+	column sk_estado
+		dataType: int64
+		formatString: 0
+		lineageTag: c66797ff-9980-4b71-ba54-846518826deb
+		summarizeBy: none
+		sourceColumn: sk_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_pais
+		dataType: int64
+		formatString: 0
+		lineageTag: dade18c7-2e6e-4b55-9361-c7592c9b2e67
+		summarizeBy: none
+		sourceColumn: nk_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_estado
+		dataType: string
+		lineageTag: c410e2b4-518f-46f4-9b11-ba6f31a764b5
+		summarizeBy: none
+		sourceColumn: nk_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_estado
+		dataType: string
+		lineageTag: a6415aee-861d-495f-8ded-40fef39005cd
+		summarizeBy: none
+		sourceColumn: nm_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_nacional
+		dataType: string
+		lineageTag: 24838989-abd1-4ea2-b603-00d16235bbda
+		summarizeBy: none
+		sourceColumn: ds_nacional
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_estado = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_estado1 = public{[Name="dim_estado"]}[Data]
+				in
+				    dim_estado1
+

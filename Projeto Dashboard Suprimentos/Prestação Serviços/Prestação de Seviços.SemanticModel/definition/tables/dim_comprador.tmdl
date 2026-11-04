@@ -1,0 +1,63 @@
+table dim_comprador
+	lineageTag: 318c91e2-eb51-48ca-90fd-462a791875ee
+
+	column sk_comprador
+		dataType: int64
+		formatString: 0
+		lineageTag: 88a880b0-602d-4fd4-af5e-2cb6ad9ae4cc
+		summarizeBy: none
+		sourceColumn: sk_comprador
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 3132f0f7-d66a-4c37-820f-cc1ef9cf70cc
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_comprador
+		dataType: string
+		lineageTag: fd891262-f7c3-4fe3-8973-f34cd0532b65
+		summarizeBy: none
+		sourceColumn: nk_comprador
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_comprador
+		dataType: string
+		lineageTag: c6bb8e3d-8fc6-4f54-848e-d50308e1cc9c
+		summarizeBy: none
+		sourceColumn: nm_comprador
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_cpf
+		dataType: string
+		lineageTag: 8bbe91dd-87fd-49d0-b695-ad1e95322561
+		summarizeBy: none
+		sourceColumn: ds_cpf
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_email
+		dataType: string
+		lineageTag: 9a62a3ad-f2a8-45c4-808e-ca724b49619a
+		summarizeBy: none
+		sourceColumn: ds_email
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_comprador = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    suprimentos = Fonte{[Schema="suprimentos"]}[Data],
+				    dim_comprador1 = suprimentos{[Name="dim_comprador"]}[Data]
+				in
+				    dim_comprador1
+

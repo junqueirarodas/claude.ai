@@ -1,0 +1,56 @@
+table dim_fornecedor
+	lineageTag: 42e4d031-b1b6-4f13-aed8-f4e9e1142d20
+
+	column sk_fornecedor
+		dataType: int64
+		formatString: 0
+		lineageTag: 715932ae-28f5-475c-ac60-c8694c440c6c
+		summarizeBy: none
+		sourceColumn: sk_fornecedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcfo
+		dataType: string
+		lineageTag: 3e47085b-af0a-48bb-83e6-d05629a3401f
+		summarizeBy: none
+		sourceColumn: nk_codcfo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_fornecedor
+		dataType: string
+		lineageTag: 9709ff89-d40b-47da-915d-4f32af24fff7
+		summarizeBy: none
+		sourceColumn: ds_fornecedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcolfornecedor
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d20a6fe-88ed-4d1d-86ba-625297c57606
+		summarizeBy: none
+		sourceColumn: nk_codcolfornecedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b71780e-5bd8-4b10-aa7e-f5489ddaaa46
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_fornecedor = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_fornecedor1 = public{[Name="dim_fornecedor"]}[Data]
+				in
+				    dim_fornecedor1
+

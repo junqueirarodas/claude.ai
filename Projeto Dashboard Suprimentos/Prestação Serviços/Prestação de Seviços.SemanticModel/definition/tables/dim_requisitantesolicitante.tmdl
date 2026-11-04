@@ -1,0 +1,55 @@
+table dim_requisitantesolicitante
+	lineageTag: ec3a7cc7-0af3-4e31-9ba8-874ae6a346f3
+
+	column sk_requisitantesolicitante
+		dataType: int64
+		formatString: 0
+		lineageTag: 369c0c78-8328-426a-948c-04319c4fa319
+		summarizeBy: none
+		sourceColumn: sk_requisitantesolicitante
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a6f4d24-1ac2-4102-b723-7e8c43c67ac4
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_requisitantesolicitante
+		dataType: string
+		lineageTag: 2e86ece1-b63c-4dae-af53-9a18eabb3825
+		summarizeBy: none
+		sourceColumn: nk_requisitantesolicitante
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_requisitantesolicitante
+		dataType: string
+		lineageTag: b4baceb4-37fa-4547-8ae7-57af31b417c9
+		summarizeBy: none
+		sourceColumn: nm_requisitantesolicitante
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_cpf
+		dataType: string
+		lineageTag: 48ff88d7-1d3a-4bd8-80ce-60837e7f2655
+		summarizeBy: none
+		sourceColumn: ds_cpf
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_requisitantesolicitante = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    suprimentos = Fonte{[Schema="suprimentos"]}[Data],
+				    dim_requisitantesolicitante1 = suprimentos{[Name="dim_requisitantesolicitante"]}[Data]
+				in
+				    dim_requisitantesolicitante1
+

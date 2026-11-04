@@ -1,0 +1,41 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["fat_prestacaoservico","dim_areadestinosolicitacao","dim_comprador","dim_localestoque","dim_requisitantesolicitante","dim_tiposolicitacaocompra","dim_empresa","dim_filial","dim_safra","dim_regional","dim_atividadecultura","dim_tempo","dim_tempoperiodo","dim_produtos","dim_produtogrupo","dim_produtofamilia","dim_produtotipo","dim_fornecedor","dim_unidademedida","dim_pais","dim_estado","dim_municipio","dim_glb_departamentos","dim_glb_contagerencial"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table fat_prestacaoservico
+ref table dim_areadestinosolicitacao
+ref table dim_comprador
+ref table dim_localestoque
+ref table dim_requisitantesolicitante
+ref table dim_tiposolicitacaocompra
+ref table dim_empresa
+ref table dim_filial
+ref table dim_safra
+ref table dim_regional
+ref table dim_atividadecultura
+ref table dim_tempo
+ref table dim_tempoperiodo
+ref table dim_produtos
+ref table dim_produtogrupo
+ref table dim_produtofamilia
+ref table dim_produtotipo
+ref table dim_fornecedor
+ref table dim_unidademedida
+ref table dim_pais
+ref table dim_estado
+ref table dim_municipio
+ref table dim_glb_departamentos
+ref table dim_glb_contagerencial
+
+ref cultureInfo pt-BR
+

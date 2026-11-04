@@ -1,0 +1,81 @@
+table dim_filial
+	lineageTag: 2a6f1515-a5fe-4338-9eda-a5401518c73f
+
+	column sk_filial
+		dataType: int64
+		formatString: 0
+		lineageTag: 1837fc07-acea-4194-b410-e8f75b209c16
+		summarizeBy: none
+		sourceColumn: sk_filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codfilial
+		dataType: int64
+		formatString: 0
+		lineageTag: c4bd37e2-4744-4f74-b21e-71412a41914e
+		summarizeBy: none
+		sourceColumn: nk_codfilial
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 357741dd-41df-4cfc-9647-3c115d2b13d2
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_nomefantasia
+		dataType: string
+		lineageTag: 8cd194d3-408c-46bf-904a-a38560341aad
+		summarizeBy: none
+		sourceColumn: nm_nomefantasia
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_nomeabreviado
+		dataType: string
+		lineageTag: 59798ad4-7a61-4782-9c05-2f15a131ec0d
+		summarizeBy: none
+		sourceColumn: nm_nomeabreviado
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_codfilialagrupamento
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ce91812-e14e-4fa6-b13e-3a4129c9d051
+		summarizeBy: none
+		sourceColumn: nr_codfilialagrupamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_estado
+		dataType: string
+		lineageTag: cd75ee3f-a638-48a3-8cac-dd4faaf83eb1
+		summarizeBy: none
+		sourceColumn: ds_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_pais
+		dataType: string
+		lineageTag: 4b971def-2d69-4b91-9b0f-1721c1643d24
+		summarizeBy: none
+		sourceColumn: ds_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_filial = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_filial1 = public{[Name="dim_filial"]}[Data]
+				in
+				    dim_filial1
+

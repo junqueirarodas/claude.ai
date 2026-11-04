@@ -1,0 +1,937 @@
+table fat_prestacaoservico
+	lineageTag: bea9e1c2-0e44-4ea8-8599-788451f7c650
+
+	column sk_empresa
+		dataType: int64
+		formatString: 0
+		lineageTag: b7899d10-ab8f-4f54-a926-dde74f885afd
+		summarizeBy: none
+		sourceColumn: sk_empresa
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_filial
+		dataType: int64
+		formatString: 0
+		lineageTag: 7b714879-41a4-4b09-9721-4b23e51df4ac
+		summarizeBy: none
+		sourceColumn: sk_filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_safra
+		dataType: int64
+		formatString: 0
+		lineageTag: dcfb32d7-bd83-4ff5-afbc-6769719d3c83
+		summarizeBy: none
+		sourceColumn: sk_safra
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_tiposolicitacaocompra
+		dataType: int64
+		formatString: 0
+		lineageTag: 4e0c4664-ddd6-4bf0-b739-4ddf7cd62199
+		summarizeBy: none
+		sourceColumn: sk_tiposolicitacaocompra
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_areadestinosolicitacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 72289c2f-fb4f-43e6-8cb4-c1bcd699bd97
+		summarizeBy: none
+		sourceColumn: sk_areadestinosolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_atividadecultura
+		dataType: int64
+		formatString: 0
+		lineageTag: 8afe3c65-5a38-4e9b-8667-f809c0e92303
+		summarizeBy: none
+		sourceColumn: sk_atividadecultura
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_regional
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b825ab4-b88b-4a05-b06d-d7447079264f
+		summarizeBy: none
+		sourceColumn: sk_regional
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_requisitantesolicitante
+		dataType: int64
+		formatString: 0
+		lineageTag: 075cebbc-c7b7-4718-844a-c23cda42bbef
+		summarizeBy: none
+		sourceColumn: sk_requisitantesolicitante
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_comprador
+		dataType: int64
+		formatString: 0
+		lineageTag: c3222a93-b433-46aa-bb99-18e707b7cabb
+		summarizeBy: none
+		sourceColumn: sk_comprador
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_localestoque
+		dataType: int64
+		formatString: 0
+		lineageTag: 18c127c0-5409-4093-9900-8e1509dc2949
+		summarizeBy: none
+		sourceColumn: sk_localestoque
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_tempo
+		dataType: int64
+		formatString: 0
+		lineageTag: aee105d9-7454-4969-9664-347220c20566
+		summarizeBy: none
+		sourceColumn: sk_tempo
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_tempoperiodo
+		dataType: int64
+		formatString: 0
+		lineageTag: fef5f026-4b11-4dff-8296-223418697565
+		summarizeBy: none
+		sourceColumn: sk_tempoperiodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_produto
+		dataType: int64
+		formatString: 0
+		lineageTag: 976dc653-6879-40e5-bae7-50b7862731b1
+		summarizeBy: none
+		sourceColumn: sk_produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_produtotipo
+		dataType: int64
+		formatString: 0
+		lineageTag: cb28bab2-1237-4dd2-a8d5-9401900a5f2e
+		summarizeBy: none
+		sourceColumn: sk_produtotipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_produtogrupo
+		dataType: int64
+		formatString: 0
+		lineageTag: 33eef9b9-ed0b-4632-b3cd-43e7dc9d354b
+		summarizeBy: none
+		sourceColumn: sk_produtogrupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_produtofamilia
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ee49bf5-f8f2-4173-86de-a0db2127a739
+		summarizeBy: none
+		sourceColumn: sk_produtofamilia
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_unidademedida
+		dataType: int64
+		formatString: 0
+		lineageTag: 0f0c81f5-8542-42cd-aaae-4314a42a6b3d
+		summarizeBy: none
+		sourceColumn: sk_unidademedida
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_fornecedor
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ff49a69-5e95-4370-bc47-d5e30638d571
+		summarizeBy: none
+		sourceColumn: sk_fornecedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: f529dc54-b71c-427c-adea-9cfeadd140b5
+		summarizeBy: none
+		sourceColumn: sk_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_estado
+		dataType: int64
+		formatString: 0
+		lineageTag: c3244dee-022a-41f5-9c9c-f162c02fd94d
+		summarizeBy: none
+		sourceColumn: sk_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_pais
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c84918f-97fe-4410-9cb4-4dd5d80026a0
+		summarizeBy: none
+		sourceColumn: sk_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_glb_departamento
+		dataType: int64
+		formatString: 0
+		lineageTag: 76928c89-7d5b-4d20-80a8-8b74070ebb86
+		summarizeBy: none
+		sourceColumn: sk_glb_departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column sk_glb_contagerencial
+		dataType: int64
+		formatString: 0
+		lineageTag: f8112113-8318-483a-8cd9-f23b29856eb9
+		summarizeBy: none
+		sourceColumn: sk_glb_contagerencial
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_processosolicitacaofluig
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a3f4f2c-2180-4cd0-90a8-f7cb1d4af589
+		summarizeBy: sum
+		sourceColumn: nr_processosolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_sequenciasolicitacaofluig
+		dataType: int64
+		formatString: 0
+		lineageTag: 1a6a2eb3-8d5d-4e3e-8482-af5d4fb7dbaf
+		summarizeBy: sum
+		sourceColumn: nr_sequenciasolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_aberturasolicitacaofluig
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7aacf173-a7d1-48ab-b6c4-304c7320a0c9
+		summarizeBy: none
+		sourceColumn: dt_aberturasolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_aberturasolicitacaofluig
+		dataType: string
+		lineageTag: a4c36319-bed1-4532-93c4-da0acd016c5f
+		summarizeBy: none
+		sourceColumn: hr_aberturasolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_statussolicitacaofluig
+		dataType: string
+		lineageTag: e5a6942e-ec63-4bea-bd7c-c59e30024c51
+		summarizeBy: none
+		sourceColumn: ds_statussolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_etapasolicitacaofluig
+		dataType: string
+		lineageTag: 3d93b851-d54f-48a1-bf17-35b76e8fe888
+		summarizeBy: none
+		sourceColumn: ds_etapasolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdsolicitadasolicitacaofluig
+		dataType: double
+		lineageTag: 178e73a0-a86d-4f2c-b4d9-a1c98bef90ca
+		summarizeBy: sum
+		sourceColumn: vl_qtdsolicitadasolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_qtdaprovadasolicitacaofluig
+		dataType: double
+		lineageTag: 3f369720-5280-4a78-8bdd-1cb34d92e13e
+		summarizeBy: sum
+		sourceColumn: vl_qtdaprovadasolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_qtdreprovadasolicitacaofluig
+		dataType: double
+		lineageTag: bfd40b98-8f31-4c0e-a10c-94c5983addcf
+		summarizeBy: sum
+		sourceColumn: vl_qtdreprovadasolicitacaofluig
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ds_urgente
+		dataType: string
+		lineageTag: a70c4b0d-b777-4021-9ec4-88e5dd6b7c3a
+		summarizeBy: none
+		sourceColumn: ds_urgente
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_aprovacaosolicitacao
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7535ef95-b1cf-4eec-9052-9577b38bea43
+		summarizeBy: none
+		sourceColumn: dt_aprovacaosolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_aprovacaosolicitacao
+		dataType: string
+		lineageTag: 27c73211-ace6-4fbb-8c5b-c1248e78ed74
+		summarizeBy: none
+		sourceColumn: hr_aprovacaosolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_responsavelaprovacaosolicitacao
+		dataType: string
+		lineageTag: 3021bfad-d4fc-4cbd-af10-3fb068c0dcb4
+		summarizeBy: none
+		sourceColumn: nm_responsavelaprovacaosolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_comunicacaoprestadorservico
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 310d6de3-5428-4a55-b550-3d1a499b5bad
+		summarizeBy: none
+		sourceColumn: dt_comunicacaoprestadorservico
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_comunicacaoprestadorservico
+		dataType: string
+		lineageTag: 88b87310-d2c4-4169-9eb5-d6f88db549fe
+		summarizeBy: none
+		sourceColumn: hr_comunicacaoprestadorservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_relatorioprestacaoservico
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 855e32d4-f9ea-46fc-a9c8-f58148b30b1d
+		summarizeBy: none
+		sourceColumn: dt_relatorioprestacaoservico
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_relatorioprestacaoservico
+		dataType: string
+		lineageTag: bb02c60b-3666-4a7c-8f6f-7a4cf54ec0db
+		summarizeBy: none
+		sourceColumn: hr_relatorioprestacaoservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_negociacaosuprimentos
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1d1d0435-9d18-4c91-abfe-13f13517c083
+		summarizeBy: none
+		sourceColumn: dt_negociacaosuprimentos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_negociacaosuprimentos
+		dataType: string
+		lineageTag: 6605b44f-af64-4d72-aa25-a10e353aa3c3
+		summarizeBy: none
+		sourceColumn: hr_negociacaosuprimentos
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_aprovacaonegociacaosuprimentos
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 31933639-bc19-47f7-9701-408dca5ad55e
+		summarizeBy: none
+		sourceColumn: dt_aprovacaonegociacaosuprimentos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_aprovacaonegociacaosuprimentos
+		dataType: string
+		lineageTag: 2b33a24f-d87b-4c79-b55a-bcfc0246dfa0
+		summarizeBy: none
+		sourceColumn: hr_aprovacaonegociacaosuprimentos
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_identificadorsolicitacaoerp
+		dataType: int64
+		formatString: 0
+		lineageTag: db7ee16e-fac6-4b95-bc20-1a31b7a0c044
+		summarizeBy: sum
+		sourceColumn: nr_identificadorsolicitacaoerp
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_movimentosolicitacaoerp
+		dataType: string
+		lineageTag: ed68e99b-82c0-466f-bbd6-51b553f0c8c5
+		summarizeBy: none
+		sourceColumn: nr_movimentosolicitacaoerp
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_statussolicitacaoerp
+		dataType: string
+		lineageTag: a6497a87-2587-45c2-8693-e42e68283fb6
+		summarizeBy: none
+		sourceColumn: ds_statussolicitacaoerp
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdpendentecompra
+		dataType: double
+		lineageTag: 5bb9fa35-6096-49c4-a830-08b8d56e8510
+		summarizeBy: sum
+		sourceColumn: vl_qtdpendentecompra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_qtdconcluidasolicitacao
+		dataType: double
+		lineageTag: 076519df-da4b-48ab-b860-4287e2d2eab1
+		summarizeBy: sum
+		sourceColumn: vl_qtdconcluidasolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ds_motivoconclusaosolicitacao
+		dataType: string
+		lineageTag: da240385-aae6-4151-adb6-a4750d120289
+		summarizeBy: none
+		sourceColumn: ds_motivoconclusaosolicitacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_cotacao
+		dataType: string
+		lineageTag: 2fa2b6ba-1403-4c91-aa71-b0d1b9156281
+		summarizeBy: none
+		sourceColumn: nr_cotacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_emissaocotacao
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 285f171c-5e18-4105-8024-a34b3038d634
+		summarizeBy: none
+		sourceColumn: dt_emissaocotacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_emissaocotacao
+		dataType: string
+		lineageTag: 635c83ce-0d50-4c75-bbeb-24c4e0a693de
+		summarizeBy: none
+		sourceColumn: hr_emissaocotacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdcotacaoenviada
+		dataType: int64
+		formatString: 0
+		lineageTag: 87fea843-2669-4560-a78b-f1ac74f42964
+		summarizeBy: sum
+		sourceColumn: vl_qtdcotacaoenviada
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdcotacaorespondidapreco
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f0b9d0d-180c-48c9-8931-99d385e72c85
+		summarizeBy: sum
+		sourceColumn: vl_qtdcotacaorespondidapreco
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdcotacaorespondidaindisponivel
+		dataType: int64
+		formatString: 0
+		lineageTag: 86555a1d-3479-4594-a65c-4071c6fdad56
+		summarizeBy: sum
+		sourceColumn: vl_qtdcotacaorespondidaindisponivel
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdcotacaorespondida
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ad1dba7-d4e0-424a-9169-836d7dc07be6
+		summarizeBy: sum
+		sourceColumn: vl_qtdcotacaorespondida
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdcotacaonaorespondida
+		dataType: int64
+		formatString: 0
+		lineageTag: 57bebbc3-db8f-4b97-a2d0-bdcc5e96f740
+		summarizeBy: sum
+		sourceColumn: vl_qtdcotacaonaorespondida
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_perccotacaorespondida
+		dataType: double
+		lineageTag: 13842ce2-9c7c-4fa8-9d37-69170fcbbf4d
+		summarizeBy: sum
+		sourceColumn: vl_perccotacaorespondida
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_unitariodescontonegociado
+		dataType: double
+		lineageTag: fe78d9da-df47-45c7-aae1-f5bc29cd9e7a
+		summarizeBy: sum
+		sourceColumn: vl_unitariodescontonegociado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_totaldescontonegociado
+		dataType: double
+		lineageTag: 67b7dc19-4a02-47b9-94be-b33c297af6d1
+		summarizeBy: sum
+		sourceColumn: vl_totaldescontonegociado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_percentualdescontonegociado
+		dataType: double
+		lineageTag: 5331ddbc-bc06-4b18-b81e-fdbc6070c1b0
+		summarizeBy: sum
+		sourceColumn: vl_percentualdescontonegociado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_unitarionegociado
+		dataType: double
+		lineageTag: 4f3acf01-3dbf-40b4-8aa7-876607d7ce2b
+		summarizeBy: sum
+		sourceColumn: vl_unitarionegociado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_totalnegociado
+		dataType: double
+		lineageTag: 42aba3f9-0404-44c8-84bf-ca7dc5bca214
+		summarizeBy: sum
+		sourceColumn: vl_totalnegociado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dt_previstaentregacotacao
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b0ccc8f5-db3a-461f-88f0-d85d0553621d
+		summarizeBy: none
+		sourceColumn: dt_previstaentregacotacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ds_statusrespostacotacao
+		dataType: string
+		lineageTag: b8747468-73b6-409c-925e-40d9df436040
+		summarizeBy: none
+		sourceColumn: ds_statusrespostacotacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_statuscotacao
+		dataType: string
+		lineageTag: a761b002-aa50-4f46-9358-7493f4ad45c2
+		summarizeBy: none
+		sourceColumn: ds_statuscotacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_motivonegociacaocotacao
+		dataType: string
+		lineageTag: 7fd68625-cff7-4eec-bec9-9ca775e4c670
+		summarizeBy: none
+		sourceColumn: ds_motivonegociacaocotacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_identificadorpedidocompra
+		dataType: int64
+		formatString: 0
+		lineageTag: f310ab68-178f-4d88-80ce-72b628ceea6c
+		summarizeBy: sum
+		sourceColumn: nr_identificadorpedidocompra
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_movimentopedidocompra
+		dataType: string
+		lineageTag: 38e6c699-20e4-4764-8928-09facd3c05f3
+		summarizeBy: none
+		sourceColumn: nr_movimentopedidocompra
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_sequenciapedidocompra
+		dataType: int64
+		formatString: 0
+		lineageTag: bea2f0d8-bd40-4b2a-8c01-73b0a6223b86
+		summarizeBy: sum
+		sourceColumn: nr_sequenciapedidocompra
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_emissaopedidocompra
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1447717c-bd14-495e-9c11-172a54e45022
+		summarizeBy: none
+		sourceColumn: dt_emissaopedidocompra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_emissaopedidocompra
+		dataType: string
+		lineageTag: b45de1e5-cd09-483f-a4b2-aab5430b6b67
+		summarizeBy: none
+		sourceColumn: hr_emissaopedidocompra
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_identificadorordemservico
+		dataType: int64
+		formatString: 0
+		lineageTag: 754636d8-973d-4579-927f-ec4b8eccb116
+		summarizeBy: sum
+		sourceColumn: nr_identificadorordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_movimentoordemservico
+		dataType: string
+		lineageTag: b7e24221-6454-42bb-8851-8bc3ce0ee954
+		summarizeBy: none
+		sourceColumn: nr_movimentoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_sequenciaordemservico
+		dataType: int64
+		formatString: 0
+		lineageTag: 1dc61431-18e9-4b84-bbc5-d6e7bfe8cebc
+		summarizeBy: sum
+		sourceColumn: nr_sequenciaordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_emissaoordemservico
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 24d50b03-4d36-456d-9e03-d711d057cd85
+		summarizeBy: none
+		sourceColumn: dt_emissaoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_emissaoordemservico
+		dataType: string
+		lineageTag: 461848fd-47ff-4dbe-a546-39225b1a6f92
+		summarizeBy: none
+		sourceColumn: hr_emissaoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_processoordemservico
+		dataType: int64
+		formatString: 0
+		lineageTag: 54f7264c-4774-479b-8af2-a9c919a9797a
+		summarizeBy: sum
+		sourceColumn: nr_processoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdcomprada
+		dataType: double
+		lineageTag: 8636d503-eca6-4330-9073-8ecd92fdb892
+		summarizeBy: sum
+		sourceColumn: vl_qtdcomprada
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_precounitariocompra
+		dataType: double
+		lineageTag: 5e9d0801-cf09-44ef-a36b-bd0de5102612
+		summarizeBy: sum
+		sourceColumn: vl_precounitariocompra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_totalcompra
+		dataType: double
+		lineageTag: 11a36d8f-5326-44b7-92f3-6cc1ae208b7b
+		summarizeBy: sum
+		sourceColumn: vl_totalcompra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_qtdpendenterecebimento
+		dataType: double
+		lineageTag: ba2f6b3d-1b23-4c0c-8201-96db6200434a
+		summarizeBy: sum
+		sourceColumn: vl_qtdpendenterecebimento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_qtdconcluidaordemservico
+		dataType: double
+		lineageTag: 56cfb50f-accf-4b2c-8be6-5180bd855207
+		summarizeBy: sum
+		sourceColumn: vl_qtdconcluidaordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dt_previstaentregaordemservico
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ed2fa475-56c1-4724-98ec-1bb884420bd5
+		summarizeBy: none
+		sourceColumn: dt_previstaentregaordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dt_aprovacaoordemservico
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 22efae48-329f-43c1-be98-0be59b5178b7
+		summarizeBy: none
+		sourceColumn: dt_aprovacaoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_aprovacaoordemservico
+		dataType: string
+		lineageTag: 837870ba-9119-4599-ab91-a377e3fb1e95
+		summarizeBy: none
+		sourceColumn: hr_aprovacaoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_responsavelaprovacaoordemservico
+		dataType: string
+		lineageTag: 6f166ad9-72d1-46f4-aa6a-6114f3b7a00b
+		summarizeBy: none
+		sourceColumn: nm_responsavelaprovacaoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_statusaprovacaoordemservico
+		dataType: string
+		lineageTag: 8fc486fc-3974-4490-9046-9811c4da5907
+		summarizeBy: none
+		sourceColumn: ds_statusaprovacaoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_motivoconclusaoordemservico
+		dataType: string
+		lineageTag: 899eb5c3-966c-412e-bae5-8bda8a7c7362
+		summarizeBy: none
+		sourceColumn: ds_motivoconclusaoordemservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_emissaorecebimento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a5bf9353-6eb7-4b36-972a-4677312dafbd
+		summarizeBy: none
+		sourceColumn: dt_emissaorecebimento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hr_emissaorecebimento
+		dataType: string
+		lineageTag: 4cfb0077-67c0-47bf-92da-3d7ec4ff823c
+		summarizeBy: none
+		sourceColumn: hr_emissaorecebimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_qtdtotalrecebida
+		dataType: double
+		lineageTag: 0d79ef19-0c9f-4fd4-954e-5a13e955b318
+		summarizeBy: sum
+		sourceColumn: vl_qtdtotalrecebida
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ds_statusrecebimento
+		dataType: string
+		lineageTag: aefdf069-3280-4d63-9ff2-f4d03be482fd
+		summarizeBy: none
+		sourceColumn: ds_statusrecebimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_leadtimeaberturasolicitacaoaprov
+		dataType: int64
+		formatString: 0
+		lineageTag: e14a17ed-473f-476b-8894-18e1160a6b75
+		summarizeBy: sum
+		sourceColumn: vl_leadtimeaberturasolicitacaoaprov
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_leadtimeaprovsolicitacaocomunic
+		dataType: int64
+		formatString: 0
+		lineageTag: c5de1a4a-1ac4-4587-845d-2166876271a2
+		summarizeBy: sum
+		sourceColumn: vl_leadtimeaprovsolicitacaocomunic
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_leadtimecomunicacaorelatorio
+		dataType: int64
+		formatString: 0
+		lineageTag: 1766aac9-505e-4fc1-8c80-c2e2ef7a53dd
+		summarizeBy: sum
+		sourceColumn: vl_leadtimecomunicacaorelatorio
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_leadtimerelatorionegociacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 8869d86c-3e43-4855-bede-50f622e8f0c3
+		summarizeBy: sum
+		sourceColumn: vl_leadtimerelatorionegociacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_leadtimenegociacaoaprovnegoc
+		dataType: int64
+		formatString: 0
+		lineageTag: eaf8c2c0-aeb4-457e-a02f-04dac3476cee
+		summarizeBy: sum
+		sourceColumn: vl_leadtimenegociacaoaprovnegoc
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_leadtimeaprovnegocaprovordem
+		dataType: int64
+		formatString: 0
+		lineageTag: 682dcb90-2586-4287-8cf2-374a96067499
+		summarizeBy: sum
+		sourceColumn: vl_leadtimeaprovnegocaprovordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_leadtimeaprovordemrecebimento
+		dataType: int64
+		formatString: 0
+		lineageTag: e019dfce-5d6a-4729-be54-e36c8267a0be
+		summarizeBy: sum
+		sourceColumn: vl_leadtimeaprovordemrecebimento
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fat_prestacaoservico = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    suprimentos = Fonte{[Schema="suprimentos"]}[Data],
+				    fat_prestacaoservico1 = suprimentos{[Name="fat_prestacaoservico"]}[Data]
+				in
+				    fat_prestacaoservico1
+

@@ -1,0 +1,64 @@
+table dim_atividadecultura
+	lineageTag: f6430026-8244-4634-9d33-ebe43268dece
+
+	column sk_atividadecultura
+		dataType: int64
+		formatString: 0
+		lineageTag: f06ba6c1-4441-40fb-8d46-16024efafb4b
+		summarizeBy: none
+		sourceColumn: sk_atividadecultura
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: 956d202a-2d3c-4a63-9c61-092a19c228e0
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codfilial
+		dataType: int64
+		formatString: 0
+		lineageTag: 77c5f4c8-acc7-4961-a7ae-84bdf2bb0319
+		summarizeBy: none
+		sourceColumn: nk_codfilial
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_atividadecultura
+		dataType: string
+		lineageTag: a6ffd9bf-e2ef-479f-b554-dc2ef693f085
+		summarizeBy: none
+		sourceColumn: nk_atividadecultura
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_atividadecultura
+		dataType: string
+		lineageTag: b12f8602-bfd8-4195-99d6-ba1007fe190b
+		summarizeBy: none
+		sourceColumn: ds_atividadecultura
+
+		annotation SummarizationSetBy = Automatic
+
+	column ds_cultura
+		dataType: string
+		lineageTag: 2d5dec98-175e-4831-9020-95fcc75d7fe4
+		summarizeBy: none
+		sourceColumn: ds_cultura
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_atividadecultura = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_atividadecultura1 = public{[Name="dim_atividadecultura"]}[Data]
+				in
+				    dim_atividadecultura1
+

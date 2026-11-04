@@ -1,0 +1,47 @@
+table dim_empresa
+	lineageTag: 40ceb83d-c794-408c-a17f-83a67ad3e204
+
+	column sk_empresa
+		dataType: int64
+		formatString: 0
+		lineageTag: 38617b72-99de-4441-9c90-877420f94b25
+		summarizeBy: none
+		sourceColumn: sk_empresa
+
+		annotation SummarizationSetBy = Automatic
+
+	column nk_codcoligada
+		dataType: int64
+		formatString: 0
+		lineageTag: a1f2b443-854e-460a-960d-7a12ba4389d5
+		summarizeBy: none
+		sourceColumn: nk_codcoligada
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_nome
+		dataType: string
+		lineageTag: e27a5b77-3280-4d61-ba2f-89edfeb7990f
+		summarizeBy: none
+		sourceColumn: nm_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column nm_nomefantasia
+		dataType: string
+		lineageTag: 592553b5-ab2d-4210-a3f0-0679002f2499
+		summarizeBy: none
+		sourceColumn: nm_nomefantasia
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_empresa = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("172.21.68.31", "jrodasdw", [HierarchicalNavigation=true]),
+				    public = Fonte{[Schema="public"]}[Data],
+				    dim_empresa1 = public{[Name="dim_empresa"]}[Data]
+				in
+				    dim_empresa1
+
